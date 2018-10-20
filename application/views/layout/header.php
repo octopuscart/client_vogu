@@ -143,7 +143,7 @@
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="mp-index.html" class="logo">
+                        <a href="/" class="logo">
                             <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="" />
                         </a>
                     </div>
@@ -157,7 +157,7 @@
                             
                             <!-- Item With Sub -->
                             <li>
-                                <a href="#" class="mn-has-sub "><i class="fa fa-home"></i> Home </a>
+                                <a href="/" class="mn-has-sub "><i class="fa fa-home"></i> Home </a>
                             </li>
                             <!-- End Item With Sub -->
                             
