@@ -224,10 +224,10 @@
                                 <div class="col-lg-5 col-md-4 col-sm-5 t_xs_align_c">
                                     <ul class="hr_list fs_small color_light  contact_info_list" style="padding-top: 0px;">
                                         <li class="m_right_20 color_light f_xs_none m_xs_right_0 m_xs_bottom_5">
-                                            <a href="#" class="color_light color_blue_hover"><span class="circle icon_wrap_size_1 d_inline_m m_right_8 "><i class="icon-phone-1"></i></span>+(852) 2868 3768 </a>
+                                            <a href="#" class="color_light color_blue_hover"><span class="circle icon_wrap_size_1 d_inline_m m_right_8 "><i class="icon-phone-1"></i></span>+(852) 2314 8016</a>
                                         </li>
                                         <li class="m_right_20 color_light f_xs_none m_xs_right_0 m_xs_bottom_5">
-                                            <a href="mailto:#" class=" color_light d_inline_b color_blue_hover"><span class="circle icon_wrap_size_1 d_inline_m m_right_8"><i class="icon-mail-alt"></i></span>newcenturytailor@yahoo.com.hk</a>
+                                            <a href="mailto:#" class=" color_light d_inline_b color_blue_hover"><span class="circle icon_wrap_size_1 d_inline_m m_right_8"><i class="icon-mail-alt"></i></span>vogue@voguetailor.com</a>
                                         </li>
 
                                     </ul>
@@ -237,7 +237,7 @@
                                     <nav class="d_inline_m m_right_10 m_xs_right_0">
                                         <ul class="hr_list stripe_list fs_small">
                                             <li><a href="#" class="color_light color_blue_hover">About</a></li>
-                                            <li><a href="<?php echo site_url('Pages/contactus'); ?>" class="color_light color_blue_hover">Contact</a></li>
+                                            <li><a href="#" class="color_light color_blue_hover">Contact</a></li>
                                             <li><a href="#" class="color_light color_blue_hover">FAQ</a></li>
                                             <!--                                            <li><a href="#" class="color_light ">My Account</a></li>
                                                                                         <li><a href="#" class="color_light ">My Wishlist</a></li>-->
@@ -245,7 +245,7 @@
                                     </nav>
                                     <br class="d_none d_xs_block">
                                     <ul class="hr_list d_inline_b social_icons">
-                                        <li class="m_right_8"><a href="#" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="icon-facebook-1"></i></a></li>
+                                        <li class="m_right_8"><a href="https://www.facebook.com/VogueTailors" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="icon-facebook-1"></i></a></li>
                                         <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="icon-twitter-1"></i></a></li>
                                         <li class="m_right_8"><a href="#" class="color_light  googleplus  goo circle icon_wrap_size_1 d_block"><i class="icon-gplus-1"></i></a></li>
                                         <li class="m_right_8"><a href="#" class="color_light  instagram  circle icon_wrap_size_1 d_block"><i class="icon-instagramm"></i></a></li>
@@ -377,7 +377,7 @@
                                             </div>
                                         </div>
                                         <form role="search" class="relative type_2 f_left type_3 f_xs_none t_xs_align_l m_xs_bottom_15">
-                                            <input type="text" placeholder="Search" class="r_corners fw_light bg_light w_full" style=" border: 1px solid #000000;">
+                                            <input type="text" placeholder="Search" class="r_corners fw_light bg_light w_full" style=" border: 1px solid #8f7418;;">
                                             <button class="color_grey_light color_purple_hover tr_all">
                                                 <i class="icon-search"></i>
                                             </button>

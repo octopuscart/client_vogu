@@ -30,7 +30,7 @@ $this->load->view('layout/header');
 
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
-<script>(function (d, s, id) {
+<!--<script>(function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id))
             return;
@@ -38,14 +38,14 @@ $this->load->view('layout/header');
         js.id = id;
         js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
         fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script>-->
 
 
 
 
 
 
-<section class="relative w_full m_bottom_15">
+<section class="relative w_full ">
     <div class="r_slider">
         <ul>
 
@@ -53,17 +53,17 @@ $this->load->view('layout/header');
 
 
 
-            <li data-transition="fade" data-slotamount="100">
+<!--            <li data-transition="fade" data-slotamount="100">
 
                 <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/259525784902848/"  data-show-text="false" data-autoplay="true">
 
                 </div>
-            </li>
+            </li>-->
 
 
 
 
-            <li data-transition="fade" data-slotamount="10">
+<!--            <li data-transition="fade" data-slotamount="10">
                 <img src="<?php echo base_url(); ?>assets/theme/slider/5a.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
                 <div class="caption sfl hide_from_mobile str " data-x="left" data-y="108" data-speed="700"><h1 class="color_dark fw_light text_padding_10 " style="font-size: 40px;">Welcome to <br/>New Century Tailor Co. 新世紀洋服公司
                         <br/>custom clothing.</h1></div>
@@ -71,16 +71,10 @@ $this->load->view('layout/header');
                 <div class="caption sfl hide_from_mobile str" data-x="10" data-x="left" data-y="300" data-speed="700" data-start="1400">
                     <a href="#" role="button" class="tt_uppercase button_type_3 transparent r_corners fs_medium d_block tr_all">Try Now!</a>
                 </div>
-            </li>
+            </li>-->
 
 
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/2bbb.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption lfb ltb" data-x="left" data-x="700" data-y="bottom" data-hoffset="-118" data-speed="600"><img src="<?php echo base_url(); ?>assets/theme/slider/suit_trans1.png" alt=""></div>
-
-
-
-            </li>
+         
             <li data-transition="fade" data-slotamount="10">
                 <img src="<?php echo base_url(); ?>assets/theme/slider/4.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
                 <div class="caption sfl hide_from_mobile str" data-x="left" data-y="98" data-speed="700"><h1 class="color_light fw_light" style="font-size: 34px;">PREMIER <br/>MADE-TO-MEASURE CLOTHING</h1></div>
@@ -118,36 +112,9 @@ $this->load->view('layout/header');
 
 
 
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/1bb.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sfl hide_from_mobile str " data-x="left" data-y="108" data-speed="700"><h1 class="color_dark fw_light text_padding_10 " style="font-size: 40px;">Welcome to <br/>New Century Tailor Co. 新世紀洋服公司
-                        <br/>custom clothing.</h1></div>
-                <div class="caption sfl hide_from_mobile str color_dark" data-x="10" data-x="left" data-y="243" data-speed="700" data-start="1200">Specializing in bespoke and made-to-measure <br/>apparel and alterations for men</div>
-                <div class="caption sfl hide_from_mobile str" data-x="10" data-x="left" data-y="300" data-speed="700" data-start="1400">
-                    <a href="#" role="button" class="tt_uppercase button_type_3 transparent r_corners fs_medium d_block tr_all">Try Now!</a>
-                </div>
-            </li>
+      
 
-
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/2bbbb.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption lfb ltb" data-x="left" data-y="bottom" data-hoffset="-118" data-speed="600"><img src="<?php echo base_url(); ?>assets/theme/slider/suit_trans1.png" alt=""></div>
-                <div class="caption sfl hide_from_mobile str" data-x="700" data-y="109" data-speed="700" data-start="1500"><h1 class="color_light fw_medium  text_padding_10" style="font-size: 34px;">CUSTOM MADE SUITS & SHIRTS.
-                        <br>SETTING THE STANDARD.</h1></div>
-                <div class="caption sfl hide_from_mobile fw_medium str color_light" data-x="700" data-y="244" data-speed="700" data-start="1700">Specializing in bespoke and made-to-measure <br/>apparel and alterations for men</div>
-
-            </li>
-
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/3bb.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sfl hide_from_mobile str" data-x="left" data-y="98" data-speed="700"><h1 class="color_light fw_light" style="font-size: 34px;">PREMIER <br/>MADE-TO-MEASURE CLOTHING</h1></div>
-                <div class="caption sfl hide_from_mobile str color_light" data-x="left" data-y="200" data-speed="700" data-start="1200"> Best high end tailoring shop in <br/>Hong Kong.</div>
-                <div class="caption sfl hide_from_mobile str" data-x="left" data-y="300" data-speed="700" data-start="1400">
-                    <a href="#" role="button" class="tt_uppercase button_type_3 transparent color_light r_corners fs_medium d_block tr_all" >Create Your Design</a>
-                </div>
-            </li>
-
-
+         
 
 
 
@@ -159,24 +126,26 @@ $this->load->view('layout/header');
 
 
 <!--canvas constraustion-->
-<section class="section_offset">
+<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg)">
     <div class="container t_align_c">
-        <h3 class="color_dark fw_light m_bottom_15 heading_1" data-appear-animation="bounceInLeft">CANVASSED CONSTRUCTION</h3>
-        <p class="m_bottom_35 heading_2" data-appear-animation="bounceInLeft" data-appear-animation-delay="150">Canvassed Jackets Improves Drape and Durability </p>
         <div class="tabs">
 
             <!--tabs content-->
             <article id="tab-1" data-appear-animation="fadeInUp" data-appear-animation-delay="450">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 m_xs_bottom_20">
-                        <img src="<?php echo base_url(); ?>assets/theme/images/halfcanvas2.jpg" class="r_corners" alt="" style="    width: 100%;">
+                    <div class="col-lg-4 col-md-4 col-sm-4 m_xs_bottom_20">
+                        <img src="<?php echo base_url(); ?>assets/theme/images/standsuit1.png" class="r_corners" alt="" style="    width: 100%;">
                     </div>
-                    <div class="col-lg-6 col-md-6 t_align_l fw_light">
-                        <p class="m_bottom_15">The canvas is cut to the jacket's shape, then the wool is stitched to the canvas. Over time, as you wear the jacket, the canvas conforms to your body's shape, creating an excellent fit.  </p>
-                        <p class="m_bottom_15">The canvas lining allows the suit fabric to drape naturally, allowing a clean, well put-together look. It takes years of training and additional hours of handwork for a tailor to be able to craft this the correct way.
+                    <div class="col-lg-8 col-md-8 t_align_l fw_light">
+                         <h3 class="color_dark fw_light m_bottom_15 heading_1" data-appear-animation="bounceInLeft">Why should you buy from us?</h3>
+        <p class="m_bottom_35 heading_2" data-appear-animation="bounceInLeft" data-appear-animation-delay="150">Because we provide best tailoring services </p>
+       
+                        <p class="m_bottom_15">Vogue Tailors stock about 15000 fabrics ranging from affordable to exclusive. Few bespoke tailors offer such a wide selection on the spot.  </p>
+                        <p class="m_bottom_15">Vogue Tailors certainly rules Hong Kong's custom tailoring trade. Having custom tailored suits for professional men and women the business has set itself a reputation that stretches seamlessly across the globe.
 
                         </p>
-                        <p class="m_bottom_15">Half-canvassed jackets have several benefits. First, they generally have a lower price than a similar fully canvassed jacket. Less handcraft means a lower overall cost to you. And because the top half of the jacket is not fused you’ll not run into any bubbling problems as you might in a fused jacket. This adds to the lifespan of the garment. Finally, the canvassing provides the proper base for the jacket to drape naturally across your chest, rather than appearing stiff and lifeless as many fused jackets do.</p>
+                        <p class="m_bottom_15">
+5 tailors make monthly calls on their overseas customers to carry out fittings, make alterations and take new orders, giving customers the opportunity to expand their wardrobes and refresh old suits. Customers tend to stay for life. They appreciate the sophisticated tailoring and individualised attention they can take for granted at Vogue Tailors.                        </p>
                     </div>
                 </div>
             </article>
