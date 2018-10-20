@@ -116,6 +116,13 @@
     ];
     ?>
     <body ng-app="App">
+        
+        <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">Loading...</div>
+        </div>
+        <!-- End Page Loader -->
+
         <div ng-controller="ShopController" class="page">
             <script>
                 var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
