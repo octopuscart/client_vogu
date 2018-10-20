@@ -47,20 +47,43 @@ $this->load->view('layout/header');
     <div class="fullscreenbanner-s bg-dark">
         <ul>
 
-             
+
             <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider0.jpg" alt="">
 
-                
+                <!--HONGKONG LEADING BESPOKE CLOTHIER-->
+   <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="150" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
 
-                
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn" style="font-size: 35px;text-shadow: 1px 2px 0px  #000">
+
+                   
+
+                       HONGKONG LEADING BESPOKE CLOTHIER
+
+                 
+
+                </div>
+
+
+
 
             </li>
-              
 
 
-             
+
+
             <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/slider3.jpg" alt="">
@@ -138,10 +161,248 @@ $this->load->view('layout/header');
                 </div>
 
             </li>
-              
 
 
-             
+
+            <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/slider8.jpg" alt="">
+
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="-100" 
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    BESPOKE OR MADE TO MEASURE SUITS & FORMAL WEARS
+                </div>
+
+                <div class="caption customin customout tp-resizeme hs-line-12 font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="0" 
+                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn" style="font-size: 35px;">
+
+                    HONG KONG LEADING BESPOKE CLOTHIER
+
+
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="120" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <div class="local-scroll">
+
+                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            See More
+                        </a>
+
+                        <span>&nbsp;</span>
+
+                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            Show Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+
+            <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/15.jpg" alt="">
+
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="-100" 
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn" style="color: black">
+
+                    TAILORING WITH THE BEST IN CUT, CLOTH & CREATION.
+
+                </div>
+
+                <div class="caption customin customout tp-resizeme hs-line-12 font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="0" 
+                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn" style="font-size: 35px;color: black">
+
+                    EXPERTISE IN CRAFTING SARTORIAL ELEGANCE
+
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="120" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <div class="local-scroll">
+
+                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-b btn-medium btn-round">
+                            See More
+                        </a>
+
+                        <span>&nbsp;</span>
+
+                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-b btn-medium btn-round">
+                            Show Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+            
+            
+            <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/17.jpg" alt="">
+
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="-100" 
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    HAND MADE AND HAND CUT
+
+                </div>
+
+                <div class="caption customin customout tp-resizeme hs-line-12 font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="0" 
+                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    ORDER TO MADE!
+
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="120" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <div class="local-scroll">
+
+                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            See More
+                        </a>
+
+                        <span>&nbsp;</span>
+
+                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            Show Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </li>
+            
+            
+
             <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/slider5.jpg"  alt="">
@@ -179,7 +440,7 @@ $this->load->view('layout/header');
 
                      data-easing="Power4.easeOut" 
                      data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
+                     data-endeasing="Power4.easeIn" style="font-size: 30px;">
 
 
                     PREMIERE BESPOKE BOUTIQUES
@@ -205,101 +466,12 @@ $this->load->view('layout/header');
                 </div>
 
             </li>
-              
-
-
-             
-<!--            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Video Slide">
-
-                <img src="<?php echo base_url(); ?>assets/theme/images/full-width-images/section-bg-18.jpg"  alt="">
-
-
-                <div class="caption customin customout tp-resizeme hs-line-8 font-alt" 
-                     data-x="30" 
-                     data-y="center" 
-                     data-voffset="-80"  
-                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-
-                     data-speed="800" 
-                     data-start="1000" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    Introducing
-
-                </div>
-
-                <div class="caption fade customout tp-resizeme hs-line-14 font-alt" 
-                     data-x="30" 
-                     data-y="center" 
-                     data-voffset="-9"  
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1300" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    <span class="uppercase">We have magic skills</span>
-
-                </div>
-
-                <div class="caption customin customout tp-resizeme large_bold_white" 
-                     data-x="30" 
-                     data-y="center" 
-                     data-voffset="75"  
-                     data-customin="x:-50;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:0.1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1500" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    <div class="local-scroll">
-
-                        <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round">
-                            Learn More
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="caption customin customout tp-resizeme" 
-                     data-x="right" 
-                     data-hoffset="0" 
-                     data-y="center" 
-                     data-voffset="0" 
-                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1800" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn" 
-                     data-autoplay="false"
-                     data-autoplayonlyfirsttime="false">
-
-                    <iframe src="http://player.vimeo.com/video/57217581?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="576" height="330" allowfullscreen>
-                    </iframe>
-
-                </div>
 
 
 
-            </li>-->
+
+
+
 
 
         </ul>
@@ -597,27 +769,27 @@ $this->load->view('layout/header');
                 </div>
             </div>
             <div class="col-lg-5 col-lg-offset-1 col-md-6" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
-                
+
                 <div class="alt-features-item align-left" >
                     <div class="alt-features-icon" >
 
                     </div>
                     <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-recycle"></span> How It Works</h3>
                     <div class="alt-features-descr align-left" >
-                    Before the measurements begin we will want to start with a few guidelines in order to obtain the most accurate measurements.  It is ideal for the subject to be in a pair of trousers and shirt that fits well.                </p>
+                        Before the measurements begin we will want to start with a few guidelines in order to obtain the most accurate measurements.  It is ideal for the subject to be in a pair of trousers and shirt that fits well.                </p>
                     </div>
-                   
+
                 </div>
-                
-                
-                
-                
+
+
+
+
                 <h3 class="color_light fw_light m_bottom_40 m_xs_top_0"></h3>
                 <p class="fs_large fw_light color_light m_bottom_25">
                 <div class="row" style="    color: #777;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 1.86;">
+                     font-size: 12px;
+                     font-weight: 300;
+                     line-height: 1.86;">
                     <div class="col-md-5 m_bottom_15">
                         <ul class="color_light">
                             <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Chest</li>
@@ -634,9 +806,9 @@ $this->load->view('layout/header');
                         </ul>
                     </div>
                 </div>
- <div class="mt-20">
-                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
-                    </div>            </div>
+                <div class="mt-20">
+                    <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                </div>            </div>
         </div>
     </div>
 </section>

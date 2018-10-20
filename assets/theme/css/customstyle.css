@@ -108,3 +108,8 @@ ul, ol {
     text-align: center;
     line-height: 18px;
 }
+
+.btn-border-b{
+    border-color: black;
+    color: black;
+}
