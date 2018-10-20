@@ -42,91 +42,347 @@ $this->load->view('layout/header');
 
 
 
-
-
-
-<section class="relative w_full ">
-    <div class="r_slider">
+<!--
+ Home Section 
+<div class="home-section fullscreen-container" id="home">
+    <div class="fullscreenbanner-s bg-dark">
         <ul>
 
+             Slide Item 
+            <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider0.jpg" alt="">
 
 
 
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="-100" 
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
 
-<!--            <li data-transition="fade" data-slotamount="100">
+                     data-speed="800" 
+                     data-start="800" 
+                     data-startslide="1" 
 
-                <div class="fb-video" data-href="https://www.facebook.com/facebook/videos/259525784902848/"  data-show-text="false" data-autoplay="true">
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    Branding / Design / Development / Photo
 
                 </div>
-            </li>-->
 
+                <div class="caption customin customout tp-resizeme hs-line-14 font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="-14" 
+                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1200" 
+                     data-startslide="1" 
 
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
 
+                    Creative Studio
 
-<!--            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/5a.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sfl hide_from_mobile str " data-x="left" data-y="108" data-speed="700"><h1 class="color_dark fw_light text_padding_10 " style="font-size: 40px;">Welcome to <br/>New Century Tailor Co. 新世紀洋服公司
-                        <br/>custom clothing.</h1></div>
-                <div class="caption sfl hide_from_mobile str color_dark" data-x="10" data-x="left" data-y="243" data-speed="700" data-start="1200">Specializing in bespoke and made-to-measure <br/>apparel and alterations for men</div>
-                <div class="caption sfl hide_from_mobile str" data-x="10" data-x="left" data-y="300" data-speed="700" data-start="1400">
-                    <a href="#" role="button" class="tt_uppercase button_type_3 transparent r_corners fs_medium d_block tr_all">Try Now!</a>
                 </div>
-            </li>-->
 
 
-         
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/4.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sfl hide_from_mobile str" data-x="left" data-y="98" data-speed="700"><h1 class="color_light fw_light" style="font-size: 34px;">PREMIER <br/>MADE-TO-MEASURE CLOTHING</h1></div>
-                <div class="caption sfl hide_from_mobile str color_light" data-x="left" data-y="200" data-speed="700" data-start="1200"> Best high end tailoring shop in <br/>Hong Kong.</div>
-                <div class="caption sfl hide_from_mobile str" data-x="left" data-y="300" data-speed="700" data-start="1400">
-                    <a href="#" role="button" class="tt_uppercase button_type_3 transparent color_light r_corners fs_medium d_block tr_all" >Create Your Design</a>
+                <div class="caption customin customout tp-resizeme" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="83" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <div class="local-scroll">
+
+                        <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            See More
+                        </a>
+
+                        <span>&nbsp;</span>
+
+                        <a href="http://vimeo.com/50201327" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
+
+                    </div>
+
                 </div>
-            </li>
-
-
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/10.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sfl hide_from_mobile str" data-x="10" data-y="109" data-speed="700" data-start="1500"><h1 class="color_black fw_light  text_padding_10" style="font-size: 34px;">CUSTOM MADE SUITS & SHIRTS.
-                        <br>SETTING THE STANDARD.</h1></div>
-                <div class="caption sfl hide_from_mobile str color_black" data-x="20" data-y="244" data-speed="700" data-start="1700">We provide the highest craftsmanship to <br/>our valuable customers with reasonable price.</div>
 
             </li>
+             End Slide Item 
 
 
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/15.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
-                <div class="caption sfl hide_from_mobile str" data-x="left" data-y="98" data-speed="700"><h1 class="color_dark fw_light" style="font-size: 34px;">PREMIER <br/>MADE-TO-MEASURE CLOTHING</h1></div>
-                <div class="caption sfl hide_from_mobile str color_dark" data-x="left" data-y="200" data-speed="700" data-start="1200"> Best high end tailoring shop in <br/>Hong Kong.</div>
+             Slide Item 
+            <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/slider3.jpg" alt="">
+
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="-100" 
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    We are just creative people
+
+                </div>
+
+                <div class="caption customin customout tp-resizeme hs-line-12 font-alt" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="0" 
+                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    Design Lovers
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme" 
+                     data-x="center" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="120" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <div class="local-scroll">
+
+                        <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            See More
+                        </a>
+
+                        <span>&nbsp;</span>
+
+                        <a href="pages-pricing-1.html" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            Get pricing
+                        </a>
+
+                    </div>
+
+                </div>
 
             </li>
+             End Slide Item 
 
-            <li data-transition="fade" data-slotamount="10">
-                <img src="<?php echo base_url(); ?>assets/theme/slider/18.jpg" alt="" data-bgfit="cover" data-bgposition="center center">
 
-                <div class="caption sfl hide_from_mobile str" data-x="10" data-y="109" data-speed="700" data-start="1500"><h1 class="color_dark fw_medium  text_padding_10" style="font-size: 34px;">CUSTOM MADE SUITS & SHIRTS.
-                        <br>SETTING THE STANDARD.</h1></div>
-                <div class="caption sfl fw_medium hide_from_mobile str color_dark" data-x="10" data-y="244" data-speed="700" data-start="1700">Specializing in bespoke and made-to-measure <br/>apparel and alterations for men</div>
+             Slide Item 
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/slider5.jpg"  alt="">
+
+
+                <div class="caption customin customout tp-resizeme mediumlarge_light_white" 
+                     data-x="center" 
+                     data-y="center" 
+                     data-voffset="-70"  
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <a href="http://vimeo.com/57217581" class="big-icon-link lightbox-gallery-1 mfp-iframe"><span class="big-icon big-icon-rs"><i class="fa fa-play-circle"></i></span></a>
+
+                </div>
+
+                <div class="caption customin customout tp-resizeme hs-line-14 font-alt" 
+                     data-x="center" 
+                     data-y="center" 
+                     data-hoffset="20" 
+                     data-voffset="40"  
+                     data-customin="x:-50;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:0.1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+
+                    Rhythm Studio
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-y="center" 
+                     data-voffset="120"
+                     data-customin="x:50;y:300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    Let&rsquo;s start work with&nbsp;us
+                </div>
 
             </li>
+             End Slide Item 
+
+
+             Slide Item 
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Video Slide">
+
+                <img src="<?php echo base_url(); ?>assets/theme/images/full-width-images/section-bg-18.jpg"  alt="">
+
+
+                <div class="caption customin customout tp-resizeme hs-line-8 font-alt" 
+                     data-x="30" 
+                     data-y="center" 
+                     data-voffset="-80"  
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    Introducing
+
+                </div>
+
+                <div class="caption fade customout tp-resizeme hs-line-14 font-alt" 
+                     data-x="30" 
+                     data-y="center" 
+                     data-voffset="-9"  
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <span class="uppercase">We have magic skills</span>
+
+                </div>
+
+                <div class="caption customin customout tp-resizeme large_bold_white" 
+                     data-x="30" 
+                     data-y="center" 
+                     data-voffset="75"  
+                     data-customin="x:-50;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:0.1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    <div class="local-scroll">
+
+                        <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            Learn More
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme" 
+                     data-x="right" 
+                     data-hoffset="0" 
+                     data-y="center" 
+                     data-voffset="0" 
+                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1800" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn" 
+                     data-autoplay="false"
+                     data-autoplayonlyfirsttime="false">
+
+                    <iframe src="http://player.vimeo.com/video/57217581?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="576" height="330" allowfullscreen>
+                    </iframe>
+
+                </div>
 
 
 
-      
-
-         
-
-
-
+            </li>
+             End Slide Item 
 
 
         </ul>
+        <div class="tp-bannertimer tp-bottom"></div> 
     </div>
-</section>
+</div>
+ End Home Section -->
+
+
+
+
 
 
 <!--canvas constraustion-->
-<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg)">
+<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg);    margin-bottom: 30px;">
     <div class="container t_align_c">
         <div class="tabs">
 
@@ -137,15 +393,59 @@ $this->load->view('layout/header');
                         <img src="<?php echo base_url(); ?>assets/theme/images/standsuit1.png" class="r_corners" alt="" style="    width: 100%;">
                     </div>
                     <div class="col-lg-8 col-md-8 t_align_l fw_light">
-                         <h3 class="color_dark fw_light m_bottom_15 heading_1" data-appear-animation="bounceInLeft">Why should you buy from us?</h3>
-        <p class="m_bottom_35 heading_2" data-appear-animation="bounceInLeft" data-appear-animation-delay="150">Because we provide best tailoring services </p>
-       
+                        <h3 class="color_dark fw_light m_bottom_15 heading_1" data-appear-animation="bounceInLeft">Why should you buy from us?</h3>
+                        <p class="m_bottom_35 heading_2" data-appear-animation="bounceInLeft" data-appear-animation-delay="150">Because we provide best tailoring services </p>
+
                         <p class="m_bottom_15">Vogue Tailors stock about 15000 fabrics ranging from affordable to exclusive. Few bespoke tailors offer such a wide selection on the spot.  </p>
-                        <p class="m_bottom_15">Vogue Tailors certainly rules Hong Kong's custom tailoring trade. Having custom tailored suits for professional men and women the business has set itself a reputation that stretches seamlessly across the globe.
 
                         </p>
+
                         <p class="m_bottom_15">
-5 tailors make monthly calls on their overseas customers to carry out fittings, make alterations and take new orders, giving customers the opportunity to expand their wardrobes and refresh old suits. Customers tend to stay for life. They appreciate the sophisticated tailoring and individualised attention they can take for granted at Vogue Tailors.                        </p>
+                            Our garments are hand cut and hand stitched down to the smallest detail, to ensure it's comfortable and durable. We even use cloths from some of the finest mills in the world including the very best of British and Italian - the difference being our suits are as affordable as an off-the-peg suit.  </p>
+                        </p>
+
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="ci-title spacial_title">
+                                Made To Measure
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="ci-title spacial_title">
+                                Professional Shanghainese Workmanship
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="ci-title spacial_title">
+                                Made In Hong Kong
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="ci-title spacial_title">
+                                Professional Alteration
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="ci-title spacial_title">
+                                Ready In 24 Hours
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </article>
@@ -153,6 +453,75 @@ $this->load->view('layout/header');
         </div>
     </div>
 </section>
+
+
+
+
+
+
+<section class="page-section" style="background: url(<?php echo base_url(); ?>assets/theme/images/2.jpg);    background-size: cover;
+         background-position: center;    padding: 10px 0;">
+    <div class="container relative">
+        <h3 class="align-center color_light" data-appear-animation="bounceInLeft" style="color:white"> WORK PROCESS</h3>
+
+
+
+        <!-- Features Grid -->
+        <div class="row multi-columns-row alt-features-grid">
+
+            <!-- Features Item -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item align-center">
+                    <div class="alt-features-icon" style="color: white;">
+                        <span class="icon-layers"></span>
+                    </div>
+                    <h3 class="alt-features-title font-alt" style="color: white;">Choose Fabric</h3>
+                    <div class="alt-features-descr align-center" style="color: white;">
+                        Choose any fabric and create own style. Vogue Tailors stock about 15000 fabrics ranging from affordable to exclusive.
+                    </div>
+                </div>
+            </div>
+            <!-- End Features Item -->
+
+            <!-- Features Item -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item align-center">
+                    <div class="alt-features-icon" style="color: white;">
+                        <span class="icon-tools"></span>
+                    </div>
+                    <h3 class="alt-features-title font-alt" style="color: white;">Get Size</h3>
+                    <div class="alt-features-descr align-center" style="color: white;">
+                        Let Size and calculate your measurement. Insert you measurements by following easy steps.
+                    </div>
+                </div>
+            </div>
+            <!-- End Features Item -->
+
+            <!-- Features Item -->
+            <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="alt-features-item align-center">
+                    <div class="alt-features-icon" style="color: white;">
+                        <span class="icon-scissors"></span>
+                    </div>
+                    <h3 class="alt-features-title font-alt" style="color: white;">Cut to Create</h3>
+                    <div class="alt-features-descr align-center" style="color: white;">
+                        You can customize your clothes conveniently, And our experienced shanghainese tailor cut and make your new dress.
+                    </div>
+                </div>
+            </div>
+            <!-- End Features Item -->
+
+
+
+        </div>
+        <!-- End Features Grid -->
+
+    </div>
+</section>
+
+
+
+
 
 
 <section class="section_offset image_bg_1">
@@ -173,7 +542,7 @@ $this->load->view('layout/header');
                                 <i class="icon-tools tr_all"></i>
                             </span>
                         </h6>
-                        <p class="fs_medium m_bottom_10">Choose any fabric and create own style.</p>
+                        <p class="fs_medium m_bottom_10">Choose any fabric and create own style. </p>
 
                     </figure>
                 </div>
@@ -222,6 +591,168 @@ $this->load->view('layout/header');
     </div>
 </section>
 
+
+
+<!-- Testimonials Section -->
+<section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="images/full-width-images/section-bg-3.jpg">
+
+    <!-- Slide Item -->
+    <div>
+        <div class="container relative">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon">
+                        <span class="icon-quote"></span>
+                    </div>
+                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                            risus utaliquam dapibus. Thanks!
+                        </p>
+                        <footer class="testimonial-author">
+                            John Doe, doodle inc.
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slide Item -->
+
+    <!-- Slide Item -->
+    <div>
+        <div class="container relative">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon">
+                        <span class="icon-quote"></span>
+                    </div>
+                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                            risus utaliquam dapibus. Thanks!
+                        </p>
+                        <footer class="testimonial-author">
+                            John Doe, doodle inc.
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slide Item -->
+
+    <!-- Slide Item -->
+    <div>
+        <div class="container relative">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon">
+                        <span class="icon-quote"></span>
+                    </div>
+                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
+                            risus utaliquam dapibus. Thanks!
+                        </p>
+                        <footer class="testimonial-author">
+                            John Doe, doodle inc.
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slide Item -->
+
+</section>
+<!-- End Testimonials Section -->
+
+
+
+
+<!-- Section -->
+<section class="page-section" style="    padding: 40px;">
+    <div class="container relative">
+
+        <div class="row">
+
+            <div class="col-md-4 mb-sm-40">
+
+                <!-- Gallery -->
+                <div class="work-full-media mt-0 white-shadow wow fadeInUp">
+                    <ul class="clearlist work-full-slider owl-carousel">
+                        <li>
+                            <img src="<?php echo base_url(); ?>assets/theme/images/shopbg_6.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Gallery -->
+
+            </div>
+
+            <div class="col-md-8 col-lg-4 col-lg-offset-1">
+                
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <div class="alt-features-item align-left">
+                    <div class="alt-features-icon" >
+                     
+                    </div>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-map"></span> TRIP SCHEDULE</h3>
+                    <div class="alt-features-descr align-left" >
+                        Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
+                    </div>
+                   <div class="mt-10">
+                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                    </div>
+                </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="alt-features-item align-left">
+                    <div class="alt-features-icon" >
+                     
+                    </div>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black"> 
+                        <span class="icon-scissors"></span> BUILD YOUR SUIT
+                    </h3>
+                    <div class="alt-features-descr align-left" >
+                        Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
+                    </div>
+                   <div class="mt-10">
+                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section -->
+
+
 <!--<section class="section_offset bg_light_2">
     <div class="container t_align_c">
         <h3 class="color_dark fw_light m_bottom_15 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft">CUSTOM TAILORED</h3>
@@ -238,7 +769,7 @@ $customarray = [
 ];
 foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
     ?>
-                                                                                 
+                                                                                                     
     <?php
 }
 ?>

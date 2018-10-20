@@ -141,24 +141,41 @@
 
 <!--Libs-->
 
-<script src="<?php echo base_url(); ?>assets/theme/plugins/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/plugins/jquery.appear.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/plugins/afterresize.min.js"></script>
-<!--<script src="<?php echo base_url(); ?>assets/theme/plugins/jquery.easing.1.3.js"></script>-->
-<!--<script src="<?php echo base_url(); ?>assets/theme/plugins/jquery.easytabs.min.js"></script>-->
-<script src="<?php echo base_url(); ?>assets/theme/plugins/jackbox/js/jackbox-packed.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/plugins/twitter/jquery.tweet.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/plugins/owl-carousel/owl.carousel.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/plugins/flickr.js"></script>
+
+<!-- JS -->
+
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/bootstrap.min.js"></script>        
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/SmoothScroll.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.localScroll.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.viewport.mini.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.appear.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.sticky.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.magnific-popup.min.js"></script>
+<!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below 
+**** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/gmap3.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/wow.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.simple-text-rotator.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/all.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/contact-form.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/jquery.ajaxchimp.min.js"></script> 
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/theme/js/rev-slider.js"></script>        
+<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
 
 
-<!--Theme Initializer-->
-<script src="<?php echo base_url(); ?>assets/theme/js/theme.plugins.js"></script>
-<script src="<?php echo base_url(); ?>assets/theme/js/theme.js"></script>
-
-<script src="<?php echo base_url(); ?>assets/theme/js/bootstrap.min.js"></script>
 
 
 <!-- type ahead-->
