@@ -7,121 +7,123 @@ $this->load->view('layout/header');
 <!--page title-->
 
 <!--content-->
-<section class="section_offset">
+<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg);    padding: 30px 0px;">
     <main class="container t_align_c">
-        <h3 class="color_dark fw_light m_bottom_15 heading_1">New Century Tailor Co. </h3>
-        <p class="m_bottom_35 heading_2">新世紀洋服公司 </p>
+        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <center>
+                <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logodddd.png"  alt="" style="height: 100px" /></a>
+            </center>       
+        </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 m_xs_bottom_20">
                 <img src="<?php echo base_url(); ?>assets/images/shop2.jpg" class="r_corners" alt="">
             </div>
             <div class="col-lg-6 col-md-6 t_align_l">
-                <p class="m_bottom_15 fw_light fs_large">
+
+                <p class="m_bottom_25 fw_light fs_large">
+                    Vogue Tailors was founded Mr. Bhat Zahoor and Mr. Farooq Shalla with the belief that bespoke does not have to mean expensive. Most people would agree that a bespoke suit, hand cut and stitched by a skilled tailor, would look and fit much better than an off-the-peg suit.
                 </p>
                 <p class="m_bottom_25 fw_light fs_large">
-                    We provide the highest craftsmanship to our valuable customers with reasonable price.
-
-                <ul class="m_bottom_25 fw_light fs_large">
-                    <li>- Selected medium to high-end fabrics</li>
-                    <li>-  Non fused inner facing</li>
-                    <li>-  Full canvas</li>
-                    <li>-  Full hand-made</li>
-                    <li>-  Selected cow-horn button</li>
-
-                </ul>
-                <p class="m_bottom_25 fw_light fs_large">Best high end tailoring shop in Hong Kong. As one of Hong Kong's leading custom tailors, we are proud of our international reputation for making the highest quality tailored clothing. </p>
+                    However, people can be put off by the prices - that need not be the case.
                 </p>
-                <!--                <a href="#" class="button_type_2 color_dark r_corners fs_medium color_blue_hover tr_all f_left m_right_10 m_sm_bottom_10">Meet Our Team</a>-->
+                <p class="m_bottom_25 fw_light fs_large">
+                    At Vogue Tailors we can make a suit to your exact specifications using many of the traditional Shanghainese bespoke tailoring techniques at an affordable price. Once you've had a custom made suit, made for you by our highly skilled bespoke tailor you will never want to go back to buying off the peg. We believe that quality should never be compromised.                </p>
+
+            </div>
+        </div>
+        <div class="alt-features-item align-left">
+            <div class="alt-features-icon" >
+            </div>
+            <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black align-center"> 
+                <span class=" icon-ribbon"></span> Why Vogue Custom Tailor?
+            </h3>
+            <div class="" >
+
+
+                <div class="col-md-4 m_xs_bottom_20">
+                    <img src="<?php echo base_url(); ?>assets/theme/images/fitjacket.png" class="r_corners" alt="" style="    height: 427px;
+    margin-left: 30px;">
+                </div>
+                <div class="col-md-8 t_align_l">
+
+                    <p class="m_bottom_25 fw_light fs_large mt-30">
+                        Our garments are hand cut and hand stitched down to the smallest detail, to ensure it's comfortable and durable. We even use cloths from some of the finest mills in the world including the very best of British and Italian - the difference being our suits are as affordable as an off-the-peg suit. 
+                    </p>
+
+
+
+                    <p class="m_bottom_25 fw_light fs_large">
+                        We don't have fancy shop fronts or premises, our main priorities are quality, customer service and Dollar for Dollar value for your money. That is why, our clients from all walks of life are not just our customers but over the years have become our friends such that we understand their personalities, styles and needs.
+                    </p>
+                    <p class="m_bottom_25 fw_light fs_large">
+                        Vogue Tailors stock about 15000 fabrics ranging from affordable to exclusive. Few bespoke tailors offer such a wide selection on the spot. Vogue Tailors certainly rules Hong Kong's custom tailoring trade. Having custom tailored suits for professional men and women the business has set itself a reputation that stretches seamlessly across the globe.
+                    </p>
+                    <p class="m_bottom_25 fw_light fs_large">
+                        5 tailors make monthly calls on their overseas customers to carry out fittings, make alterations and take new orders, giving customers the opportunity to expand their wardrobes and refresh old suits. Customers tend to stay for life. They appreciate the sophisticated tailoring and individualised attention they can take for granted at Vogue Tailors.                    
+                    </p>
+                </div>
+
             </div>
         </div>
     </main>
 </section>
 
 
+<!-- Testimonials Section -->
+<section class="page-section fullwidth-slider" data-background="<?php echo base_url(); ?>assets/theme/images/clients.jpg" style="    padding: 10px;">
 
-<div class="section_offset bg_light_2">
-    <div class="container">
-        <div class="row">
-            <section class="col-lg-6 col-md-6 t_align_l m_sm_bottom_30">
-                <h3 class="color_dark t_align_c m_bottom_15 fw_light heading_5">Testimonials</h3>
-
-                <div class="owl-carousel" data-nav="t_nav_" data-plugin-options='{"autoPlay":true,"autoHeight":true,"transitionStyle": "backSlide"}'>
-                    <!--item-->
-
-
-                    <!--item-->
-                    <div class="tr_all_medium">
-                        <!--quote-->
-                        <blockquote class="r_corners relative type_2 fs_large color_dark m_bottom_20">
-                            <p style="    word-break: break-word;"><i>Carlson employs the best tailors from Shanghai, the best fabrics from the UK. His style advice is up to date without being trendy. A true class act. Expect to pay US$1000+ depending on the fabric per Saville Row quality, bespoke suit.</i></p>
-                        </blockquote>
-                        <div class="d_table w_full">
-                            <div class="d_table_cell">
-                                <!--author photo-->
-                                <div class="d_inline_m circle wrapper m_right_10">
-                                    <img src="images/testimonial_img_2.jpg" alt="">
-                                </div>
-                                <!--author name-->
-                                <div class="d_inline_m">
-                                    <b class="fs_large d_block color_dark">pfpedersen Florida</b>
-                                    <p class="fs_medium d_mxs_none">tripadvisor.com</p>
-                                </div>
-                            </div>
-                            <div class="d_table_cell t_align_r v_align_m">
-                                <button class="circle icon_wrap_size_5 color_grey_light d_inline_m color_blue_hover m_right_5 tr_all t_nav_prev">
-                                    <i class="icon-left-open-big"></i>
-                                </button>
-                                <button class="circle icon_wrap_size_5 color_grey_light d_inline_m color_blue_hover tr_all t_nav_next">
-                                    <i class="icon-right-open-big"></i>
-                                </button>
-                            </div>
-                        </div>
+    <!-- -->
+    <div>
+        <div class="container relative">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon" style="color:white">
+                        <span class="icon-quote"></span>
                     </div>
-                    <div>
-
-
-
-                        <!--quote-->
-                        <blockquote class="r_corners relative type_2 fs_large color_dark m_bottom_20">
-                            <p class="m_bottom_15" style="    word-break: break-word;"><i>Excellent service & quality</i></p>
-
-                        </blockquote>
-                        <div class="d_table w_full">
-                            <div class="d_table_cell">
-                                <!--author photo-->
-                                <div class="d_inline_m circle wrapper m_right_10">
-                                    <img src="images/testimonial_img_1.jpg" alt="">
-                                </div>
-                                <!--author name-->
-                                <div class="d_inline_m">
-                                    <b class="fs_large d_block color_dark">Rachel Lam</b>
-                                    <p class="fs_medium d_mxs_none">Google User</p>
-                                </div>
-                            </div>
-                            <div class="d_table_cell t_align_r v_align_m">
-                                <button class="circle icon_wrap_size_5 color_grey_light d_inline_m color_blue_hover m_right_5 tr_all t_nav_prev">
-                                    <i class="icon-left-open-big"></i>
-                                </button>
-                                <button class="circle icon_wrap_size_5 color_grey_light d_inline_m color_blue_hover tr_all t_nav_next">
-                                    <i class="icon-right-open-big"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-
+                    <!-- Section Title --><h3 class="small-title font-alt" style="color:white">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            I always approach to Vogue Tailors for many reasons, one because I know what the quality they give, second because nothing ever fits (Square shoulders, Baggy trousers, bit of a gut) and thirdly because I always look to stand out from the ground. Sometimes before, I needed a wedding suit and I directly approached Vogue Tailors, and I am greatly impressed with what is being made for me. Honesty in giving an advice to customers is the main key point that you will love. Anyone who wants bespoke tailored suit, just go to Vogue Tailors. There is no benefit to ring other tailors. This is my personal experience that I am telling you.
+                        </p>
+                        <footer class="testimonial-author" style="color:white">
+                            TAHSA
+                        </footer>
+                    </blockquote>
                 </div>
-            </section>
-            <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_20 m_sm_bottom_30">
-                <h5 class="color_dark fw_light m_bottom_15">Join Us on Facebook</h5>
-                <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fnewcenturytailor&amp;width=500&amp;height=500&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=438889712801266" style="border:none; overflow:hidden; width:100%; height:258px;"></iframe>
-                <div style="clear: both"></div>
             </div>
-
         </div>
     </div>
-</div>
+    <!--  -->
 
+    <!-- -->
+    <div>
+        <div class="container relative">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon">
+                        <span class="icon-quote"></span>
+                    </div>
+                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            Vogue tailors provide premium quality fabrics, which are from the finest mills from all over the world. They offer various brands of fabrics such as Scabal, Ermenegildo Zegna, Marzoni etc. Vogue Tailors provide high quality tailoring. They are full of ideas, knowledge of running trend, reliable and user-friendly. I would recommend you to go for Vogue tailor for your bespoke tailored suits.
+                        </p>
+                        <footer class="testimonial-author">
+                            MICHAEL
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+
+</section>
+<!-- End Testimonials Section -->
 
 
 
