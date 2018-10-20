@@ -164,7 +164,7 @@
                             <!-- Item With Sub -->
                             
                             <li>
-                                <a href="<?php echo site_url('Shop/aboutus');?>" class="mn-has-sub"><i class="fa fa-question-circle"></i> About Us </a>
+                                <a href="#" class="mn-has-sub"><i class="fa fa-question-circle"></i> About Us </a>
                             </li>
                             
                              <li>
