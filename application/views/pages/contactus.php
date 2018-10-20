@@ -44,9 +44,9 @@ $this->load->view('layout/header');
                                         Address
                                     </div>
                                     <div class="ci-text" style="text-align: left;">
-                                        B6 Star House Plaza , Star House (Next to Starbucks)
-                                        3 Salisbury Road
-                                        Tsimshatsui, Kowloon
+                                        B6 Star House Plaza , <br/>Star House (Next to Starbucks)
+                                       <br/> 3 Salisbury Road
+                                        Tsimshatsui,<br/> Kowloon
                                     </div>
                                 </div>
                             </div>

@@ -54,7 +54,7 @@
                                         Address
                                     </div>
                                     <div class="ci-text" style="text-align: left;">
-                                        B6 Star House Plaza , Star House (Next to Starbucks)
+                                        B6 Star House Plaza , Star House (Next to Starbucks)<br/>
                                         3 Salisbury Road
                                         Tsimshatsui, Kowloon
                                     </div>
