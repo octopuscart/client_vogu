@@ -50,7 +50,7 @@ $this->load->view('layout/header');
 
             <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
 
-                <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider0.jpg" alt="">
+                <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider01.jpg" alt="">
 
                 <!--HONGKONG LEADING BESPOKE CLOTHIER-->
    <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
@@ -280,7 +280,7 @@ $this->load->view('layout/header');
 
                      data-easing="Power4.easeOut" 
                      data-endspeed="500" 
-                     data-endeasing="Power4.easeIn" style="font-size: 35px;color: black">
+                     data-endeasing="Power4.easeIn" style="font-size: 30px;color: black">
 
                     EXPERTISE IN CRAFTING SARTORIAL ELEGANCE
 
