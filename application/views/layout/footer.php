@@ -54,8 +54,8 @@
                                         Address
                                     </div>
                                     <div class="ci-text" style="text-align: left;">
-                                        B6 Star House Plaza, Star House (Next to Starbucks), <br/>
-                                        3 Salisbury Road, Tsimsha Tsui, Kowloon, Hong Kong
+                                        B6, Star House Plaza, Star House (Next to Starbucks), <br/>
+                                        3 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong
                                     </div>
                                 </div>
                             </div>
