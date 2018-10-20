@@ -9,11 +9,11 @@ $this->load->view('layout/header');
 <!--content-->
 <section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg);    padding: 30px 0px;">
     <main class="container t_align_c">
-        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+<!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <center>
                 <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logodddd.png"  alt="" style="height: 100px" /></a>
             </center>       
-        </div>
+        </div>-->
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 m_xs_bottom_20">
                 <img src="<?php echo base_url(); ?>assets/images/shop2.jpg" class="r_corners" alt="">
