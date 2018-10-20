@@ -161,11 +161,11 @@
                             </li>
                             
                              <li>
-                                <a href="#" class="mn-has-sub"><i class="fa fa-shopping-bag"></i> Shop Now </a>
+                                <a href="http://www.voguetailors.com" class="mn-has-sub"><i class="fa fa-shopping-bag"></i> Shop Now </a>
                             </li>
                             
                              <li>
-                                <a href="#" class="mn-has-sub"><i class="fa fa-phone"></i> Contact Us</a>
+                                 <a href="<?php echo site_url('Shop/contactus');?>" class="mn-has-sub"><i class="fa fa-phone"></i> Contact Us</a>
                             </li>
                            
                             

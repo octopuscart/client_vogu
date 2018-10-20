@@ -13,7 +13,7 @@
 
 
 <!-- Foter -->
-<footer class="page-section bg-gray-lighter footer " style="padding: 0px">
+<footer class="page-section bg-gray-lighter footer " style="padding: 0px;border-top: 2px solid #bfa95c">
     <div class="container">
 
         <section class="page-section" id="contact" style="padding: 0px">
@@ -29,7 +29,7 @@
                         <div class="row">
 
                             <!-- Phone -->
-                            <div class="col-lg-4 pt-20 pb-20 pb-xs-0">
+                            <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
                                 <div class="contact-item">
                                     <div class="ci-icon">
                                         <i class="fa fa-phone"></i>
@@ -45,7 +45,7 @@
                             <!-- End Phone -->
 
                             <!-- Address -->
-                            <div class="col-lg-4 pt-20 pb-20 pb-xs-0">
+                            <div class="col-lg-6 pt-20 pb-20 pb-xs-0">
                                 <div class="contact-item">
                                     <div class="ci-icon">
                                         <i class="fa fa-map-marker"></i>
@@ -63,7 +63,7 @@
                             <!-- End Address -->
 
                             <!-- Email -->
-                            <div class="col-lg-4 pt-20 pb-20 pb-xs-0">
+                            <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
                                 <div class="contact-item">
                                    
                                     <div class="ci-title font-alt" style="text-align: left;">
