@@ -1,138 +1,141 @@
-<!---footer--->
-<footer role="contentinfo" class="bg_light_3 bg_dark" id="#footer_1">
-    <!--top part-->
-    <section class="footer_top_part">
+<!-- Contact Section -->
 
-        <div class="container">
-            <div class="row">
-                <!--about us-->
-                <div class="col-lg-3 col-md-3 col-sm-3 fw_light m_bottom_30 color_light">
-                    <h5 class="color_light m_bottom_20 ">Shortly About Us</h5>
-                    <p class='font_size_14'>New Century Tailor Co. <span class="font_size_13"> 新世紀洋服公司 </span> - Best high end tailoring shop in Hong Kong. We provide the highest craftsmanship to our valuable customers with reasonable price.</p>
-                </div>
-                <!--contact info--> 
-                <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_30">
-                    <h5 class="color_light m_bottom_20 fw_light ">Contact Us</h5>
-                    <div class="row">
-                        <ul class="col-lg-6 col-md-6 col-sm-6 fw_light w_break m_xs_bottom_8 color_light">
-                            <li class="m_bottom_8 font_size_14">
-                                <div class="d_inline_m icon_wrap_size_1 color_light  circle m_right_10">
-                                    <i class="icon-phone-1"></i>
-                                </div>
-                                +(852) 2868 3768
-
-                            </li>
-
-                            <li class="m_bottom_8 font_size_14">
-                                <div class="d_inline_m  icon_wrap_size_1 color_light circle  m_right_10" style='font-size: 24px;    margin-right: 11px;'>
-                                    <i class="fa fa-fax" style="    font-size: 10px;
-                                       line-height: 19px;"></i>
-                                </div>
-                                +(852) 2868 3782<br/>
-                            </li>
-
-                            <li class="m_bottom_8">
-                                <div class="d_inline_m icon_wrap_size_1 color_light  circle m_right_10">
-                                    <i class="icon-mail-alt"></i>
-                                </div>
-
-                                <a href="mailto:newcenturytailor@yahoo.com.hk" class="color_black color_light color_blue_hover">newcenturytailor@yahoo.com.hk</a><br/>
-                                <a href="mailto:sales@newcenturytailor.com" class="color_black color_light color_blue_hover" style='margin-left:35px'>sales@newcenturytailor.com</a>
-                            </li>
-
-                        </ul>
-                        <ul class="col-lg-6 col-md-6 col-sm-6 vr_list_type_5">
-                            <li class="m_bottom_15 fw_light relative color_light font_size_14" >
-                                <div class="icon_wrap_size_1 color_light  circle f_left">
-                                    <i class="icon-location"></i>
-                                </div>
-
-                                1/F AIE Building,<br/> 33 Connaught Road Central<br/> <span class="font_size_13"> 中環干諾道中 33號中亞洲大廈1樓 </span>
-                                <br/>Hong Kong
-
-                            </li>
-                            <li>
-                                <a href="https://www.google.co.in/maps/place/New+Century+Tailor+Co+%E6%96%B0%E4%B8%96%E7%B4%80%E6%B4%8B%E6%9C%8D%E5%85%AC%E5%8F%B8/@22.2837108,114.1571304,15z/data=!4m2!3m1!1s0x0:0xdb28bd0a01d76a2c?sa=X&ved=2ahUKEwi6tPyT9ufdAhXFOY8KHfRAAfoQ_BIwCnoECAoQCw" target="_blank" class="button_type_2 color_light r_corners tr_all color_light _hover d_inline_m fs_medium t_md_align_c w_break">Open in Google Maps</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--social buttons-->
-                <div class="col-lg-3 col-md-3 col-sm-3 m_bottom_20 m_xs_bottom_20">
-
-                    <h5 class="color_light fw_light m_bottom_20">Newsletter</h5>
-                    <p class="color_light fw_light m_bottom_25">Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
-                    <form class="subscribe_send_form">
-                        <ul>
-                            <li class="m_bottom_20">
-                                <input type="email" name="subscribe_email" placeholder="Your email address" class="r_corners bg_light w_full fw_light">
-                            </li>
-                            <li>
-                                <button class="fs_medium button_type_1 color_light r_corners tr_all">Subscribe</button>
-                            </li>
-                        </ul>
-                        <div class="message_container d_none m_top_10"></div></form>
-
-                    <h5 class="color_light m_bottom_10 fw_light "></h5>
-                </div>
-                <div class="container">
-                    <ul class="hr_list social_icons">
-                        <!--tooltip_container class is required-->
-                        <li class="m_right_15 m_bottom_15 tooltip_container">
-                            <!--tooltip-->
-                            <span class="d_block r_corners color_default tooltip fs_small tr_all">Follow Us on Facebook</span>
-                            <a href="#" class="d_block facebook facebook_static_color icon_wrap_size_2 circle color_grey_light_2">
-                                <i class="icon-facebook fs_small"></i>
-                            </a>
-                        </li>
-                        <li class="m_right_15 m_bottom_15 tooltip_container">
-                            <!--tooltip-->
-                            <span class="d_block r_corners color_default tooltip fs_small tr_all">Follow Us on Twitter</span>
-                            <a href="#" class="d_block twitter twitter_static_color icon_wrap_size_2 circle color_grey_light_2">
-                                <i class="icon-twitter fs_small"></i>
-                            </a>
-                        </li>
-                        <li class="m_right_15 m_bottom_15 m_sm_right_0 tooltip_container m_xs_right_15">
-                            <!--tooltip-->
-                            <span class="d_block r_corners color_default tooltip fs_small tr_all">Google Plus</span>
-                            <a href="#" class="d_block googleplus googleplus_static_color icon_wrap_size_2 circle color_grey_light_2">
-                                <i class="icon-gplus-1 fs_small"></i>
-                            </a>
-                        </li>
-                        <li class="m_right_15 m_bottom_15 tooltip_container m_sm_right_0 m_xs_right_15">
-                            <!--tooltip-->
-                            <span class="d_block r_corners color_default tooltip fs_small tr_all">Instagram</span>
-                            <a href="#" class="d_block instagram instagram_static_color icon_wrap_size_2 circle color_grey_light_2">
-                                <i class="icon-instagramm fs_small"></i>
-                            </a>
-                        </li>
-
-                        <li class="m_right_15 m_bottom_15 m_sm_right_0 tooltip_container m_xs_right_15">
-                            <!--tooltip-->
-                            <span class="d_block r_corners color_default tooltip fs_small tr_all">Youtube</span>
-                            <a href="#" class="d_block youtube youtube_static_color icon_wrap_size_2 circle color_grey_light_2">
-                                <i class="icon-youtube fs_small"></i>
-                            </a>
-                        </li>
-
-                        <p class="f_right color_light">©  <?php echo date('Y') ?> New Century Tailor Co. 新世紀洋服公司
-
-                            . All Rights Reserved.</p>
+<!-- End Contact Section -->
 
 
-
-
-                    </ul>
-                </div>
+<!--             Google Map 
+            <div class="google-map">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14766.265299096092!2d114.168786!3d22.2944119!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaa36f76b04a6a4a4!2sVogue+Tailors!5e0!3m2!1sen!2sin!4v1540021794499" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                
             </div>
+             End Google Map -->
+
+
+<!-- Foter -->
+<footer class="page-section bg-gray-lighter footer " style="padding: 0px">
+    <div class="container">
+
+        <section class="page-section" id="contact" style="padding: 0px">
+            <div class="container relative">
+
+                <h2 class="section-title font-alt mb-70 mb-sm-40">
+                    Contact
+                </h2>
+
+                <div class="row mb-10 mb-xs-40">
+
+                    <div class="col-md-12">
+                        <div class="row">
+
+                            <!-- Phone -->
+                            <div class="col-lg-4 pt-20 pb-20 pb-xs-0">
+                                <div class="contact-item">
+                                    <div class="ci-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="ci-title font-alt" style="text-align: left;">
+                                        Call Us
+                                    </div>
+                                    <div class="ci-text" style="text-align: left;">
+                                        +(852) 2314 8016
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Phone -->
+
+                            <!-- Address -->
+                            <div class="col-lg-4 pt-20 pb-20 pb-xs-0">
+                                <div class="contact-item">
+                                    <div class="ci-icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="ci-title font-alt" style="text-align: left;">
+                                        Address
+                                    </div>
+                                    <div class="ci-text" style="text-align: left;">
+                                        B6 Star House Plaza , Star House (Next to Starbucks)
+                                        3 Salisbury Road
+                                        Tsimshatsui, Kowloon
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Address -->
+
+                            <!-- Email -->
+                            <div class="col-lg-4 pt-20 pb-20 pb-xs-0">
+                                <div class="contact-item">
+                                   
+                                    <div class="ci-title font-alt" style="text-align: left;">
+                                       <div class="ci-icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>  Email
+                                    </div>
+                                    <div class="ci-text" style="text-align: left;">
+                                        <a href="mailto:vogue@voguetailor.com">vogue@voguetailor.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Email -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+           
+
+            </div>
+        </section>
+
+        <!-- Footer Logo -->
+        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logo21.png" width="78" height="36" alt="" /></a>
         </div>
-    </section>
+        <!-- End Footer Logo -->
+
+        <!-- Social Links -->
+        <div class="footer-social-links mb-30 mb-xs-60">
+            <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+        </div>
+        <!-- End Social Links -->  
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+
+            <!-- Copyright -->
+            <div class="footer-copy font-alt">
+                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com 2018</a>.
+            </div>
+            <!-- End Copyright -->
+
+            <div class="footer-made">
+                TAILORING WITH THE BEST IN CUT, CLOTH, CREATION
+            </div>
+
+        </div>
+        <!-- End Footer Text --> 
+
+    </div>
+
+
+    <!-- Top Link -->
+    <div class="local-scroll">
+        <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- End Top Link -->
 
 </footer>
-<!---footer--->
+<!-- End Foter -->
 
 
 </div>
+<!-- End Page Wrap -->
+
+
 </body>
 
 <script>

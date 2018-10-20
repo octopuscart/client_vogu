@@ -42,93 +42,25 @@ $this->load->view('layout/header');
 
 
 
-<!--
- Home Section 
+
 <div class="home-section fullscreen-container" id="home">
     <div class="fullscreenbanner-s bg-dark">
         <ul>
 
-             Slide Item 
+             
             <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider0.jpg" alt="">
 
+                
 
-
-                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
-                     data-x="center" 
-                     data-hoffset="0" 
-                     data-y="center" 
-                     data-voffset="-100" 
-                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-
-                     data-speed="800" 
-                     data-start="800" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    Branding / Design / Development / Photo
-
-                </div>
-
-                <div class="caption customin customout tp-resizeme hs-line-14 font-alt" 
-                     data-x="center" 
-                     data-hoffset="0" 
-                     data-y="center" 
-                     data-voffset="-14" 
-                     data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1200" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    Creative Studio
-
-                </div>
-
-
-                <div class="caption customin customout tp-resizeme" 
-                     data-x="center" 
-                     data-hoffset="0" 
-                     data-y="center" 
-                     data-voffset="83" 
-                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1500" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    <div class="local-scroll">
-
-                        <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round">
-                            See More
-                        </a>
-
-                        <span>&nbsp;</span>
-
-                        <a href="http://vimeo.com/50201327" class="btn btn-mod btn-border-w btn-medium btn-round lightbox mfp-iframe">Play Reel</a>
-
-                    </div>
-
-                </div>
+                
 
             </li>
-             End Slide Item 
+              
 
 
-             Slide Item 
+             
             <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/slider3.jpg" alt="">
@@ -149,7 +81,7 @@ $this->load->view('layout/header');
                      data-endspeed="500" 
                      data-endeasing="Power4.easeIn">
 
-                    We are just creative people
+                    HAND MADE AND HAND CUT
 
                 </div>
 
@@ -168,7 +100,8 @@ $this->load->view('layout/header');
                      data-endspeed="500" 
                      data-endeasing="Power4.easeIn">
 
-                    Design Lovers
+                    ORDER TO MADE!
+
 
                 </div>
 
@@ -190,14 +123,14 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="#about" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="pages-pricing-1.html" class="btn btn-mod btn-border-w btn-medium btn-round">
-                            Get pricing
+                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                            Show Now
                         </a>
 
                     </div>
@@ -205,10 +138,10 @@ $this->load->view('layout/header');
                 </div>
 
             </li>
-             End Slide Item 
+              
 
 
-             Slide Item 
+             
             <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/slider5.jpg"  alt="">
@@ -249,7 +182,7 @@ $this->load->view('layout/header');
                      data-endeasing="Power4.easeIn">
 
 
-                    Rhythm Studio
+                    PREMIERE BESPOKE BOUTIQUES
 
                 </div>
 
@@ -268,15 +201,15 @@ $this->load->view('layout/header');
                      data-endspeed="500" 
                      data-endeasing="Power4.easeIn">
 
-                    Let&rsquo;s start work with&nbsp;us
+                    TAILORING WITH THE BEST IN CUT, CLOTH, CREATION
                 </div>
 
             </li>
-             End Slide Item 
+              
 
 
-             Slide Item 
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Video Slide">
+             
+<!--            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Video Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/images/full-width-images/section-bg-18.jpg"  alt="">
 
@@ -366,15 +299,13 @@ $this->load->view('layout/header');
 
 
 
-            </li>
-             End Slide Item 
+            </li>-->
 
 
         </ul>
         <div class="tp-bannertimer tp-bottom"></div> 
     </div>
 </div>
- End Home Section -->
 
 
 
@@ -462,7 +393,7 @@ $this->load->view('layout/header');
 <section class="page-section" style="background: url(<?php echo base_url(); ?>assets/theme/images/2.jpg);    background-size: cover;
          background-position: center;    padding: 10px 0;">
     <div class="container relative">
-        <h3 class="align-center color_light" data-appear-animation="bounceInLeft" style="color:white"> WORK PROCESS</h3>
+        <h3 class="align-center color_light" data-appear-animation="bounceInLeft" style="color:white;    margin-bottom: 80px;"> WORK PROCESS</h3>
 
 
 
@@ -523,160 +454,6 @@ $this->load->view('layout/header');
 
 
 
-
-<section class="section_offset image_bg_1">
-    <div class="container">
-        <h3 class="color_light fw_light m_bottom_15 t_align_c heading_3 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft">What We Do</h3>
-        <p class="m_bottom_40 t_align_c heading_4 appear-animation bounceInLeft appear-animation-visible color_light" data-appear-animation="bounceInLeft" data-appear-animation-delay="150" style="animation-delay: 150ms;">Four Simple Steps To A 
-
-            Custom Dress </p>
-        <div data-appear-animation="fadeInUp" data-appear-animation-delay="800" class="appear-animation color_light fadeInUp appear-animation-visible" style="animation-delay: 800ms;">
-            <!--first four services-->
-            <div class="row m_bottom_30">
-                <!--service-->
-                <div class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30">
-                    <figure class="item_services">
-                        <h6 class="m_bottom_5 relative">
-                            <a href="#" class="color_light d_block n_sc_hover">Create Own Style</a>
-                            <span class="d_block icon_wrap_size_3 circle color_light wrapper animation_fill">
-                                <i class="icon-tools tr_all"></i>
-                            </span>
-                        </h6>
-                        <p class="fs_medium m_bottom_10">Choose any fabric and create own style. </p>
-
-                    </figure>
-                </div>
-                <!--service-->
-                <div class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30">
-                    <figure class="item_services">
-                        <h6 class="m_bottom_5 relative">
-                            <a href="#" class="color_light d_block n_sc_hover">Get Size</a>
-                            <span class="d_block icon_wrap_size_3 circle color_light wrapper animation_fill">
-                                <i class="icon-tape tr_all"></i>
-                            </span>
-                        </h6>
-                        <p class="fs_medium m_bottom_10">Let Size and calculate your measurement.</p>
-
-                    </figure>
-                </div>
-                <!--service-->
-                <div class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30">
-                    <figure class="item_services">
-                        <h6 class="m_bottom_5 relative">
-                            <a href="#" class="color_light d_block n_sc_hover">Cut to Create</a>
-                            <span class="d_block icon_wrap_size_3 circle color_light wrapper animation_fill">
-                                <i class="icon-crop tr_all"></i>
-                            </span>
-                        </h6>
-                        <p class="fs_medium m_bottom_10">Our experienced shanghainese tailor cut and make your new dress.</p>
-
-                    </figure>
-                </div>
-                <!--service-->
-                <div class="col-lg-3 col-md-3 col-sm-3 m_xs_bottom_30">
-                    <figure class="item_services">
-                        <h6 class="m_bottom_5 relative">
-                            <a href="#" class="color_light d_block n_sc_hover">Delivery </a>
-                            <span class="d_block icon_wrap_size_3 circle color_light wrapper animation_fill">
-                                <i class="icon-truck tr_all"></i>
-                            </span>
-                        </h6>
-                        <p class="fs_medium m_bottom_10">Delivery with guaranteed best fit.</p>
-
-                    </figure>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Testimonials Section -->
-<section class="page-section bg-dark bg-dark-alfa-90 fullwidth-slider" data-background="images/full-width-images/section-bg-3.jpg">
-
-    <!-- Slide Item -->
-    <div>
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 align-center">
-                    <!-- Section Icon -->
-                    <div class="section-icon">
-                        <span class="icon-quote"></span>
-                    </div>
-                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                    <blockquote class="testimonial white">
-                        <p>
-                            Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-                            risus utaliquam dapibus. Thanks!
-                        </p>
-                        <footer class="testimonial-author">
-                            John Doe, doodle inc.
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Slide Item -->
-
-    <!-- Slide Item -->
-    <div>
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 align-center">
-                    <!-- Section Icon -->
-                    <div class="section-icon">
-                        <span class="icon-quote"></span>
-                    </div>
-                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                    <blockquote class="testimonial white">
-                        <p>
-                            Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-                            risus utaliquam dapibus. Thanks!
-                        </p>
-                        <footer class="testimonial-author">
-                            John Doe, doodle inc.
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Slide Item -->
-
-    <!-- Slide Item -->
-    <div>
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2 align-center">
-                    <!-- Section Icon -->
-                    <div class="section-icon">
-                        <span class="icon-quote"></span>
-                    </div>
-                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
-                    <blockquote class="testimonial white">
-                        <p>
-                            Phasellus luctus commodo ullamcorper a posuere rhoncus commodo elit. Aenean congue,
-                            risus utaliquam dapibus. Thanks!
-                        </p>
-                        <footer class="testimonial-author">
-                            John Doe, doodle inc.
-                        </footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Slide Item -->
-
-</section>
-<!-- End Testimonials Section -->
-
-
-
-
 <!-- Section -->
 <section class="page-section" style="    padding: 40px;">
     <div class="container relative">
@@ -685,7 +462,22 @@ $this->load->view('layout/header');
 
             <div class="col-md-4 mb-sm-40">
 
-                <!-- Gallery -->
+                <div class="alt-features-item align-left" style="    margin-top: 150px;">
+                    <div class="alt-features-icon" >
+
+                    </div>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-map"></span> TRIP SCHEDULE</h3>
+                    <div class="alt-features-descr align-left" >
+                        Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
+                    </div>
+                    <div class="mt-20">
+                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-sm-40">
                 <div class="work-full-media mt-0 white-shadow wow fadeInUp">
                     <ul class="clearlist work-full-slider owl-carousel">
                         <li>
@@ -693,37 +485,13 @@ $this->load->view('layout/header');
                         </li>
                     </ul>
                 </div>
-                <!-- End Gallery -->
 
             </div>
 
-            <div class="col-md-8 col-lg-4 col-lg-offset-1">
-                
-                <table style="width: 100%">
-                    <tr>
-                        <td>
-                            <div class="alt-features-item align-left">
+            <div class="col-md-4 mb-sm-40">
+
+                <div class="alt-features-item align-left">
                     <div class="alt-features-icon" >
-                     
-                    </div>
-                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-map"></span> TRIP SCHEDULE</h3>
-                    <div class="alt-features-descr align-left" >
-                        Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
-                    </div>
-                   <div class="mt-10">
-                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
-                    </div>
-                </div>
-                        </td>
-                        <td></td>
-                    </tr>
-                    
-                    <tr>
-                        <td></td>
-                        <td>
-                            <div class="alt-features-item align-left">
-                    <div class="alt-features-icon" >
-                     
                     </div>
                     <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black"> 
                         <span class="icon-scissors"></span> BUILD YOUR SUIT
@@ -731,232 +499,96 @@ $this->load->view('layout/header');
                     <div class="alt-features-descr align-left" >
                         Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
                     </div>
-                   <div class="mt-10">
-                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                    <div class="mt-20">
+                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                     </div>
                 </div>
-                        </td>
-                    </tr>
-                    
-                </table>
-                
-                
-                
-                
-                
-                
-                
+
+
+
+                <div class="alt-features-item align-left mt-100" style="    margin-top: 150px;">
+                    <div class="alt-features-icon" >
+                    </div>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">  
+                        <span class="  icon-basket"></span> DELIVERY</h3>
+                    <div class="alt-features-descr align-left" >
+                        Suits arrive in 4-6 weeks. Optional second fittings are encouraged to perfect your fit.
+                    </div>
+                    <div class="mt-20">
+                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                    </div>
+                </div>
             </div>
+
+
+
+
         </div>
     </div>
 </section>
 <!-- End Section -->
 
 
-<!--<section class="section_offset bg_light_2">
-    <div class="container t_align_c">
-        <h3 class="color_dark fw_light m_bottom_15 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft">CUSTOM TAILORED</h3>
-        <p class="m_bottom_35 appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" data-appear-animation-delay="150" style="animation-delay: 150ms;">Order online & get your men's suit straight from the production line - made-to-measure with canvassed construction </p>
+<!-- Testimonials Section -->
+<section class="page-section fullwidth-slider" data-background="<?php echo base_url(); ?>assets/theme/images/clients.jpg">
 
-        <section class="portfolio_isotope_container home three_columns without_text m_bottom_15" data-isotope-options="{&quot;itemSelector&quot; : &quot;.portfolio_item&quot;,&quot;layoutMode&quot; : &quot;fitRows&quot;,&quot;transitionDuration&quot;:&quot;0.7s&quot;}" style="position: relative; ">
-
-<?php
-$customarray = [
-    array("title" => "Suits", "id" => "2", "image" => "suitb.jpg", "price" => "1700.00"),
-    array("title" => "Shirts", "id" => "2", "image" => "shirts.jpg", "price" => "220.00"),
-    array("title" => "Jackets", "id" => "3", "image" => "suita.jpg", "price" => "1200.00"),
-    array("title" => "Pants", "id" => "4", "image" => "pant.jpg", "price" => "500.00")
-];
-foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
-    ?>
-                                                                                                     
-    <?php
-}
-?>
-
-
-        </section>
-
-    </div>
-</section>-->
-
-
-<!--content-->
-<section class="section_offset bg_light_2">
-    <div class="container">
-        <h3 class="fw_light color_dark m_bottom_35 t_align_c" data-appear-animation="bounceInLeft">Featured Products</h3>
-        <div class="relative ">
+    <!-- -->
+    <div>
+        <div class="container relative">
             <div class="row">
-                <div class="owl-carousel t_xs_align_c featured_products" data-nav="fproducts_nav_" data-plugin-options='{"singleItem":false,"itemsCustom":[[992,4],[768,3],[600,2],[10,1]]}'>
-                    <?php
-                    foreach ($product_home_slider_bottom['home_bottom'] as $key => $value) {
-                        ?>
-
-
-                        <!--product-->
-                        <figure class="fp_item t_align_c d_xs_inline_b col-lg-12 col-md-12 col-sm-12" data-appear-animation="bounceIn" data-appear-animation-delay="400">
-                            <div class="relative r_corners d_xs_inline_b d_mxs_block wrapper m_bottom_23">
-                                <!--images container-->
-                                <div class="fp_images relative">
-                                    <img class="lazyload tr_all" src="<?php echo imageserver . $value['file_name1']; ?>" alt=""  style="background: white;">
-                                    <img class="lazyload tr_all" src="<?php echo imageserver . $value['file_name']; ?>" alt="" >
-                                </div>
-                                <!--labels-->
-
-                            </div>
-                            <figcaption>
-                                <h6 class="m_bottom_5"><a href="#" class="color_dark"><?php echo $value['title']; ?></a></h6>
-                                <a href="#" class="fs_medium color_grey d_inline_b m_bottom_3"><i><?php echo $value['short_description']; ?></i></a>
-                                <div class="im_half_container m_bottom_10">
-                                    <p class="color_dark fw_ex_bold half_column d_inline_m t_align_c tr_all animate_fctl fp_price with_ie">{{<?php echo "1022"; ?>|currency:"<?php echo globle_currency; ?> "}}</p>	
-                                    <p class="color_dark fw_ex_bold half_column d_inline_m t_align_c tr_all animate_fctl fp_price with_ie hide_from_mobile"></p>	
-
-                                </div>
-                                <div class="clearfix">
-                                    <div class="half_column w_md_full m_md_bottom_10 animate_fctl tr_all f_left with_ie f_md_none">
-                                        <!--<a href="<?php echo site_url("Product/customizationRedirect/" . $suitcustome->id) ?>/<?php echo $value['id']; ?>" class="button_type_6 d_inline_b color_pink transparent r_corners vc_child tr_all add_to_cart_button"><span class="d_inline_m clerarfix"><i class="icon-basket f_left m_right_10 fs_small"></i><span class="fs_small">Customize</span></span></a>-->
-                                        <a href="#" class="button_type_6 d_inline_b color_pink transparent r_corners vc_child tr_all add_to_cart_button"><span class="d_inline_m clerarfix"><i class="icon-basket f_left m_right_10 fs_small"></i><span class="fs_small">Customize</span></span></a>
-                                    </div>
-                                    <div class="half_column w_md_full animate_fctr tr_all f_left f_md_none clearfix with_ie">
-                                        <a href="#" class="button_type_6 relative tooltip_container f_right f_md_none d_md_inline_b d_block color_dark r_corners vc_child tr_all color_purple_hover tr_all t_align_c m_right_5 m_md_right_0"><i class="icon-heart d_inline_m fs_large"></i><span class="d_block r_corners color_default tooltip fs_small fw_normal tr_all">Add to Wishlist</span></a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <!--product-->
-
-
-                    <?php } ?>
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon" style="color:white">
+                        <span class="icon-quote"></span>
+                    </div>
+                    <!-- Section Title --><h3 class="small-title font-alt" style="color:white">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            I always approach to Vogue Tailors for many reasons, one because I know what the quality they give, second because nothing ever fits (Square shoulders, Baggy trousers, bit of a gut) and thirdly because I always look to stand out from the ground. Sometimes before, I needed a wedding suit and I directly approached Vogue Tailors, and I am greatly impressed with what is being made for me. Honesty in giving an advice to customers is the main key point that you will love. Anyone who wants bespoke tailored suit, just go to Vogue Tailors. There is no benefit to ring other tailors. This is my personal experience that I am telling you.
+                        </p>
+                        <footer class="testimonial-author" style="color:white">
+                            TAHSA
+                        </footer>
+                    </blockquote>
                 </div>
             </div>
-            <!--carousel nav-->
-            <button class="icon_wrap_size_4 circle color_grey_light tr_all color_blue_hover fproducts_nav_prev d_md_none" data-appear-animation="fadeIn">
-                <i class="icon-left-open-big"></i>
-            </button>
-            <button class="icon_wrap_size_4 circle color_grey_light tr_all color_blue_hover fproducts_nav_next d_md_none" data-appear-animation="fadeIn">
-                <i class="icon-right-open-big"></i>
-            </button>
         </div>
-        <!--banners-->
-<!--        <section class="row t_xs_align_c">
-            <div class="col-lg-4 col-md-4 col-sm-4 m_bottom_12 m_xs_bottom_30" data-appear-animation="fadeInUp">
-                <a href="#" class="d_block d_xs_inline_b d_mxs_block"><img src="images/banner_1.jpg" alt=""></a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 m_bottom_12 m_xs_bottom_30" data-appear-animation="fadeInUp" data-appear-animation-delay="200">
-                <a href="#" class="d_block d_xs_inline_b d_mxs_block"><img src="images/banner_2.jpg" alt=""></a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 m_bottom_12 m_xs_bottom_0" data-appear-animation="fadeInUp" data-appear-animation-delay="400">
-                <a href="#" class="d_block d_xs_inline_b d_mxs_block"><img src="images/banner_3.jpg" alt=""></a>
-            </div>
-        </section>-->
     </div>
-</section>
+    <!--  -->
 
-
-<!--<section class="section_offset_2 image_bg_3" id="pricing_tables_container">
-    <div class="container">
-        <h3 class="color_light fw_light m_bottom_15 t_align_c appear-animation bounceInUp appear-animation-visible" data-appear-animation="bounceInUp">ORIGINAL ITALIAN FABRICS</h3>
-        <p class="m_bottom_35 t_align_c color_light appear-animation bounceInUp appear-animation-visible" data-appear-animation="bounceInUp" data-appear-animation-delay="200" style="animation-delay: 200ms;    font-size: 26px;
-           line-height: 38px;
-           font-weight: 300;">
-            Our fabrics are sourced from only a handful of the finest mills across the globe.
-            <br/> Every detail is carefully constructed using precision technology and state-of-the-art machinery.   
-            <br/>The best men's suits are tailored from the best cloth - this means pure merino wool fabric, <br/>woven in the traditional mills of Italy and England.     </p>
-
-    </div>
-</section>-->
-
-
-
-<section class="section_offset relative wrapper" style="height: 500px">
-    <div class="video_wrap">
-        <video autoplay="" muted="" loop="">
-            <source src="<?php echo base_url(); ?>assets/theme/bigvideo/nct1.mp4" type="video/mp4">
-
-        </video>
-    </div>
-    <div class="container" style="margin-top: 100px;background: #00000096;">
-        <h3 class="color_light fw_light m_bottom_15 t_align_c appear-animation bounceInUp appear-animation-visible" data-appear-animation="bounceInUp">ORIGINAL ITALIAN FABRICS</h3>
-        <p class="m_bottom_35 t_align_c color_light appear-animation bounceInUp appear-animation-visible" data-appear-animation="bounceInUp" data-appear-animation-delay="200" style="animation-delay: 200ms;    font-size: 26px;
-           line-height: 38px;
-           font-weight: 300;">
-            Our fabrics are sourced from only a handful of the finest mills across the globe.
-            <br/> Every detail is carefully constructed using precision technology and state-of-the-art machinery.   
-            <br/>The best men's suits are tailored from the best cloth - this means pure merino wool fabric, <br/>woven in the traditional mills of Italy and England.     </p>
-
-    </div>
-</section>
-
-
-<section class="section_offset bg_light_2">
-    <div class="container">
-        <h3 class="color_dark fw_light m_bottom_15 t_align_c" data-appear-animation="bounceInLeft">Latest Blog</h3>
-        <p class="m_bottom_35 t_align_c" data-appear-animation="bounceInLeft" data-appear-animation-delay="200">Read latest fashions and styling tips on our blog.</p>
-        <div class="relative">
+    <!-- -->
+    <div>
+        <div class="container relative">
             <div class="row">
-                <div class="owl-carousel" data-plugin-options='{"singleItem":false,"itemsCustom":[[992,4],[768,3],[450,2],[10,1]]}' data-nav="ln_nav_">
-
-                    <?php
-                    for ($i = 0; $i < 7; $i++) {
-                        ?>
-                        <figure class="col-lg-12 col-md-12 col-sm-12" data-appear-animation="fadeInUp">
-                            <!--image-->
-                            <div class="popup_wrap relative r_corners wrapper m_bottom_20 db_xs_centered">
-                                <img src="<?php echo base_url(); ?>assets/demoblog/1.jpg" alt="">
-
-                            </div>
-                            <!--description-->
-                            <figcaption>
-                                <h6 class="lh_large m_bottom_3"><a href="#" class="color_dark tr_all">All our products are non-fused and with full canvas</a></h6>
-                                <!--project's info-->
-                                <ul class="dotted_list m_bottom_8 color_grey_light_2 lh_ex_small">
-                                    <li class="m_right_15 relative d_inline_m">
-                                        <a href="#" class="color_grey_light_2 fs_small">
-                                            <i class="icon-doc-text-inv"></i>
-                                        </a>
-                                    </li>
-                                    <li class="m_right_15 relative d_inline_m">
-                                        <a href="#" class="color_grey fs_small">
-                                            <i><?php echo date('y-M'); ?></i>
-                                        </a>
-                                    </li>
-                                    <li class="m_right_15 relative d_inline_m">
-                                        <a href="#" class="fs_medium color_grey"><i>Suit Style</i></a>,
-                                        <a href="#" class="fs_medium color_grey"><i>Fashion Tips</i></a>
-                                    </li>
-
-
-                                </ul>
-                                <p class="m_bottom_12">This is what's happening on a " FUSED " suit jacket, the " GLUED " area starting to detach after a multiple times of laundry washed!...</p>
-                                <div class="clearfix">
-                                    <a href="#" class="color_black  f_left d_block m_right_20 fw_light">
-                                        <span class="d_inline_m m_right_5 icon_wrap_size_0 circle color_grey_light tr_all">
-                                            <i class="icon-angle-right"></i>
-                                        </span>
-                                        Read More
-                                    </a>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <?php
-                    }
-                    ?>
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <!-- Section Icon -->
+                    <div class="section-icon">
+                        <span class="icon-quote"></span>
+                    </div>
+                    <!-- Section Title --><h3 class="small-title font-alt">What people say?</h3>
+                    <blockquote class="testimonial white">
+                        <p>
+                            Vogue tailors provide premium quality fabrics, which are from the finest mills from all over the world. They offer various brands of fabrics such as Scabal, Ermenegildo Zegna, Marzoni etc. Vogue Tailors provide high quality tailoring. They are full of ideas, knowledge of running trend, reliable and user-friendly. I would recommend you to go for Vogue tailor for your bespoke tailored suits.
+                        </p>
+                        <footer class="testimonial-author">
+                            MICHAEL
+                        </footer>
+                    </blockquote>
                 </div>
             </div>
-            <!--carousel nav-->
-            <button class="icon_wrap_size_4 circle color_grey_light tr_all color_blue_hover ln_nav_prev d_md_none" data-appear-animation="fadeIn">
-                <i class="icon-left-open-big"></i>
-            </button>
-            <button class="icon_wrap_size_4 circle color_grey_light tr_all color_blue_hover ln_nav_next d_md_none" data-appear-animation="fadeIn">
-                <i class="icon-right-open-big"></i>
-            </button>
         </div>
     </div>
+    <!--  -->
+
+
+
 </section>
+<!-- End Testimonials Section -->
 
 
 
-<section class="section_offset image_bg_7" id="how_it_works">
+
+<section class="section_offset image_bg_7 mt-20" id="how_it_works">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 m_sm_bottom_30" data-appear-animation="fadeInUp" data-appear-animation-delay="400">
@@ -965,11 +597,28 @@ foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
                 </div>
             </div>
             <div class="col-lg-5 col-lg-offset-1 col-md-6" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
-                <h3 class="color_light fw_light m_bottom_40 m_xs_top_0">How It Works</h3>
-                <p class="fs_large fw_light color_light m_bottom_25">
+                
+                <div class="alt-features-item align-left" >
+                    <div class="alt-features-icon" >
+
+                    </div>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-recycle"></span> How It Works</h3>
+                    <div class="alt-features-descr align-left" >
                     Before the measurements begin we will want to start with a few guidelines in order to obtain the most accurate measurements.  It is ideal for the subject to be in a pair of trousers and shirt that fits well.                </p>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_15">
+                    </div>
+                   
+                </div>
+                
+                
+                
+                
+                <h3 class="color_light fw_light m_bottom_40 m_xs_top_0"></h3>
+                <p class="fs_large fw_light color_light m_bottom_25">
+                <div class="row" style="    color: #777;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.86;">
+                    <div class="col-md-5 m_bottom_15">
                         <ul class="color_light">
                             <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Chest</li>
                             <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Stomach</li>
@@ -977,7 +626,7 @@ foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
 
                         </ul>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 m_bottom_15">
+                    <div class=" col-md-7  m_bottom_15">
                         <ul class="color_light">
                             <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Shoulder </li>
                             <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Sleeve Length</li>
@@ -985,54 +634,66 @@ foreach ($product_home_slider_bottom['home_slider'] as $key => $value) {
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="color_green fs_medium button_type_3 tr_all r_corners tt_uppercase d_inline_b">Learn More</a>
-            </div>
+ <div class="mt-20">
+                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                    </div>            </div>
         </div>
     </div>
 </section>
 
 
-
-<section class="section_offset">
+<section class="page-section fullwidth-slider" data-background="<?php echo base_url(); ?>assets/theme/images/fabricback.jpg" style="padding: 30px">
     <div class="container">
-        <h3 class="color_dark fw_light m_bottom_15 t_align_c appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft">Our Brands</h3>
-        <p class="m_bottom_35 t_align_c appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" data-appear-animation-delay="200" style="animation-delay: 200ms;"></p>
-        <div class="relative appear-animation bounceInLeft appear-animation-visible" data-appear-animation="bounceInLeft" data-appear-animation-delay="400" style="animation-delay: 400ms;">
-            <div class="t_xs_align_c">
-                <div class="owl-carousel clients brands t_align_c owl-theme owl-carousel-init" data-plugin-options='{"singleItem":false,"itemsCustom":[[992,4],[768,3],[450,2],[10,1]]}' data-nav="c_nav_" style="display: block; opacity: 1;">
-                    <!--item-->
+        <h3 class="color_light fw_light m_bottom_15 t_align_c appear-animation bounceInUp appear-animation-visible align-center" data-appear-animation="bounceInUp" style="color:white">ORIGINAL ITALIAN FABRICS</h3>
+        <p class="m_bottom_35 t_align_c color_light appear-animation bounceInUp appear-animation-visible align-center" data-appear-animation="bounceInUp" data-appear-animation-delay="200" style="animation-delay: 200ms;    font-size: 15px;
+           line-height: 38px;color:white;
+           font-weight: 300;">
+            Our fabrics are sourced from only a handful of the finest mills across the globe.
+            <br/> Every detail is carefully constructed using precision technology and state-of-the-art machinery.   
+            <br/>The best men's suits are tailored from the best cloth - this means pure merino wool fabric, <br/>woven in the traditional mills of Italy and England.     </p>
 
-
-                    <?php
-                    for ($i = 1; $i < 7; $i++) {
-                        ?>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-14 m_bottom_20 f_mxs_none w_mxs_full m_mxs_bottom_10">
-                            <div class="clients_item db_xs_centered wrapper relative r_corners d_xs_block d_mxs_inline_b">
-                                <a href="#" class="d_block  tr_all wrapper r_corners">
-                                    <img src="<?php echo base_url(); ?>assets/brand/<?php echo $i; ?>.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <?php
-                    }
-                    ?>
-
-
-
-                    <!--item-->
-
-                </div>
-                <!--carousel nav-->
-                <button class="icon_wrap_size_5 circle color_grey_light tr_all color_blue_hover c_nav_prev nav_type_2 d_md_none">
-                    <i class="icon-left-open-big"></i>
-                </button>
-                <button class="icon_wrap_size_5 circle color_grey_light tr_all color_blue_hover c_nav_next nav_type_2 d_md_none">
-                    <i class="icon-right-open-big"></i>
-                </button>
-            </div>
-        </div>
+    </div>
 </section>
+
+
+<!-- Section -->
+<section class="page-section  bg-scroll" style="padding: 20px 10px;" >
+    <div class="container relative">
+        <h3 class="align-center" data-appear-animation="bounceInLeft">Our Brands</h3>
+
+        <!-- Features Grid -->
+        <div class="item-carousel owl-carousel">
+
+
+            <?php
+            for ($i = 1; $i < 7; $i++) {
+                ?>
+                <!-- Features Item -->
+                <div class="features-item"> <div class="clients_item db_xs_centered wrapper relative r_corners d_xs_block d_mxs_inline_b">
+                        <a href="#" class="d_block  tr_all wrapper r_corners">
+                            <img src="<?php echo base_url(); ?>assets/brand/<?php echo $i; ?>.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <?php
+            }
+            ?>
+
+
+
+
+
+
+        </div>
+        <!-- Features Grid -->
+
+    </div>
+</section>
+<!-- End Section -->
+
+
+
 
 
 
