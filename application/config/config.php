@@ -36,7 +36,7 @@ switch ($baselink) {
         $baselinkmain = $baselink . '/voguetailors';
         break;
     default:
-        $baselinkmain = 'https://www.voguetailor.com/';
+        $baselinkmain = 'https://vogue.octopuscart.com/';
 }
 
 $config['base_url'] = $baselinkmain;
