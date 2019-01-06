@@ -86,3 +86,9 @@
 .inner-nav ul li a {
     color: #000;
 }
+
+.font-alt {
+    font-family: Dosis, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
