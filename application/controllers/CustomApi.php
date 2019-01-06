@@ -780,7 +780,8 @@ class CustomApi extends REST_Controller {
                         "insert_style" => "collar_m_comman_insert20001.png",
                         "insert_overlay" => "collar_simple_insert_overlay.png",
                         "insert_full" => ["collar_button_down_5w_insf0001.png"],
-                        "buttons" => "collar_regular_button_down.jpeg",
+                       
+                        "buttons" => ["button_collar_button_down0001.png"],
                     )
                     , array(
                         "status" => "0",
@@ -795,7 +796,7 @@ class CustomApi extends REST_Controller {
                         "insert_style" => "collar_m_comman_insert20001.png",
                         "insert_overlay" => "collar_simple_insert_overlay.png",
                         "insert_full" => ["collar_hidden_button_down_5w_insf0001.png"],
-                        "buttons" => "hidden_button_down.jpeg",
+                        "buttons" => ["button_collar_hidden_button_down0001.png"],
                     ),
                     array(
                         "status" => "0",
