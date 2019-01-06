@@ -81,16 +81,16 @@
             "submenuitems" => [
                 array(
                     "title" => "Suits",
-                    "link" => '#',),
+                      "link" => site_url('Product/ProductList/2/0')),
                 array(
                     "title" => "Jackets",
-                    "link" => '#',),
+                    "link" => site_url('Product/ProductList/4/0'),),
                 array(
                     "title" => "Shirts",
-                    "link" => '#',),
+                     "link" => site_url('Product/ProductList/1/0'),),
                 array(
                     "title" => "Pants",
-                    "link" => '#',)
+                    "link" => site_url('Product/ProductList/3/0'),),
             ]
         ),
         array(
@@ -123,7 +123,7 @@
         </div>
         <!-- End Page Loader -->
 
-        <div ng-controller="ShopController" class="page">
+        <div ng-controller="ShopController" class="page"  id="top">
             <script>
                 var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
                 //$interpolateProvider.startSymbol('{$');
@@ -137,76 +137,71 @@
                         var avaiblecredits = 0;</script>
             <!--header-->
 
-            <nav class=" backblack  " style="    background-size: contain;">
-                    <div class="row" style="margin: auto">
-                        <!--contact info-->
-                        <div class="col-lg-5 col-md-4 col-sm-5 t_xs_align_c">
-                            <nav class="d_inline_m m_right_10 m_xs_right_0 pull-left">
-                               <ul class="hr_list stripe_list fs_small">
-                                    <!-- Item With Sub -->
-                                    <li>
-                                        <a href="#" class="mn-has-sub "><i class="fa fa-phone"></i>  +(852) 2314 8016  </a>
-                                    </li>
-                                    
-                                    
-                                     <li >
-                                    <a href="#" ><i class="fa fa-envelope"></i> vogue@voguetailor.com </a>
-                                </li>
-                               </ul>
-                            </nav>
-                   
-                        </div>
-                        <div class="col-lg-7 col-md-8 col-sm-7 t_align_r t_xs_align_c m_top_0 ">
-                            <!--mini nav-->
-                            <nav class="d_inline_m m_right_10 m_xs_right_0 pull-right" style="    margin-right: 30px;">
-                                <ul class="hr_list stripe_list fs_small">
-                                    <!-- Item With Sub -->
-                                    <li>
-                                        <a href="/" class="mn-has-sub "><i class="fa fa-home"></i> Home </a>
-                                    </li>
-                                    <!-- End Item With Sub -->
-
-                                    <!-- Item With Sub -->
-
-                                    <li>
-                                        <a href="<?php echo site_url('Shop/aboutus'); ?>" class="mn-has-sub"><i class="fa fa-question-circle"></i> About Us </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="http://www.voguetailors.com" class="mn-has-sub"><i class="fa fa-shopping-bag"></i> Shop Now </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="<?php echo site_url('Shop/contactus'); ?>" class="mn-has-sub"><i class="fa fa-phone"></i> Contact Us</a>
-                                    </li></ul>
-                            </nav>
-                            <br class="d_none d_xs_block">
-                            <ul class="hr_list d_inline_b social_icons">
-                                <li class="m_right_8"><a href="#" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="icon-facebook-1"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="icon-twitter-1"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  googleplus  goo circle icon_wrap_size_1 d_block"><i class="icon-gplus-1"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  instagram  circle icon_wrap_size_1 d_block"><i class="icon-instagramm"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  youtube  circle icon_wrap_size_1 d_block"><i class="icon-youtube"></i></a></li>
-                            </ul>
-
-
-                        </div>
-                    </div>
-            </nav>
-            <!-- Navigation panel -->
-            <nav class="main-nav lightgrey  " style="    background-size: contain;">
+            <nav class="main-nav js-stick">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
-                    <center>
-                    <div class="">
-                        <a href="/" class="logo">
-                            <img src="<?php echo base_url(); ?>assets/images/logodddd.png" alt="" style="    height: 100px;" />
+                    <div class="nav-logo-wrap local-scroll">
+                        <a href="<?php echo site_url(); ?>" class="logo">
+                            <img src="<?php echo base_url(); ?>assets/images/logodddd.png" alt="" />
                         </a>
                     </div>
-                    </center>
+                    <div class="mobile-nav">
+                        <i class="fa fa-bars"></i>
+                    </div>
 
+                    <!-- Main Menu -->
+                    <div class="inner-nav desktop-nav">
+                        <ul class="clearlist">
+
+                            <!-- Item With Sub -->
+
+                            <?php
+                            foreach ($menuitems as $mkey => $mvalue) {
+                                ?>   
+
+
+                                <li>
+                                    <a href="<?php echo $mvalue['link'];?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
+                                        <?php echo $mvalue['title']; ?> <?php echo $mvalue['submenu'] == 'yes' ? '<i class="fa fa-angle-down"></i>' : '' ?>
+                                    </a>
+
+                                    <?php
+                                    if ($mvalue['submenu'] == 'yes') {
+                                        ?>
+                                        <!-- Sub Multilevel -->
+                                        <ul class="mn-sub mn-has-multi">
+
+                                            <!-- Sub Column -->
+                                            <li class="mn-sub-multi">
+                                                <ul>
+                                                    <?php
+                                                    foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
+                                                        ?>   
+                                                        <li>
+                                                            <a href="<?php echo $smvalue['link'];?>"><?php echo $smvalue['title'];?></a>
+                                                        </li>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <?php
+                                    }
+                                    ?>
+                                </li>
+                                <?php
+                            }
+                            ?>
+
+                        </ul>
+                    </div>
                 </div>
             </nav>
+
+
+            <!-- End Sub Column -->
+
             <!-- End Navigation panel -->
 
 
