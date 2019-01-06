@@ -423,7 +423,6 @@ $this->load->view('layout/header');
                      data-endspeed="500" 
                      data-endeasing="Power4.easeIn">
 
-                    <a href="http://vimeo.com/57217581" class="big-icon-link lightbox-gallery-1 mfp-iframe"><span class="big-icon big-icon-rs"><i class="fa fa-play-circle"></i></span></a>
 
                 </div>
 
