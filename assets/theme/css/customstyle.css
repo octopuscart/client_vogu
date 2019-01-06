@@ -1,12 +1,12 @@
 .mn-has-multi {
     width: auto !important;
-     padding: 0px; 
+    padding: 0px; 
     text-align: left;
     white-space: nowrap;
 }
 
 .post-prev-img {
-     margin-bottom: 5px; 
+    margin-bottom: 5px; 
     position: relative;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .post-prev-title {
-     margin-bottom: 1px; 
+    margin-bottom: 1px; 
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -56,21 +56,21 @@
 
 .bith_date_select {
     width: 30%;
-        float: left;
+    float: left;
 }
 
 .bith_date_select_year {
     width: 40%;
-        float: left;
+    float: left;
 }
 
 .navbar-default {
-   margin-bottom: 0px;
+    margin-bottom: 0px;
     height: 28px;
     min-height: 10px;
     background: black;
     color: white;
-        margin-bottom: 0px;
+    margin-bottom: 0px;
     border-radius: 0;
     border: 0;
 }
