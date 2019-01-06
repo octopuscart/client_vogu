@@ -2065,6 +2065,12 @@ class CustomApi extends REST_Controller {
                 array(
                     "title" => "Buttons",
                     "viewtype" => "front",
+                    "type" => "submain",
+                     "colrow" => "1",
+                ),
+                array(
+                    "title" => "Buttons",
+                    "viewtype" => "front",
                     "type" => "main",
                     "colrow" => "3",
                     "style_side" => "    background-size:70%!important;",
@@ -2385,7 +2391,12 @@ class CustomApi extends REST_Controller {
                     "type" => "main",
                     "colrow" => "3",
                 ),
-                
+                array(
+                    "title" => "Buttons",
+                    "viewtype" => "front",
+                    "type" => "submain",
+                     "colrow" => "1",
+                ),
                 array(
                     "title" => "Sleeve Buttons",
                     "viewtype" => "front",

@@ -53,7 +53,7 @@ $this->load->view('layout/header');
                 <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider01.jpg" alt="">
 
                 <!--HONGKONG LEADING BESPOKE CLOTHIER-->
-   <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
                      data-x="center" 
                      data-hoffset="0" 
                      data-y="center" 
@@ -68,11 +68,11 @@ $this->load->view('layout/header');
                      data-endspeed="500" 
                      data-endeasing="Power4.easeIn" style="font-size: 35px;text-shadow: 1px 2px 0px  #000">
 
-                   
 
-                       HONGKONG LEADING BESPOKE CLOTHIER
 
-                 
+                    HONGKONG LEADING BESPOKE CLOTHIER
+
+
 
                 </div>
 
@@ -146,13 +146,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -226,13 +226,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -305,13 +305,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-b btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-b btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-b btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-b btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -321,8 +321,8 @@ $this->load->view('layout/header');
 
             </li>
 
-            
-            
+
+
             <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/17.jpg" alt="">
@@ -385,13 +385,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="http://www.voguetailors.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -400,8 +400,8 @@ $this->load->view('layout/header');
                 </div>
 
             </li>
-            
-            
+
+
 
             <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
 
@@ -479,87 +479,100 @@ $this->load->view('layout/header');
 </div>
 
 
+<!-- Section -->
+<section class="page-section" style="    padding: 40px;">
+    <div class="container relative">
 
+        <div class="row">
 
+            <div class="col-md-4 mb-sm-40">
+                <div class="alt-features-item align-left" >
+                    <div class="alt-features-icon" >
 
-
-<!--canvas constraustion-->
-<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg);    margin-bottom: 30px;">
-    <div class="container t_align_c">
-        <div class="tabs">
-
-            <!--tabs content-->
-            <article id="tab-1" data-appear-animation="fadeInUp" data-appear-animation-delay="450">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 m_xs_bottom_20">
-                        <img src="<?php echo base_url(); ?>assets/theme/images/standsuit1.png" class="r_corners" alt="" style="    width: 100%;">
                     </div>
-                    <div class="col-lg-8 col-md-8 t_align_l fw_light">
-                        <h3 class="color_dark fw_light m_bottom_15 heading_1" data-appear-animation="bounceInLeft">Why should you buy from us?</h3>
-                        <p class="m_bottom_35 heading_2" data-appear-animation="bounceInLeft" data-appear-animation-delay="150">Because we provide best tailoring services </p>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-recycle"></span> Tailoring services</h3>
+                    <div class="alt-features-descr align-left" >
 
-                        <p class="m_bottom_15">Vogue Tailors stock about 15000 fabrics ranging from affordable to exclusive. Few bespoke tailors offer such a wide selection on the spot.  </p>
+                        Made To Measure<br/>
 
-                        </p>
+                        Professional Shanghainese Workmanship<br/>
 
-                        <p class="m_bottom_15">
-                            Our garments are hand cut and hand stitched down to the smallest detail, to ensure it's comfortable and durable. We even use cloths from some of the finest mills in the world including the very best of British and Italian - the difference being our suits are as affordable as an off-the-peg suit.  </p>
-                        </p>
+                        Made In Hong Kong<br/>
 
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                            <div class="ci-title spacial_title">
-                                Made To Measure
-                            </div>
+                        Professional Alteration<br/>
+
+                        Ready In 24 Hours<br/>
+
+                        <div class="mt-20">
+                            <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
                         </div>
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                            <div class="ci-title spacial_title">
-                                Professional Shanghainese Workmanship
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                            <div class="ci-title spacial_title">
-                                Made In Hong Kong
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                            <div class="ci-title spacial_title">
-                                Professional Alteration
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="ci-icon">
-                                <i class="fa fa-arrow-right"></i>
-                            </div>
-                            <div class="ci-title spacial_title">
-                                Ready In 24 Hours
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
-            </article>
+                    <div class="alt-features-item align-left" style="    margin-top: 100px;">
+                        <div class="alt-features-icon" >
 
+                        </div>
+                        <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-map"></span> TRIP SCHEDULE</h3>
+                        <div class="alt-features-descr align-left" >
+                            Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
+                        </div>
+                        <div class="mt-20">
+                            <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 mb-sm-40">
+                    <div class="work-full-media mt-0 white-shadow wow fadeInUp">
+                        <ul class="clearlist work-full-slider owl-carousel">
+                            <li>
+                                <img src="<?php echo base_url(); ?>assets/theme/images/shopbg_6.png" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 mb-sm-40">
+
+                    <div class="alt-features-item align-left">
+                        <div class="alt-features-icon" >
+                        </div>
+                        <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black"> 
+                            <span class="icon-scissors"></span> BUILD YOUR SUIT
+                        </h3>
+                        <div class="alt-features-descr align-left" >
+                            Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
+                        </div>
+                        <div class="mt-20">
+                            <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="alt-features-item align-left mt-100" style="    margin-top: 150px;">
+                        <div class="alt-features-icon" >
+                        </div>
+                        <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">  
+                            <span class="  icon-basket"></span> DELIVERY</h3>
+                        <div class="alt-features-descr align-left" >
+                            Suits arrive in 4-6 weeks. Optional second fittings are encouraged to perfect your fit.
+                        </div>
+                        <div class="mt-20">
+                            <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
-    </div>
 </section>
-
-
-
-
-
+<!-- End Section -->
 
 <section class="page-section" style="background: url(<?php echo base_url(); ?>assets/theme/images/2.jpg);    background-size: cover;
          background-position: center;    padding: 10px 0;">
@@ -621,83 +634,52 @@ $this->load->view('layout/header');
     </div>
 </section>
 
+<!--canvas constraustion-->
+<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg);    margin-bottom: 30px;">
+    <div class="container t_align_c">
+        <div class="tabs">
 
-
-
-
-<!-- Section -->
-<section class="page-section" style="    padding: 40px;">
-    <div class="container relative">
-
-        <div class="row">
-
-            <div class="col-md-4 mb-sm-40">
-
-                <div class="alt-features-item align-left" style="    margin-top: 150px;">
-                    <div class="alt-features-icon" >
-
+            <!--tabs content-->
+            <article id="tab-1" data-appear-animation="fadeInUp" data-appear-animation-delay="450">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 m_xs_bottom_20">
+                        <img src="<?php echo base_url(); ?>assets/theme/images/standsuit1.png" class="r_corners" alt="" style="  height: 350px;">
                     </div>
-                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-map"></span> TRIP SCHEDULE</h3>
-                    <div class="alt-features-descr align-left" >
-                        Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
-                    </div>
-                    <div class="mt-20">
-                        <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
-                    </div>
-                </div>
-            </div>
+                    <div class="col-lg-8 col-md-8 t_align_l fw_light" style="margin-top: 40px">
+                        <h3 class="color_dark fw_light m_bottom_15 heading_1" data-appear-animation="bounceInLeft">Why should you buy from us?</h3>
+                        <p class="m_bottom_35 heading_2" data-appear-animation="bounceInLeft" data-appear-animation-delay="150">Because we provide best tailoring services </p>
+
+                        <p class="m_bottom_15">Vogue Tailors stock about 15000 fabrics ranging from affordable to exclusive. Few bespoke tailors offer such a wide selection on the spot.  </p>
+
+                        </p>
+
+                        <p class="m_bottom_15">
+                            Our garments are hand cut and hand stitched down to the smallest detail, to ensure it's comfortable and durable. We even use cloths from some of the finest mills in the world including the very best of British and Italian - the difference being our suits are as affordable as an off-the-peg suit.  </p>
+                        </p>
 
 
-            <div class="col-md-4 mb-sm-40">
-                <div class="work-full-media mt-0 white-shadow wow fadeInUp">
-                    <ul class="clearlist work-full-slider owl-carousel">
-                        <li>
-                            <img src="<?php echo base_url(); ?>assets/theme/images/shopbg_6.png" alt="" />
-                        </li>
-                    </ul>
-                </div>
 
-            </div>
 
-            <div class="col-md-4 mb-sm-40">
-
-                <div class="alt-features-item align-left">
-                    <div class="alt-features-icon" >
-                    </div>
-                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black"> 
-                        <span class="icon-scissors"></span> BUILD YOUR SUIT
-                    </h3>
-                    <div class="alt-features-descr align-left" >
-                        Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
-                    </div>
-                    <div class="mt-20">
-                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                     </div>
                 </div>
-
-
-
-                <div class="alt-features-item align-left mt-100" style="    margin-top: 150px;">
-                    <div class="alt-features-icon" >
-                    </div>
-                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">  
-                        <span class="  icon-basket"></span> DELIVERY</h3>
-                    <div class="alt-features-descr align-left" >
-                        Suits arrive in 4-6 weeks. Optional second fittings are encouraged to perfect your fit.
-                    </div>
-                    <div class="mt-20">
-                        <a href="http://www.voguetailors.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-
-
+            </article>
 
         </div>
     </div>
 </section>
-<!-- End Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Testimonials Section -->
@@ -764,12 +746,13 @@ $this->load->view('layout/header');
         <div class="row">
             <div class="col-lg-6 col-md-6 m_sm_bottom_30" data-appear-animation="fadeInUp" data-appear-animation-delay="400">
                 <div class="iframe_video_wrap">
-                    <iframe width="642" height="361" src="https://www.youtube.com/embed/qbh6AHh12Oo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="642" height="361" src="https://www.youtube.com/embed/LcbLFNOTW2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
+                
             </div>
             <div class="col-lg-5 col-lg-offset-1 col-md-6" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
 
-                <div class="alt-features-item align-left" >
+                <div class="alt-features-item align-left" style="margin-top: 0px;">
                     <div class="alt-features-icon" >
 
                     </div>
@@ -806,7 +789,7 @@ $this->load->view('layout/header');
                     </div>
                 </div>
                 <div class="mt-20">
-                    <a href="http://www.voguetailors.com/trip_schedule.php" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                    <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
                 </div>            </div>
         </div>
     </div>
@@ -840,7 +823,8 @@ $this->load->view('layout/header');
             for ($i = 1; $i < 7; $i++) {
                 ?>
                 <!-- Features Item -->
-                <div class="features-item"> <div class="clients_item db_xs_centered wrapper relative r_corners d_xs_block d_mxs_inline_b">
+                <div class="features-item"> 
+                    <div class="clients_item db_xs_centered wrapper relative r_corners d_xs_block d_mxs_inline_b">
                         <a href="#" class="d_block  tr_all wrapper r_corners">
                             <img src="<?php echo base_url(); ?>assets/brand/<?php echo $i; ?>.jpg" alt="">
                         </a>

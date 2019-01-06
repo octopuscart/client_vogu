@@ -81,13 +81,13 @@
             "submenuitems" => [
                 array(
                     "title" => "Suits",
-                      "link" => site_url('Product/ProductList/2/0')),
+                    "link" => site_url('Product/ProductList/2/0')),
                 array(
                     "title" => "Jackets",
                     "link" => site_url('Product/ProductList/4/0'),),
                 array(
                     "title" => "Shirts",
-                     "link" => site_url('Product/ProductList/1/0'),),
+                    "link" => site_url('Product/ProductList/1/0'),),
                 array(
                     "title" => "Pants",
                     "link" => site_url('Product/ProductList/3/0'),),
@@ -136,7 +136,26 @@
                         var globlecurrency = "<?php echo globle_currency; ?>";
                         var avaiblecredits = 0;</script>
             <!--header-->
+            <!-- Navigation panel -->
+            <nav class="navbar navbar-default" style="margin-bottom: 0px;">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-phone"></i>  +(852) 2314 8016</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> vogue@voguetailor.com</a></li>
+                        </ul>
 
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="m_right_8"><a href="#" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
+                                <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
+                                <li class="m_right_8"><a href="#" class="color_light  googleplus  goo circle icon_wrap_size_1 d_block"><i class="fa fa-instagram"></i></a></li>
+                                <li class="m_right_8"><a href="#" class="color_light  youtube  circle icon_wrap_size_1 d_block"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
             <nav class="main-nav js-stick">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
@@ -161,7 +180,7 @@
 
 
                                 <li>
-                                    <a href="<?php echo $mvalue['link'];?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
+                                    <a href="<?php echo $mvalue['link']; ?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
                                         <?php echo $mvalue['title']; ?> <?php echo $mvalue['submenu'] == 'yes' ? '<i class="fa fa-angle-down"></i>' : '' ?>
                                     </a>
 
@@ -178,7 +197,7 @@
                                                     foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
                                                         ?>   
                                                         <li>
-                                                            <a href="<?php echo $smvalue['link'];?>"><?php echo $smvalue['title'];?></a>
+                                                            <a href="<?php echo $smvalue['link']; ?>"><?php echo $smvalue['title']; ?></a>
                                                         </li>
                                                         <?php
                                                     }
@@ -193,6 +212,9 @@
                                 <?php
                             }
                             ?>
+                            <li>
+                                <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart(0)</a>
+                            </li>
 
                         </ul>
                     </div>
