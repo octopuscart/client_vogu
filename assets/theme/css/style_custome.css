@@ -245,9 +245,9 @@ code {
 }
 
 .monogramtext_posistion_collar {
-    left: 181px;
+       left: 199px;
     display: block;
-    top: 26px;
+    top: 29px;
         transform: rotate(0deg);
 }
 
@@ -261,9 +261,10 @@ code {
 
 
 .monogramtext_posistion_cuff_left {
-       left: 331px;
+  left: 365px;
     display: block;
-    top: 306px;
+    top: 335px;
+
     transform: rotate(-14deg)
 }
 
@@ -289,18 +290,18 @@ code {
 }
 
 .monogramtext_posistion_abdomen{
-        left: 221px;
+       left: 233px;
     display: block;
-    top: 259px;
+    top: 258px;
         transform: rotate(0deg);
     /*transform: rotate(43deg);*/
 } 
            
 
 .monogramtext_posistion_shirt_tail{
-         left: 195px;
+            left: 221px;
     display: block;
-    top: 352px;
+    top: 382px;
         transform: rotate(0deg);
 }
 
