@@ -75,7 +75,7 @@
                     "link" => '#',),
             ]),
         array(
-            "title" => "Customize Now",
+            "title" => "Order Now",
             "submenu" => "yes",
             "link" => '#',
             "submenuitems" => [
@@ -93,11 +93,7 @@
                     "link" => site_url('Product/ProductList/3/0'),),
             ]
         ),
-        array(
-            "title" => "Our Clients",
-            "submenu" => "no",
-            "link" => '#',
-        ),
+        
         array(
             "title" => "Blog",
             "submenu" => "no",
@@ -156,20 +152,37 @@
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
+             <!-- Navigation panel -->
+            <nav class="main-nav lightgrey  " style="    background-size: contain;">
+                <div class="full-wrapper relative clearfix">
+                    <!-- Logo ( * your text or image into link tag *) -->
+                    <center>
+                    <div class="">
+                        <a href="/" class="logo">
+                            <img src="https://www.voguetailorhk.com/assets/images/logo21.png" alt="" style="    height: 100px;" />
+                        </a>
+                    </div>
+                    </center>
+
+                </div>
+            </nav>
+            <!-- End Navigation panel -->
             <nav class="main-nav js-stick">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
-                    <div class="nav-logo-wrap local-scroll">
+<!--                    <div class="nav-logo-wrap local-scroll">
                         <a href="<?php echo site_url(); ?>" class="logo">
                             <img src="<?php echo base_url(); ?>assets/images/logodddd.png" alt="" />
                         </a>
-                    </div>
+                    </div>-->
+
+
                     <div class="mobile-nav">
                         <i class="fa fa-bars"></i>
                     </div>
-
+<center>
                     <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav">
+                    <div class="inner-nav desktop-nav" style="float: none;">
                         <ul class="clearlist">
 
                             <!-- Item With Sub -->
@@ -218,6 +231,7 @@
 
                         </ul>
                     </div>
+</center>
                 </div>
             </nav>
 
