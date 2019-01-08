@@ -85,41 +85,36 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
                 $(".page_link").click(function () {
                     $("html, body").animate({scrollTop: 0}, "slow")
                 })
-
+                var priceui = document.getElementById("price-range");
+                var minp = Number($scope.productResults.price.minprice - 50);
+                var maxp = Number($scope.productResults.price.maxprice)
+                noUiSlider.create(priceui, {
+                    start: [minp, maxp],
+                    connect: true,
+                    range: {
+                        'min': minp,
+                        'max': maxp
+                    }
+                });
+                
 
 
                 //  Price Filter ( noUiSlider Plugin)
-                if($("#price-range").noUiSlider){
-                $("#price-range").noUiSlider({
-                    range: {
-                        'min': [Number($scope.productResults.price.minprice)],
-                        'max': [Number($scope.productResults.price.maxprice)]
-                    },
-                    start: [Number($scope.productResults.price.minprice), Number($scope.productResults.price.maxprice)],
-                    connect: true,
-                    serialization: {
-                        lower: [
-                            $.Link({
-                                target: $("#price-min")
-                            })
-                        ],
-                        upper: [
-                            $.Link({
-                                target: $("#price-max")
-                            })
-                        ],
-                        format: {
-                            // Set formatting
-                            decimals: 2,
-                            prefix: '$'
-                        }
-                    }
-                })
-                                $("#amount").val("$" + $("#price-range").slider("values", 0) + " - $" + $("#price-range").slider("values", 1));
+//                if($("#price-range").noUiSlider){
+//                $("#price-range").noUiSlider({
+//                    range: {
+//                        'min': [Number($scope.productResults.price.minprice)],
+//                        'max': [Number($scope.productResults.price.maxprice)]
+//                    },
+//                    start: [Number($scope.productResults.price.minprice), Number($scope.productResults.price.maxprice)],
+//                    connect: true,
+//                   
+//                })
+                $("#amount").val("$" + $("#price-range").slider("values", 0) + " - $" + $("#price-range").slider("values", 1));
 
-            }
+//            }
 
-                
+
             }, 1000)
 
             $scope.init = 1;

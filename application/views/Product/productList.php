@@ -219,7 +219,7 @@ $image2 = "";
 
 
                         <!-- HEADING -->
-                        <div  ng-if='atv.product_count'>
+                        <div  >
                             <div class="heading">
                                 <h6>Filter by price</h6>
                                 <hr class="dotted">
@@ -521,3 +521,6 @@ $this->load->view('layout/footer');
 
     });
 </script>
+
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.css">
+<script src="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.js" type="text/javascript"></script>
