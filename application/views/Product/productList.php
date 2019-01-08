@@ -227,7 +227,8 @@ $image2 = "";
                             <!-- PRICE -->
                             <div class="cost-price-content">
                                 <div id="price-range" class="price-range"></div>
-                                <span id="price-min" class="price-min">20</span> <span id="price-max" class="price-max">80</span> <a href="#." class="btn btn-small btn-inverse pull-right" >FILTER</a> </div>
+                                <br/>
+                                <span id="price-min" class="price-min"></span> -  <span id="price-max" class="price-max"></span> <a href="#." class="btn btn-small btn-inverse pull-right" >FILTER</a> </div>
                         </div>
 
                         <!-- HEADING -->

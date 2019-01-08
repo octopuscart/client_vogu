@@ -91,12 +91,21 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
                 noUiSlider.create(priceui, {
                     start: [minp, maxp],
                     connect: true,
+                    steps:10,
                     range: {
                         'min': minp,
                         'max': maxp
                     }
                 });
-                
+
+                priceui.noUiSlider.on('update', function (values, handle) {
+                    console.log(values, handle)
+                    $("#price-min").text(values[0]);
+                      $("#price-max").text(values[1]);
+                   
+                }
+                )
+
 
 
                 //  Price Filter ( noUiSlider Plugin)
