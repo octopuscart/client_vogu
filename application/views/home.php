@@ -48,38 +48,6 @@ $this->load->view('layout/header');
         <ul>
 
 
-            <li data-transition="fade" data-slotamount="7" data-title="Intro Slide">
-
-                <img src="<?php echo base_url(); ?>assets/theme/slider/shopslider01.jpg" alt="">
-
-                <!--HONGKONG LEADING BESPOKE CLOTHIER-->
-                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
-                     data-x="center" 
-                     data-hoffset="0" 
-                     data-y="center" 
-                     data-voffset="150" 
-                     data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1500" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn" style="font-size: 35px;text-shadow: 1px 2px 0px  #000">
-
-
-
-                    HONGKONG LEADING BESPOKE CLOTHIER
-
-
-
-                </div>
-
-
-
-
-            </li>
 
 
 

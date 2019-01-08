@@ -79,16 +79,28 @@
     color: #fff;
     padding: 2px 10px;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 14px;
 }
-
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
 
 .inner-nav ul li a {
     color: #000;
+    
+    font-size: 16px;
+
 }
 
 .font-alt {
     font-family: Dosis, arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+}
+
+.inner-nav ul li .mn-sub li a{
+    font-size: 16px;
 }
