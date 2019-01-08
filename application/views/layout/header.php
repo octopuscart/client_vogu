@@ -88,11 +88,17 @@
                     "title" => "Jackets",
                     "link" => site_url('Product/ProductList/4/0'),),
                 array(
+                    "title" => "Pants",
+                    "link" => site_url('Product/ProductList/3/0'),),
+                array(
                     "title" => "Shirts",
                     "link" => site_url('Product/ProductList/1/0'),),
                 array(
-                    "title" => "Pants",
-                    "link" => site_url('Product/ProductList/3/0'),),
+                    "title" => "Tuxedo",
+                    "link" => site_url('Product/ProductList/1/0'),
+                    "submenu" => "yes",
+                    "submenuitems" => []
+                ),
             ]
         ),
         array(
@@ -122,12 +128,12 @@
 
         <div ng-controller="ShopController" class="page"  id="top">
             <script>
-                var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
-                //$interpolateProvider.startSymbol('{$');
-                //$interpolateProvider.endSymbol('$}');
-                $httpProvider.defaults.headers.common = {};
-                        $httpProvider.defaults.headers.post = {};
-                });
+                        var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
+                            //$interpolateProvider.startSymbol('{$');
+                            //$interpolateProvider.endSymbol('$}');
+                            $httpProvider.defaults.headers.common = {};
+                            $httpProvider.defaults.headers.post = {};
+                        });
                         var baseurl = "<?php echo base_url(); ?>index.php/";
                         var imageurlg = "<?php echo imageserver; ?>";
                         var globlecurrency = "<?php echo globle_currency; ?>";
@@ -146,7 +152,7 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li> <a href="<?php echo site_url("Account/login"); ?>" >Sign In / Sign Up </a>
-                                        </li>
+                            </li>
 
                             <li class="m_right_8"><a href="#" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
                             <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
@@ -209,29 +215,50 @@
 
                                                 <!-- Sub Column -->
                                                 <li class="mn-sub-multi">
-                                                    <ul>
+                                                    <ul class='mn-has-multi'>
                                                         <?php
                                                         foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
                                                             ?>   
                                                             <li>
-                                                                <a href="<?php echo $smvalue['link']; ?>"><?php echo $smvalue['title']; ?></a>
+                                                                <a class="mn-has-sub" href="<?php echo $smvalue['link']; ?>">
+                                                                    <?php echo $smvalue['title']; ?>
+                                                                </a>
+                                                                <?php
+                                                                if (isset($smvalue['submenu']) && $smvalue['submenu'] == 'yes') {
+                                                                    ?>
+                                                                    <ul class="">
+                                                                        <li>
+                                                                            <a href="">Suits</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Pants</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Shirts</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <?php
+                                                                }
+                                                                ?>
                                                             </li>
-                                                            <?php
-                                                        }
-                                                        ?>
-                                                    </ul>
-                                                </li>
+
+                                                    </li>
+                                                    <?php
+                                                }
+                                                ?>
                                             </ul>
-                                            <?php
-                                        }
-                                        ?>
-                                    </li>
+                                        </li>
+                                    </ul>
                                     <?php
                                 }
                                 ?>
-                                <li>
-                                    <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart(0)</a>
                                 </li>
+                                <?php
+                            }
+                            ?>
+                            <li>
+                                <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart(0)</a>
+                            </li>
 
                             </ul>
                         </div>
