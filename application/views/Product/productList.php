@@ -185,7 +185,7 @@ $image2 = "";
             <div class="row"> 
 
                 <!-- Shop Side Bar -->
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <div class="side-bar">
                        
                         <?php if (count($categories)) { ?>
@@ -268,7 +268,7 @@ $image2 = "";
                 </div>
 
                 <!-- Main Shop Itesm -->          
-                <div class="col-md-9"> 
+                <div class="col-md-10"> 
 
                     <div id="content1"  ng-if="productProcess.state == 1" style="padding: 100px 0px;"> 
 
