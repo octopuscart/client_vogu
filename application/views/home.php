@@ -459,83 +459,65 @@ $this->load->view('layout/header');
         <div class="row">
 
             <div class="col-md-4 mb-sm-40">
-                <div class="alt-features-item align-left" >
+                <div class="alt-features-item align-left" style='margin-top: 0px'>
                     <div class="alt-features-icon" >
 
                     </div>
                     <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-recycle"></span> Tailoring services</h3>
                     <div class="alt-features-descr align-left" >
+                        <div style='float: left;    height: 125px;'>
+                            Made To Measure<br/>
 
-                        Made To Measure<br/>
+                            Professional Shanghainese Workmanship<br/>
 
-                        Professional Shanghainese Workmanship<br/>
+                            Made In Hong Kong<br/>
 
-                        Made In Hong Kong<br/>
+                            Professional Alteration<br/>
 
-                        Professional Alteration<br/>
 
-                        Ready In 24 Hours<br/>
-
-                        <div class="mt-20">
-                            <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
-                        </div>
-                    </div>
-                </div>
-                    <div class="alt-features-item align-left" style="    margin-top: 100px;">
-                        <div class="alt-features-icon" >
-
-                        </div>
-                        <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-map"></span> TRIP SCHEDULE</h3>
-                        <div class="alt-features-descr align-left" >
-                            Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
                         </div>
                         <div class="mt-20">
-                            <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
+                            <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
 
+            </div>
 
-                <div class="col-md-4 mb-sm-40">
-                    <div class="work-full-media mt-0 white-shadow wow fadeInUp">
-                        <ul class="clearlist work-full-slider owl-carousel">
-                            <li>
-                                <img src="<?php echo base_url(); ?>assets/theme/images/shopbg_6.png" alt="" />
-                            </li>
-                        </ul>
+
+            <div class="col-md-4 mb-sm-40">
+                <div class="alt-features-item align-left mt-100" style='margin-top: 0px'>
+                    <div class="alt-features-icon" >
                     </div>
-
-                </div>
-
-                <div class="col-md-4 mb-sm-40">
-
-                    <div class="alt-features-item align-left">
-                        <div class="alt-features-icon" >
-                        </div>
-                        <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black"> 
-                            <span class="icon-scissors"></span> BUILD YOUR SUIT
-                        </h3>
-                        <div class="alt-features-descr align-left" >
-                            Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
-                        </div>
-                        <div class="mt-20">
-                            <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="alt-features-item align-left mt-100" style="    margin-top: 150px;">
-                        <div class="alt-features-icon" >
-                        </div>
-                        <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">  
-                            <span class="  icon-basket"></span> DELIVERY</h3>
-                        <div class="alt-features-descr align-left" >
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">  
+                        <span class="  icon-basket"></span> DELIVERY</h3>
+                    <div class="alt-features-descr align-left" >
+                        <div style='float: left;    height: 125px;'>
                             Suits arrive in 4-6 weeks. Optional second fittings are encouraged to perfect your fit.
                         </div>
-                        <div class="mt-20">
-                            <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                    </div>
+                    <div class="mt-20">
+                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-sm-40">
+
+                <div class="alt-features-item align-left" style='margin-top: 0px'>
+                    <div class="alt-features-icon" >
+                    </div>
+                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black"> 
+                        <span class="icon-scissors"></span> BUILD YOUR SUIT
+                    </h3>
+                    <div class="alt-features-descr align-left" >
+                        <div style='float: left;    height: 125px;'>
+                            Our tailors have each cut over 1,000 suits. The collaborative fitting process ensures you will get the suit you want.
                         </div>
+                    </div>
+                    <div class="mt-20">
+                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                     </div>
                 </div>
 
@@ -543,7 +525,12 @@ $this->load->view('layout/header');
 
 
             </div>
+
+
+
+
         </div>
+    </div>
 </section>
 <!-- End Section -->
 
@@ -714,59 +701,7 @@ $this->load->view('layout/header');
 
 
 
-<section class="section_offset image_bg_7 mt-20" id="how_it_works">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 m_sm_bottom_30" data-appear-animation="fadeInUp" data-appear-animation-delay="400">
-                <div class="iframe_video_wrap">
-                    <iframe width="642" height="361" src="https://www.youtube.com/embed/LcbLFNOTW2s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-                
-            </div>
-            <div class="col-lg-5 col-lg-offset-1 col-md-6" data-appear-animation="fadeInUp" data-appear-animation-delay="600">
 
-                <div class="alt-features-item align-left" style="margin-top: 0px;">
-                    <div class="alt-features-icon" >
-
-                    </div>
-                    <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black">   <span class=" icon-recycle"></span> How It Works</h3>
-                    <div class="alt-features-descr align-left" >
-                        Before the measurements begin we will want to start with a few guidelines in order to obtain the most accurate measurements.  It is ideal for the subject to be in a pair of trousers and shirt that fits well.                </p>
-                    </div>
-
-                </div>
-
-
-
-
-                <h3 class="color_light fw_light m_bottom_40 m_xs_top_0"></h3>
-                <p class="fs_large fw_light color_light m_bottom_25">
-                <div class="row" style="    color: #777;
-                     font-size: 12px;
-                     font-weight: 300;
-                     line-height: 1.86;">
-                    <div class="col-md-5 m_bottom_15">
-                        <ul class="color_light">
-                            <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Chest</li>
-                            <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Stomach</li>
-                            <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Hips</li>
-
-                        </ul>
-                    </div>
-                    <div class=" col-md-7  m_bottom_15">
-                        <ul class="color_light">
-                            <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Shoulder </li>
-                            <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Sleeve Length</li>
-                            <li class="m_bottom_8"><i class="icon-right m_right_15 fs_large"></i>Measure the Back Length </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-20">
-                    <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Schedule Now</a>
-                </div>            </div>
-        </div>
-    </div>
-</section>
 
 
 <section class="page-section fullwidth-slider" data-background="<?php echo base_url(); ?>assets/theme/images/fabricback.jpg" style="padding: 30px">
