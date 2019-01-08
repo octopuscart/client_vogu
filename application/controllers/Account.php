@@ -62,7 +62,7 @@ class Account extends CI_Controller {
             $this->db->set('last_name', $this->input->post('last_name'));
             $this->db->set('contact_no', $this->input->post('contact_no'));
             $this->db->set('gender', $this->input->post('gender'));
-            $this->db->set('birth_date', $this->input->post('birth_date'));
+            $this->db->set('birth_date', "");
 
             $this->db->where('id', $this->user_id);
             $this->db->update('admin_users');
@@ -140,7 +140,7 @@ class Account extends CI_Controller {
             $last_name = $this->input->post('last_name');
             $cpassword = $this->input->post('con_password');
 
-            $birth_date = $this->input->post('birth_date');
+            $birth_date = "";
             $gender = $this->input->post('gender');
             $country = $this->input->post('country');
             $profession = $this->input->post('profession');

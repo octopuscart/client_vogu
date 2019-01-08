@@ -34,7 +34,6 @@
 
 
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
         <!--theme css-->
@@ -73,6 +72,9 @@
                 array(
                     "title" => "FAQ's",
                     "link" => '#',),
+                array(
+                    "title" => "Return Policy",
+                    "link" => '#',),
             ]),
         array(
             "title" => "Order Now",
@@ -93,7 +95,6 @@
                     "link" => site_url('Product/ProductList/3/0'),),
             ]
         ),
-        
         array(
             "title" => "Blog",
             "submenu" => "no",
@@ -144,24 +145,27 @@
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
+                            <li> <a href="<?php echo site_url("Account/login"); ?>" >Sign In / Sign Up </a>
+                                        </li>
+
                             <li class="m_right_8"><a href="#" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  googleplus  goo circle icon_wrap_size_1 d_block"><i class="fa fa-instagram"></i></a></li>
-                                <li class="m_right_8"><a href="#" class="color_light  youtube  circle icon_wrap_size_1 d_block"><i class="fa fa-youtube"></i></a></li>
+                            <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
+                            <li class="m_right_8"><a href="#" class="color_light  googleplus  goo circle icon_wrap_size_1 d_block"><i class="fa fa-instagram"></i></a></li>
+                            <li class="m_right_8"><a href="#" class="color_light  youtube  circle icon_wrap_size_1 d_block"><i class="fa fa-youtube"></i></a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-             <!-- Navigation panel -->
+            <!-- Navigation panel -->
             <nav class="main-nav lightgrey  " style="    background-size: contain;">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <center>
-                    <div class="">
-                        <a href="/" class="logo">
-                            <img src="https://www.voguetailorhk.com/assets/images/logo21.png" alt="" style="    height: 100px;" />
-                        </a>
-                    </div>
+                        <div class="">
+                            <a href="/" class="logo">
+                                <img src="https://www.voguetailorhk.com/assets/images/logo21.png" alt="" style="    height: 100px;" />
+                            </a>
+                        </div>
                     </center>
 
                 </div>
@@ -170,68 +174,68 @@
             <nav class="main-nav js-stick">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
-<!--                    <div class="nav-logo-wrap local-scroll">
-                        <a href="<?php echo site_url(); ?>" class="logo">
-                            <img src="<?php echo base_url(); ?>assets/images/logodddd.png" alt="" />
-                        </a>
-                    </div>-->
+                    <!--                    <div class="nav-logo-wrap local-scroll">
+                                            <a href="<?php echo site_url(); ?>" class="logo">
+                                                <img src="<?php echo base_url(); ?>assets/images/logodddd.png" alt="" />
+                                            </a>
+                                        </div>-->
 
 
                     <div class="mobile-nav">
                         <i class="fa fa-bars"></i>
                     </div>
-<center>
-                    <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav" style="float: none;">
-                        <ul class="clearlist">
+                    <center>
+                        <!-- Main Menu -->
+                        <div class="inner-nav desktop-nav" style="float: none;">
+                            <ul class="clearlist">
 
-                            <!-- Item With Sub -->
+                                <!-- Item With Sub -->
 
-                            <?php
-                            foreach ($menuitems as $mkey => $mvalue) {
-                                ?>   
-
-
-                                <li>
-                                    <a href="<?php echo $mvalue['link']; ?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
-                                        <?php echo $mvalue['title']; ?> <?php echo $mvalue['submenu'] == 'yes' ? '<i class="fa fa-angle-down"></i>' : '' ?>
-                                    </a>
-
-                                    <?php
-                                    if ($mvalue['submenu'] == 'yes') {
-                                        ?>
-                                        <!-- Sub Multilevel -->
-                                        <ul class="mn-sub mn-has-multi">
-
-                                            <!-- Sub Column -->
-                                            <li class="mn-sub-multi">
-                                                <ul>
-                                                    <?php
-                                                    foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
-                                                        ?>   
-                                                        <li>
-                                                            <a href="<?php echo $smvalue['link']; ?>"><?php echo $smvalue['title']; ?></a>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <?php
-                                    }
-                                    ?>
-                                </li>
                                 <?php
-                            }
-                            ?>
-                            <li>
-                                <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart(0)</a>
-                            </li>
+                                foreach ($menuitems as $mkey => $mvalue) {
+                                    ?>   
 
-                        </ul>
-                    </div>
-</center>
+
+                                    <li>
+                                        <a href="<?php echo $mvalue['link']; ?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
+                                            <?php echo $mvalue['title']; ?> <?php echo $mvalue['submenu'] == 'yes' ? '<i class="fa fa-angle-down"></i>' : '' ?>
+                                        </a>
+
+                                        <?php
+                                        if ($mvalue['submenu'] == 'yes') {
+                                            ?>
+                                            <!-- Sub Multilevel -->
+                                            <ul class="mn-sub mn-has-multi">
+
+                                                <!-- Sub Column -->
+                                                <li class="mn-sub-multi">
+                                                    <ul>
+                                                        <?php
+                                                        foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
+                                                            ?>   
+                                                            <li>
+                                                                <a href="<?php echo $smvalue['link']; ?>"><?php echo $smvalue['title']; ?></a>
+                                                            </li>
+                                                            <?php
+                                                        }
+                                                        ?>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <?php
+                                        }
+                                        ?>
+                                    </li>
+                                    <?php
+                                }
+                                ?>
+                                <li>
+                                    <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart(0)</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </center>
                 </div>
             </nav>
 

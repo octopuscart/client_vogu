@@ -90,7 +90,7 @@
 
 .inner-nav ul li a {
     color: #000;
-    
+
     font-size: 16px;
 
 }
@@ -103,4 +103,12 @@
 
 .inner-nav ul li .mn-sub li a{
     font-size: 16px;
+}
+
+
+
+@media (min-width: 1500px){
+    .container {
+        width: 1600px;
+    }
 }

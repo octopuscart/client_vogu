@@ -121,46 +121,7 @@ $this->load->view('layout/header');
 
 
                             </div>
-                            <div class="col-md-6">
-                                <input type="hidden" name="birth_date" id="birth_date" value="{{birth_year}}-{{birth_month}}-{{date_birth}}"> 
-                                <label>Date Of Birth *</label>
-                                <div class="row" style="    margin: 0;">
-                                    <select id="birth_year" name="birth_year"  ng-model="birth_year" class="form-control bg_light w_full border_none bith_date_select_year"  required >
-                                        <option value="" >-YYYY-</option>
-                                        <?php
-                                        for ($i = (date('Y') - 100); $i <= date('Y'); $i++) {
-                                            echo "<option value='$i'>$i</option>";
-                                        }
-                                        ?>
-                                    </select>
-
-                                    <select id="birth_month" ng-model="birth_month" name="birth_month" class="form-control bg_light w_full border_none bith_date_select" required >
-                                        <option value="" >-MM-</option>
-                                        <?php
-                                        for ($i = 1; $i <= 12; $i++) {
-                                            $mmdate = $i < 10 ? "0" . $i : $i;
-                                            echo "<option value='$mmdate'>$mmdate</option>";
-                                        }
-                                        ?>
-                                    </select> 
-
-                                    <select id="birth_date" name="date_birth" ng-model="date_birth" class="form-control bg_light w_full border_none bith_date_select"  required >
-                                        <option value="" >-DD-</option>
-                                        <?php
-                                        for ($i = 1; $i <= 31; $i++) {
-                                            $dddate = $i < 10 ? "0" . $i : $i;
-                                            echo "<option value='$dddate'>$dddate</option>";
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div style="clear: both"></div>
-
-                        <div class="row" style="margin-top: 15px;">
-                            <div class="col-md-6">
+<div class="col-md-6">
                                 <label>Profession *</label>
                                 <select name="profession" id="profession_select" class="form-control" onchange="professionChange()" class="r_corners bg_light w_full border_none" style="width: 100%;height: 40px;padding: 5px;" required >
                                     <option value="" >Select Profession</option>
@@ -175,6 +136,11 @@ $this->load->view('layout/header');
                                 </select>
 
                             </div>
+                        </div>
+                        <div style="clear: both"></div>
+
+                        <div class="row" style="margin-top: 15px;">
+                            
                             <div class="col-md-6">
                                 <label>Country *</label>
                                 <select name="country" id="country" class="form-control"  onchange="countryChange()" class="r_corners bg_light w_full border_none" style="width: 100%;height: 40px;padding: 5px;" required >
