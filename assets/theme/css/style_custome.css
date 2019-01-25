@@ -37,6 +37,7 @@ code {
     position: absolute;
     left: 0;
     height: 480px;
+    max-height: 500px;
 }
 
 
@@ -245,9 +246,10 @@ code {
 }
 
 .monogramtext_posistion_collar {
-       left: 199px;
-    display: block;
-    top: 29px;
+       left: 202px;
+    display: flex;
+    position: absolute;
+    top: 23px;
         transform: rotate(0deg);
 }
 
@@ -261,11 +263,10 @@ code {
 
 
 .monogramtext_posistion_cuff_left {
-  left: 365px;
+     left: 329px;
     display: block;
-    top: 335px;
-
-    transform: rotate(-14deg)
+    top: 317px;
+    transform: rotate(-1deg);
 }
 
 .multicustom .monogramtext_posistion_cuff_left {
@@ -277,10 +278,10 @@ code {
 
 
 .monogramtext_posistion_left_pocket {
-      left: 229px;
+         left: 251px;
     display: block;
-    top: 112px;
-        transform: rotate(0deg);
+    top: 122px;
+    transform: rotate(0deg);
 }
 .multicustom .monogramtext_posistion_left_pocket {
     left: 277px;

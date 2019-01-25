@@ -187,7 +187,7 @@ $image2 = "";
                 <!-- Shop Side Bar -->
                 <div class="col-md-2">
                     <div class="side-bar">
-                       
+
                         <?php if (count($categories)) { ?>
 
                             <div class="widget">
@@ -215,54 +215,58 @@ $image2 = "";
                         }
                         ?>
 
-                       
+
 
 
                         <!-- HEADING -->
-                        <div  >
+                        <div class="widget"  >
                             <div class="heading">
-                                <h6>Filter by price</h6>
-                                <hr class="dotted">
+                                <h5 class="widget-title font-alt">Filter by price</h5>
                             </div>
                             <!-- PRICE -->
                             <div class="cost-price-content">
                                 <div id="price-range" class="price-range"></div>
-                                <br/>
-                                <span id="price-min" class="price-min"></span> -  <span id="price-max" class="price-max"></span> <a href="#." class="btn btn-small btn-inverse pull-right" >FILTER</a> </div>
+                                <div class='row' style="margin:0px;">
+                                    <span id="price-min" class="price-min col-xs-4"></span>
+                                    <span class="col-xs-1">-</span> 
+                                    <span id="price-max" class="price-max col-xs-4"></span> 
+                                    <a href="#." class="col-xs-3" >FILTER</a> 
+                                </div>
+                            </div>
                         </div>
 
                         <!-- HEADING -->
 
                         <div class="product_attr" ng-repeat="(attrk, attrv) in productResults.attributes" >
-                            
+
                             <div class="widget" ng-if='attrv.widget == "color"'>
 
                                 <h5 class="widget-title font-alt">Color</h5>
                                 <!-- COLORE -->
-                            <div class="cate" ng-if='attrv.widget == "color"'>
-                                <div ng-repeat="atv in attrv" ng-if='atv.product_count'>
+                                <div class="cate" ng-if='attrv.widget == "color"'>
+                                    <div ng-repeat="atv in attrv" ng-if='atv.product_count'>
 
-                                    <label style="font-weight: 500;background: {{atv.additional_value}};padding: 0px 5px;float: left;
-                                           margin-right: 5px;border: 1px solid #0000005e;border: 1px solid #0000005e;
-                                           text-shadow: 0px 1px 4px #000;">
-                                        <input type="checkbox"  ng-model="atv.checked" ng-click="attributeProductGet(atv)" style="opacity: 0;"> 
+                                        <label style="font-weight: 500;background: {{atv.additional_value}};padding: 0px 5px;float: left;
+                                               margin-right: 5px;border: 1px solid #0000005e;border: 1px solid #0000005e;
+                                               text-shadow: 0px 1px 4px #000;">
+                                            <input type="checkbox"  ng-model="atv.checked" ng-click="attributeProductGet(atv)" style="opacity: 0;"> 
 
-                                        <i class="fa fa-check" ng-if="atv.checked" style="    position: absolute;
-                                           margin-top: -22px;
-                                           color: #fff;"></i>
-                                        <!--{{atv.attribute_value}} ({{atv.product_count}})-->
-                                    </label>
+                                            <i class="fa fa-check" ng-if="atv.checked" style="    position: absolute;
+                                               margin-top: -22px;
+                                               color: #fff;"></i>
+                                            <!--{{atv.attribute_value}} ({{atv.product_count}})-->
+                                        </label>
 
 
                                     <!--<a href="#."><input type="checkbox">{{atv.attribute_value}} <span>(32) </span></a>-->
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                                
-                            
-                            
 
-                            
+
+
+
+
                         </div>
 
                     </div>
@@ -520,8 +524,7 @@ $this->load->view('layout/footer');
 <script type="text/javascript">
             $(document).ready(function () {
 
-    });
-</script>
+    });</script>
 
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.css">
 <script src="<?php echo base_url(); ?>assets/theme/noslider/nouislider.min.js" type="text/javascript"></script>

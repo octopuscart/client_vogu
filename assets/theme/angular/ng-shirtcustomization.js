@@ -91,7 +91,7 @@ App.controller('customizationShirt', function ($scope, $http, $location, $filter
                         down: (origin.y - mouse.y) / 2
                     };
 
-                    var transform = ("scale(1.2,1.2) translateX(" + trans.left + "px) translateY(" + trans.down + "px)");
+                    var transform = ("scale(1.4,1.4) translateX(" + trans.left + "px) translateY(" + trans.down + "px)");
 
                     $(this).children(".zoom").css("transform", transform);
 

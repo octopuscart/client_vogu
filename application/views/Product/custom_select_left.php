@@ -1,7 +1,7 @@
 
 <div class="media selected-fabric-block-mobile"  style="cursor:pointer;    padding: 0px 10px;"> 
     <div class="media-left  mobile_view_element_tab">
-        <p class="selected-fabric-block-image" style="margin: 0px;background: url('<?php echo custome_image_server; ?>/coman/output/{{screencustom.productobj.folder}}/cutting20001.png')"></p>
+        <p class="selected-fabric-block-image" style="margin: 12px;background: url('<?php echo custome_image_server; ?>/coman/output/{{screencustom.productobj.folder}}/cutting20001.png');    float: left;"></p>
     </div>
     <div class="media-body">
         <h4 class="selected-element-title media-heading">{{screencustom.productobj.title}} - {{screencustom.productobj.item_name}}</h4>
@@ -29,7 +29,9 @@
             <a href="#custome{{$index}}" data-toggle="tab"  ng-click="changeViews(k.viewtype)">
                 <div class="{{$index == 0?'active':''}} ">
                     <div class="activestyleselect"><div class="thumbnail" style="    margin-bottom: 0;">
-                        <img src="<?php echo base_url(); ?>assets/images/{{selecteElements[screencustom.fabric][k.title].image}}" style="height: 50px;">
+                       <center>
+                           <img src="<?php echo base_url(); ?>assets/images/{{selecteElements[screencustom.fabric][k.title].image}}" style="height: 50px;">
+                       </center>
                         </div>
 <!--<div class="customization_box_element " style="background: url(<?php echo base_url(); ?>assets/images/{{selecteElements[screencustom.fabric][k.title].image}});    height: 60px;" > </div>-->
                         <div class='customization_title_hr'>

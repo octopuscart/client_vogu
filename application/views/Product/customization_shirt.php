@@ -115,7 +115,7 @@ $this->load->view('layout/header');
                                         <i class="icon ion-refresh"></i>
                                     </button>
                                     <div class="col-md-3"></div>
-                                    <div class="col-md-8 frame1">
+                                    <div class="col-md-8 frame">
                                     <?php
                                     $this->load->view('customization/shirtBlock');
                                     ?>

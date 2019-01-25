@@ -112,3 +112,12 @@
         width: 1600px;
     }
 }
+
+.noUi-connect {
+    background: #000000!important;
+}
+
+.ci-text {
+    font-size: 17px;
+    font-weight: 300;
+}
