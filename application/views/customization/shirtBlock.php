@@ -38,10 +38,11 @@
 
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Cuff & Sleeve'].button_hole"  >
     <img src="<?php echo custome_image_server; ?>/shirt/hole_thread/{{selecteElements[fab.product_id]['Button Hole Color'].color}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Cuff & Sleeve'].button_hole"  >
-      
 
+
+    <img src="<?php echo custome_image_server; ?>/shirt/overlay/{{selecteElements[fab.product_id]['Cuff & Sleeve'].buttonso}}" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Cuff & Sleeve'].french == '0'"  >
     <img src="<?php echo custome_image_server; ?>/shirt/buttons/{{selecteElements[fab.product_id]['Buttons'].button}}/{{selecteElements[fab.product_id]['Cuff & Sleeve'].buttons}}" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Cuff & Sleeve'].french == '0'"  >
-   
+
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Cuff & Sleeve'].button_thread"  >
     <img src="<?php echo custome_image_server; ?>/shirt/hole_thread/{{selecteElements[fab.product_id]['Button Thread Color'].color}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Cuff & Sleeve'].button_thread"  >
 
@@ -49,7 +50,7 @@
     <!--collar-->
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Collar'].elements">
     <img src="<?php echo custome_image_server; ?>/shirt/overlay/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Collar'].overlay">
-    
+
     <img src="<?php echo custome_image_server; ?>/shirt/buttons/{{selecteElements[fab.product_id]['Buttons'].button}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Collar'].buttons">
 
     <!--front fly-->
@@ -57,7 +58,7 @@
 
 
     <!--pocket-->
-        <img src="<?php echo custome_image_server; ?>/shirt/overlay/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Pocket'].overlay">
+    <img src="<?php echo custome_image_server; ?>/shirt/overlay/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Pocket'].overlay">
 
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Pocket'].elements">
 
@@ -65,15 +66,18 @@
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/front_button_hole0001.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Front'].show_buttons == 'true'" style="margin-top: 4px;margin-left: 3px;">
     <img src="<?php echo custome_image_server; ?>/shirt/hole_thread/{{selecteElements[fab.product_id]['Button Hole Color'].color}}/front_button_hole0001.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Front'].show_buttons == 'true'"  style="margin-top: 4px;margin-left: 3px;">
 
+    <img src="<?php echo custome_image_server; ?>/shirt/overlay/buttonoverlay.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Front'].show_buttons == 'true'"  style="margin-top: 4px;margin-left: 3px;">
 
     <img src="<?php echo custome_image_server; ?>/shirt/buttons/{{selecteElements[fab.product_id]['Buttons'].button}}/button_front20001.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Front'].show_buttons == 'true'"  style="margin-top: 4px;margin-left: 3px;">
+
+
 
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/button_front_trd0001.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Front'].show_buttons == 'true'"  style="margin-top: 4px;margin-left: 3px;">
     <img src="<?php echo custome_image_server; ?>/shirt/hole_thread/{{selecteElements[fab.product_id]['Button Thread Color'].color}}/button_front_trd0001.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Front'].show_buttons == 'true'"  style="margin-top: 4px;margin-left: 3px;">
 
     <img src="<?php echo custome_image_server; ?>/shirt/overlay/body_overlayc.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Collar'].showwm == '0'"  />
 
-        <img src="<?php echo custome_image_server; ?>/shirt/overlay/body_overlaycwm.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Collar'].showwm == '1'"  />
+    <img src="<?php echo custome_image_server; ?>/shirt/overlay/body_overlaycwm.png" class="fixpos animated" ng-if="selecteElements[fab.product_id]['Collar'].showwm == '1'"  />
 
 </div>
 
@@ -99,9 +103,9 @@
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/backbody0001.png" class="fixpos animated" >
     <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/{{img}}" ng-repeat="img in selecteElements[fab.product_id]['Cuff & Sleeve'].sleeveoverlay" class="fixpos animated" >
     <img src="<?php echo custome_image_server; ?>/shirt/overlay/{{img}}" class="fixpos animated" ng-repeat="img in selecteElements[fab.product_id]['Back'].overlay" >
-   
-        <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/yoke0001.png" class="fixpos animated"  >
 
-    
+    <img src="<?php echo custome_image_server; ?>/shirt/output/{{screencustom.productobj.folder}}/yoke0001.png" class="fixpos animated"  >
+
+
 
 </div>

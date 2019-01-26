@@ -439,6 +439,7 @@ class CustomApi extends REST_Controller {
                         "button_hole" => ["cuff_s_hole_10001.png"],
                         "button_thread" => ["cuff_s_button1_trd0001.png"],
                         "buttons" => "cuff_s_button10001.png",
+                        "buttonso" => "cuff_s_button1o.png",
                         "french" => "0",
                     ), array(
                         "status" => "1",
@@ -460,6 +461,7 @@ class CustomApi extends REST_Controller {
                         "button_hole" => ["cuff_s_hole_10001.png"],
                         "button_thread" => ["cuff_s_button1_trd0001.png"],
                         "buttons" => "cuff_s_button10001.png",
+                        "buttonso" => "cuff_s_button1o.png",
                         "french" => "0",
                     ), array(
                         "status" => "0",
@@ -481,6 +483,7 @@ class CustomApi extends REST_Controller {
                         "button_hole" => ["cuff_s_hole_10001.png"],
                         "button_thread" => ["cuff_s_button1_trd0001.png"],
                         "buttons" => "cuff_s_button10001.png",
+                        "buttonso" => "cuff_s_button1o.png",
                         "french" => "0",
                     ), array(
                         "status" => "0",
@@ -502,6 +505,7 @@ class CustomApi extends REST_Controller {
                         "button_hole" => ["cuff_s_hole_20001.png"],
                         "button_thread" => [ "cuff_s_button2_trd0001.png"],
                         "buttons" => "cuff_s_button20001.png",
+                        "buttonso" => "cuff_s_button2o.png",
                         "french" => "0",
                     ), array(
                         "status" => "0",
@@ -523,6 +527,7 @@ class CustomApi extends REST_Controller {
                         "button_hole" => [ "cuff_s_hole_20001.png"],
                         "button_thread" => [ "cuff_s_button2_trd0001.png"],
                         "buttons" => "cuff_s_button20001.png",
+                        "buttonso" => "cuff_s_button2o.png",
                         "french" => "0",
                     ), array(
                         "status" => "0",
@@ -544,6 +549,7 @@ class CustomApi extends REST_Controller {
                         "button_hole" => [ "cuff_s_hole_20001.png"],
                         "button_thread" => [ "cuff_s_button2_trd0001.png"],
                         "buttons" => "cuff_s_button20001.png",
+                        "buttonso" => "cuff_s_button2o.png",
                         "french" => "0",
                     ), array(
                         "status" => "0",
