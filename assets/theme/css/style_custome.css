@@ -38,6 +38,7 @@ code {
     left: 0;
     height: 480px;
     max-height: 500px;
+    max-width:  428px!important;
 }
 
 
