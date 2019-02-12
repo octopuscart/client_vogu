@@ -146,3 +146,11 @@
     width: 100%;
     font-size: 13px;
 }
+
+.cart-page-area .panel-title a{
+    color:white;
+}
+
+.cart-page-area .panel-title {
+    padding: 10px 15px 10px 5px;
+}
