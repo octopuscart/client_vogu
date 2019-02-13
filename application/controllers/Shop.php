@@ -104,6 +104,13 @@ class Shop extends CI_Controller {
     public function catalogue() {
         $this->load->view('pages/catalogue');
     }
+    public function lookbook() {
+        $this->load->view('pages/lookbook');
+    }
+
+    public function blog() {
+        $this->load->view('pages/lookbook');
+    }
 
     public function appointment() {
         if (isset($_POST['submit'])) {

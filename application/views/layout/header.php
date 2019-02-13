@@ -120,7 +120,7 @@
         array(
             "title" => "Look Book",
             "submenu" => "no",
-            "link" => '#',
+            "link" => site_url("Shop/lookbook"),
         ),
         array(
             "title" => "Contact Us",
