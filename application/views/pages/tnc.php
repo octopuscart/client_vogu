@@ -32,7 +32,7 @@ $this->load->view('layout/header');
         <div class="row">
              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                  <p class="text-center" style="font-size: 20px;">
-                     Due to the fact that our each product is 100% custom made,  we have <b>NO REFUND</b> policy. We will do everything to correct the error/problem in the garment and replace it.
+                     Due to the fact that our each product is 100% custom made,  we have <b>NO REFUND</b> policy.<br/> We will do everything to correct the error/problem in the garment and replace it.
                  </p>
             </div>
         </div>
