@@ -101,15 +101,7 @@
                 array(
                     "title" => "Tuxedo Suits",
                     "link" => "#",),
-                array(
-                    "title" => "Tuxedo Jackets",
-                    "link" => "#",),
-                array(
-                    "title" => "Tuxedo Pants",
-                    "link" => "#",),
-                array(
-                    "title" => "Tuxedo Shirts",
-                    "link" => "#",)
+               
             ]
         ),
         array(
