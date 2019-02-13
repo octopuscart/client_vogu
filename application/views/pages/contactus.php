@@ -77,7 +77,7 @@ $this->load->view('layout/header');
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-                <form class="form contact-form" id="contact_form">
+                <form class="form contact-form" method="post" id="contact_form">
                     <div class="clearfix">
 
                         <div class="cf-left-col">
