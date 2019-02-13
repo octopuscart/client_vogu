@@ -20,7 +20,7 @@ $this->load->view('layout/header');
             </div>
             <div class="col-lg-7 col-md-7 t_align_l">
 
-                <p class="m_bottom_25 fw_light fs_large">
+                <p class="m_bottom_25 mt-50 fw_light fs_large">
                     Vogue Tailors was founded Mr. Bhat Zahoor and Mr. Farooq Shalla with the belief that bespoke does not have to mean expensive. Most people would agree that a bespoke suit, hand cut and stitched by a skilled tailor, would look and fit much better than an off-the-peg suit.
                 </p>
                 <p class="m_bottom_25 fw_light fs_large">
