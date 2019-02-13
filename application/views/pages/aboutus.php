@@ -7,16 +7,16 @@ $this->load->view('layout/header');
 <!--page title-->
 
 <!--content-->
-<section class="section_offset" style="background: url(<?php echo base_url(); ?>assets/images/middle3.jpg);    padding: 30px 0px;">
+<section class="section_offset" style="   padding: 30px 0px;">
     <main class="container t_align_c">
-<!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <center>
-                <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logodddd.png"  alt="" style="height: 100px" /></a>
-            </center>       
-        </div>-->
+        <!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+                    <center>
+                        <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logodddd.png"  alt="" style="height: 100px" /></a>
+                    </center>       
+                </div>-->
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 m_xs_bottom_20">
-                <img src="<?php echo base_url(); ?>assets/images/shop2.jpg" class="r_corners" alt="">
+                <img src="<?php echo base_url(); ?>assets/images/aboutvogue2.jpg" class="r_corners" alt="">
             </div>
             <div class="col-lg-6 col-md-6 t_align_l">
 
@@ -31,20 +31,15 @@ $this->load->view('layout/header');
 
             </div>
         </div>
-        <div class="alt-features-item align-left">
+        <hr/>
+        <div class="align-left">
             <div class="alt-features-icon" >
             </div>
-            <h3 class="font-alt mb-10 mb-xxs-10 alt-features-title_black align-center"> 
+            <h3 class="font-alt mb-20 mb-xxs-10 alt-features-title_black align-center"> 
                 <span class=" icon-ribbon"></span> Why Vogue Custom Tailor?
             </h3>
             <div class="" >
-
-
-                <div class="col-md-4 m_xs_bottom_20">
-                    <img src="<?php echo base_url(); ?>assets/theme/images/fitjacket.png" class="r_corners" alt="" style="    height: 427px;
-    margin-left: 30px;">
-                </div>
-                <div class="col-md-8 t_align_l">
+ <div class="col-md-6 t_align_l">
 
                     <p class="m_bottom_25 fw_light fs_large mt-30">
                         Our garments are hand cut and hand stitched down to the smallest detail, to ensure it's comfortable and durable. We even use cloths from some of the finest mills in the world including the very best of British and Italian - the difference being our suits are as affordable as an off-the-peg suit. 
@@ -62,6 +57,11 @@ $this->load->view('layout/header');
                         5 tailors make monthly calls on their overseas customers to carry out fittings, make alterations and take new orders, giving customers the opportunity to expand their wardrobes and refresh old suits. Customers tend to stay for life. They appreciate the sophisticated tailoring and individualised attention they can take for granted at Vogue Tailors.                    
                     </p>
                 </div>
+
+                <div class="col-md-6 m_xs_bottom_20">
+                    <img src="<?php echo base_url(); ?>assets/images/cirtificate.jpg" class="r_corners mt-50" alt="" style="    height: 427px;width: auto;">
+                </div>
+               
 
             </div>
         </div>

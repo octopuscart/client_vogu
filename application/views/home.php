@@ -163,7 +163,7 @@ $this->load->view('layout/header');
                      data-endspeed="500" 
                      data-endeasing="Power4.easeIn">
 
-                    ORDER TO MADE!
+                    MADE TO ORDER!
 
 
                 </div>

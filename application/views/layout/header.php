@@ -22,7 +22,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/bootstrap.min.css">
         <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/style.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/style-responsive.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>assets/theme/css/animate.min.css">
@@ -96,11 +96,17 @@
                     "title" => "Shirts",
                     "link" => site_url('Product/ProductList/1/0'),),
                 array(
-                    "title" => "Tuxedo",
-                    "link" => site_url('Product/ProductList/1/0'),
-                    "submenu" => "yes",
-                    "submenuitems" => []
-                ),
+                    "title" => "Tuxedo Suits",
+                    "link" => "#",),
+                array(
+                    "title" => "Tuxedo Jackets",
+                    "link" => "#",),
+                array(
+                    "title" => "Tuxedo Pants",
+                    "link" => "#",),
+                array(
+                    "title" => "Tuxedo Shirts",
+                    "link" => "#",)
             ]
         ),
         array(
@@ -217,7 +223,7 @@
 
                                                 <!-- Sub Column -->
                                                 <li class="mn-sub-multi">
-                                                    <ul class='mn-has-multi'>
+                                                    <ul class=''>
                                                         <?php
                                                         foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
                                                             ?>   
@@ -228,16 +234,18 @@
                                                                 <?php
                                                                 if (isset($smvalue['submenu']) && $smvalue['submenu'] == 'yes') {
                                                                     ?>
-                                                                    <ul class="">
-                                                                        <li>
-                                                                            <a href="">Suits</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Pants</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Shirts</a>
-                                                                        </li>
+                                                                    <ul class="mn-sub mn-has-multi">
+                                                                        <?php
+                                                                        foreach ($smvalue["submenuitems"] as $smkey1 => $smvalue1) {
+                                                                            ?>   
+                                                                            <li>
+                                                                                <a class="" href="<?php echo $smvalue1['link']; ?>">
+                                                                                    <?php echo $smvalue1['title']; ?>
+                                                                                </a>
+                                                                            </li>
+                                                                            <?php
+                                                                        }
+                                                                        ?>
                                                                     </ul>
                                                                     <?php
                                                                 }

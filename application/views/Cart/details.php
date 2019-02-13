@@ -26,7 +26,7 @@ $this->load->view('layout/header');
 
 <!--content-->
 <div class="section_offset counter" ng-if="globleCartData.total_quantity">
-    <div class="container">
+    <div class="container" style="margin-bottom: 20px">
         <div class="im_half_container m_bottom_10">
             <div class="half_column d_inline_m w_xs_full m_xs_bottom_10">
                 <p class="fw_light">Your shopping cart contains {{product.total_quantity}} product(s)</p>
