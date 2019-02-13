@@ -66,22 +66,25 @@
         array(
             "title" => "Home",
             "submenu" => "yes",
-            "link" => '#',
+            "link" => site_url("/"),
             "submenuitems" => [
                 array(
                     "title" => "About Us",
-                    "link" => site_url("Shop/aboutus"),),
+                    "link" => site_url("Shop/aboutus"),
+                    ),
                 array(
                     "title" => "FAQ's",
-                    "link" => '#',),
+                    "link" => site_url("Shop/faq")
+                    ),
                 array(
-                    "title" => "Return Policy",
-                    "link" => '#',),
+                    "title" => "Terms & Conditions",
+                    "link" => site_url("Shop/tnc")
+                    ),
             ]),
         array(
             "title" => "Order Now",
             "submenu" => "yes",
-            "link" => '#',
+            "link" => site_url('Product/ProductList/2/0'),
             "submenuitems" => [
                 array(
                     "title" => "Suits",

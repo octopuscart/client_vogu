@@ -31,10 +31,10 @@ class Shop extends CI_Controller {
     }
 
     public function contactus() {
-        $data['rand_num1'] = rand(1,9);
-        $data['rand_num2'] = rand(1,9);
-        
-        
+        $data['rand_num1'] = rand(1, 9);
+        $data['rand_num2'] = rand(1, 9);
+
+
         if (isset($_POST['sendmessage'])) {
             $web_enquiry = array(
                 'last_name' => $this->input->post('last_name'),
@@ -91,6 +91,10 @@ class Shop extends CI_Controller {
 
     public function aboutus() {
         $this->load->view('pages/aboutus');
+    }
+
+    public function tnc() {
+        $this->load->view('pages/tnc');
     }
 
     public function faq() {
