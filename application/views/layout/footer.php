@@ -51,10 +51,18 @@
                                         <i class="fa fa-map-marker"></i>
                                     </div>
                                     <div class="ci-title font-alt" style="text-align: left;">
-                                        Address
+                                        Shop Address
                                     </div>
                                     <div class="ci-text" style="text-align: left;">
                                         B6, Star House Plaza, Star House (Next to Starbucks), <br/>
+                                        3 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong
+                                    </div>
+                                    <br/>
+                                    <div class="ci-title font-alt" style="text-align: left;">
+                                        Showroom
+                                    </div>
+                                    <div class="ci-text" style="text-align: left;">
+                                        522A, 5/F, Star House, <br/>
                                         3 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong
                                     </div>
                                 </div>
