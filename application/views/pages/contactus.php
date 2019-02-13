@@ -41,12 +41,20 @@ $this->load->view('layout/header');
                                 <i class="fa fa-map-marker"></i>
                             </div>
                             <div class="ci-title font-alt" style="text-align: left;">
-                                Address
+                                Shop Address
                             </div>
                             <div class="ci-text" style="text-align: left;">
                                 B6, Star House Plaza, <br/>Star House (Next to Starbucks),
                                 <br/> 3 Salisbury Road,
                                 Tsim Sha Tsui,<br/> Kowloon, Hong Kong
+                            </div>
+                            <br/>
+                            <div class="ci-title font-alt" style="text-align: left;">
+                                Showroom
+                            </div>
+                            <div class="ci-text" style="text-align: left;">
+                               522A, 5/F, Star House, <br/>
+                                        3 Salisbury Road, Tsim Sha Tsui, <br/>Kowloon, Hong Kong
                             </div>
                         </div>
                     </div>
@@ -77,7 +85,7 @@ $this->load->view('layout/header');
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-                <form class="form contact-form" method="post" id="contact_form">
+                <form class="" method="post" action="#" id="contact_form">
                     <div class="clearfix">
 
                         <div class="cf-left-col">
@@ -163,7 +171,7 @@ $this->load->view('layout/header');
 
                             <!-- Send Button -->
                             <div class="align-right pt-10">
-                                <button class="submit_btn btn btn-mod btn-medium btn-round" id="submit_btn">Submit Message</button>
+                                <button class="submit_btn btn btn-mod btn-medium btn-round" name="sendmessage" type ="submit" >Submit Message</button>
                             </div>
 
                         </div>
