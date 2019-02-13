@@ -133,7 +133,7 @@
 
             <!-- Copyright -->
             <div class="footer-copy font-alt">
-                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com <?php echo date("y");?></a>.
+                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com <?php echo date("Y");?></a>.
             </div>
             <!-- End Copyright -->
 
