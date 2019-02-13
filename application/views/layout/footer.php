@@ -45,7 +45,7 @@
                             <!-- End Phone -->
 
                             <!-- Address -->
-                            <div class="col-lg-6 pt-20 pb-20 pb-xs-0">
+                            <div class="col-lg-6 pt-20 pb-20 pb-xs-0" style="padding: 0px 133px;">
                                 <div class="contact-item">
                                     <div class="ci-icon">
                                         <i class="fa fa-map-marker"></i>
@@ -133,7 +133,7 @@
 
             <!-- Copyright -->
             <div class="footer-copy font-alt">
-                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com 2018</a>.
+                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com <?php echo date("y");?></a>.
             </div>
             <!-- End Copyright -->
 
