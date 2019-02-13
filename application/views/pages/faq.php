@@ -55,7 +55,7 @@ $this->load->view('layout/header');
                                         </a>
                                     </h4>
                                 </div>
-                                <div id="collapseOne<?php echo "accord_" . $index; ?>" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne<?php echo "accord_" . $index; ?>">
+                                <div id="collapseOne<?php echo "accord_" . $index; ?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne<?php echo "accord_" . $index; ?>">
                                     <div class="panel-body">
                                       A:  <?php echo $x_value; ?>
                                     </div>
