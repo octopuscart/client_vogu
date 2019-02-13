@@ -35,14 +35,7 @@ $this->load->view('layout/header');
             <section class="">
                 <div class="relative">
                     
-                    <!-- Works Filter -->                    
-                    <div class="works-filter font-alt align-center">
-                        <a href="#" class="filter active" data-filter="*">All works</a>
-                        <a href="#branding" class="filter" data-filter=".branding">Branding</a>
-                        <a href="#design" class="filter" data-filter=".design">Design</a>
-                        <a href="#photography" class="filter" data-filter=".photography">Photography</a>
-                    </div>                    
-                    <!-- End Works Filter -->
+                 
                     
                     <!-- Works Grid -->
                     <ul class="works-grid clearfix font-alt hover-white hide-titles masonry" id="work-grid">
