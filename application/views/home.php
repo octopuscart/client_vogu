@@ -111,7 +111,7 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Shop/aboutus");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             About Us
                         </a>
 
@@ -186,13 +186,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Shop/aboutus");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Product/ProductList/2/0");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -266,13 +266,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Shop/aboutus");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Product/ProductList/2/0");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -345,13 +345,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-b btn-medium btn-round">
+                        <a href="<?php echo site_url("Shop/aboutus");?>" class="btn btn-mod btn-border-b btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-b btn-medium btn-round">
+                        <a href="<?php echo site_url("Product/ProductList/2/0");?>" class="btn btn-mod btn-border-b btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -425,13 +425,13 @@ $this->load->view('layout/header');
 
                     <div class="local-scroll">
 
-                        <a href="https://test2.voguetailorhk.com/about.php" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Shop/aboutus");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             See More
                         </a>
 
                         <span>&nbsp;</span>
 
-                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border-w btn-medium btn-round">
+                        <a href="<?php echo site_url("Product/ProductList/2/0");?>" class="btn btn-mod btn-border-w btn-medium btn-round">
                             Show Now
                         </a>
 
@@ -613,7 +613,7 @@ $this->load->view('layout/header');
 
                         </div>
                         <div class="mt-20">
-                            <a href="https://test2.voguetailorhk.com/Shop/contactus" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                            <a href="<?php echo site_url("Shop/contactus");?>" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -633,7 +633,7 @@ $this->load->view('layout/header');
                         </div>
                     </div>
                     <div class="mt-20">
-                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                        <a href="<?php echo site_url("Shop/aboutus");?>" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                     </div>
                 </div>
 
@@ -653,7 +653,7 @@ $this->load->view('layout/header');
                         </div>
                     </div>
                     <div class="mt-20">
-                        <a href="https://test2.voguetailorhk.com/" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
+                        <a href="<?php echo site_url("Product/ProductList/2/0");?>" class="btn btn-mod btn-border btn-round btn-medium" target="_blank">Read More</a>
                     </div>
                 </div>
 

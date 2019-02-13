@@ -91,6 +91,9 @@
         <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logo21.png" width="78" height="36" alt="" /></a>
         </div>
+        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <a href="#top"><img src="<?php echo base_url(); ?>assets/images/qclogo.png" width="78" height="36" alt="" /></a>
+        </div>
         <!-- End Footer Logo -->
 
         <!-- Social Links -->
