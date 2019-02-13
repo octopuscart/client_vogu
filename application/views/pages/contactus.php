@@ -91,6 +91,7 @@ $this->load->view('layout/header');
                             <div class="form-group">
                                 <input type="email" name="email"  class="input-md round form-control" placeholder="Email"  required>
                             </div>
+                            
 
                         </div>
 

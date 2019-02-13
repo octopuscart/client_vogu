@@ -64,11 +64,11 @@
                             <!-- Email -->
                             <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
                                 <div class="contact-item">
-                                   
+
                                     <div class="ci-title font-alt" style="text-align: left;">
-                                       <div class="ci-icon">
-                                        <i class="fa fa-envelope"></i>
-                                    </div>  Email
+                                        <div class="ci-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>  Email
                                     </div>
                                     <div class="ci-text" style="text-align: left;">
                                         <a href="mailto:vogue@voguetailor.com">vogue@voguetailor.com</a>
@@ -82,26 +82,41 @@
 
                 </div>
 
-           
+
 
             </div>
         </section>
 
         <!-- Footer Logo -->
-        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+
+
+<!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logo21.png" width="78" height="36" alt="" /></a>
-        </div>
+        </div>-->
         <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <a href="#top"><img src="<?php echo base_url(); ?>assets/images/qclogo.png" width="78" height="36" alt="" /></a>
         </div>
         <!-- End Footer Logo -->
-
+        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <div class="newsletter-area">
+                <h3>Newsletter Sign Up!</h3>
+                <center>
+                    <div class="input-group" style="width: 300px;">
+                        <input type="text" class="form-control" placeholder="E-mail . . .">
+                        <span class="input-group-addon">
+                            <button type="submit" class="">
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </button>  
+                        </span>
+                    </div>
+                </center>
+            </div>
+        </div>
         <!-- Social Links -->
         <div class="footer-social-links mb-30 mb-xs-60">
-            <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="#" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
-            <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.facebook.com/VogueTailors/" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/voguetailors" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+
         </div>
         <!-- End Social Links -->  
 
