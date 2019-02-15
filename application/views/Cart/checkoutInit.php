@@ -127,9 +127,9 @@ $this->load->view('Cart/checkoutheader');
                 </thead>
                 <tbody>
                     <tr class="tr_delay" ng-repeat="product in globleCartData.products">
-                        <td data-title="Product Image" style='    width: 100px;'>
+                        <td data-title="Product Image" style='    width: 150px;'>
                             <a href="#" class="r_corners d_inline_b wrapper">
-                                <img src="{{product.file_name}}" alt="" style='height: 80px'>
+                                <img src="{{product.file_name}}" alt="" style='height: 150px'>
                             </a>
                         </td>
                         <td data-title="Description">
