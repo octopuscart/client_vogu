@@ -31,19 +31,6 @@
                             <!-- Phone -->
                             <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
                                 <div class="contact-item">
-                                    <div class="ci-icon">
-                                        <i class="fa fa-phone"></i>
-                                    </div>
-                                    <div class="ci-title font-alt" style="text-align: left;">
-                                        Call Us
-                                    </div>
-                                    <div class="ci-text" style="text-align: left;">
-                                        +(852) 2314 8016
-                                    </div>
-                                </div>
-                                <br/>
-                                <br/>
-                                <div class="contact-item">
 
                                     <div class="ci-title font-alt" style="text-align: left;">
                                         <div class="ci-icon">
@@ -54,6 +41,23 @@
                                         <a href="mailto:vogue@voguetailor.com">vogue@voguetailor.com</a>
                                     </div>
                                 </div>
+                                <br/>
+                                <br/>
+                                
+                                
+                                <div class="contact-item">
+                                    <div class="ci-icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="ci-title font-alt" style="text-align: left;">
+                                        Call Us
+                                    </div>
+                                    <div class="ci-text" style="text-align: left;">
+                                        +(852) 2314 8016
+                                    </div>
+                                </div>
+                                
+                                
                             </div>
                             <!-- End Phone -->
 
