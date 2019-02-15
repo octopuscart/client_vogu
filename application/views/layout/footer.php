@@ -41,6 +41,19 @@
                                         +(852) 2314 8016
                                     </div>
                                 </div>
+                                <br/>
+                                <br/>
+                                <div class="contact-item">
+
+                                    <div class="ci-title font-alt" style="text-align: left;">
+                                        <div class="ci-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </div>  Email
+                                    </div>
+                                    <div class="ci-text" style="text-align: left;">
+                                        <a href="mailto:vogue@voguetailor.com">vogue@voguetailor.com</a>
+                                    </div>
+                                </div>
                             </div>
                             <!-- End Phone -->
 
@@ -71,17 +84,12 @@
 
                             <!-- Email -->
                             <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
-                                <div class="contact-item">
-
-                                    <div class="ci-title font-alt" style="text-align: left;">
-                                        <div class="ci-icon">
-                                            <i class="fa fa-envelope"></i>
-                                        </div>  Email
-                                    </div>
-                                    <div class="ci-text" style="text-align: left;">
-                                        <a href="mailto:vogue@voguetailor.com">vogue@voguetailor.com</a>
-                                    </div>
-                                </div>
+                                  <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <a href="#top"><img src="<?php echo base_url(); ?>assets/images/qclogo.png" style="    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 100px;" /></a>
+        </div>
                             </div>
                             <!-- End Email -->
 
@@ -101,9 +109,7 @@
 <!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logo21.png" width="78" height="36" alt="" /></a>
         </div>-->
-        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <a href="#top"><img src="<?php echo base_url(); ?>assets/images/qclogo.png" width="120" height="36" alt="" /></a>
-        </div>
+      
         <!-- End Footer Logo -->
         <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <div class="newsletter-area">
