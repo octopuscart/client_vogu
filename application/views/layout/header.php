@@ -166,7 +166,7 @@
                 </div><!-- /.container-fluid -->
             </nav>
             <!-- Navigation panel -->
-            <nav class="main-nav lightgrey  " style="    background-size: contain;">
+            <nav class="main-nav lightgrey hideonmobile " style="    background-size: contain;">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <center>
@@ -183,12 +183,13 @@
             <nav class="main-nav js-stick">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
-                    <!--                    <div class="nav-logo-wrap local-scroll">
+                    <div class="showonmobile">
+                                        <div class="nav-logo-wrap local-scroll ">
                                             <a href="<?php echo site_url(); ?>" class="logo">
-                                                <img src="<?php echo base_url(); ?>assets/images/logodddd.png" alt="" />
+                                                <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="" />
                                             </a>
-                                        </div>-->
-
+                                        </div>
+                    </div>
 
                     <div class="mobile-nav">
                         <i class="fa fa-bars"></i>

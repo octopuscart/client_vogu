@@ -62,7 +62,7 @@
                             <!-- End Phone -->
 
                             <!-- Address -->
-                            <div class="col-lg-6 pt-20 pb-20 pb-xs-0" style="padding: 0px 133px;">
+                            <div class="col-lg-6 pt-20 pb-20 pb-xs-0 contactupper" style="">
                                 <div class="contact-item">
                                     <div class="ci-icon">
                                         <i class="fa fa-map-marker"></i>
@@ -89,10 +89,7 @@
                             <!-- Email -->
                             <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
                                   <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <a href="#top"><img src="<?php echo base_url(); ?>assets/images/qclogo.png" style="    height: 200px;
-    position: absolute;
-    top: 0px;
-    right: 100px;" /></a>
+            <a href="#top"><img class="quantitylogo" src="<?php echo base_url(); ?>assets/images/qclogo.png" /></a>
         </div>
                             </div>
                             <!-- End Email -->

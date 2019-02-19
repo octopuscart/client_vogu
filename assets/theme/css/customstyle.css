@@ -154,3 +154,42 @@
 .cart-page-area .panel-title {
     padding: 10px 15px 10px 5px;
 }
+.showonmobile{
+    display: none;
+}
+
+.contactupper{
+    padding: 0px 133px;
+}
+
+
+.quantitylogo{
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hideonmobile {
+        display: none;
+    }
+    .showonmobile{
+        display: block;
+    }
+
+    .contactupper{
+        padding: 20px ;
+    }
+
+    .quantitylogo{
+      position: inherit;
+    width: 200px;
+
+    }
+
+
+
+}
+
