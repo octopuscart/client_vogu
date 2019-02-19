@@ -149,6 +149,7 @@
 
 .cart-page-area .panel-title a{
     color:white;
+    text-decoration: none;
 }
 
 .cart-page-area .panel-title {
@@ -187,6 +188,10 @@
       position: inherit;
     width: 200px;
 
+    }
+    
+    .mobilebutton{
+        width: 100%
     }
 
 

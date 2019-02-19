@@ -224,28 +224,10 @@
                                                         foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
                                                             ?>   
                                                             <li>
-                                                                <a class="mn-has-sub" href="<?php echo $smvalue['link']; ?>">
+                                                                <a class="" href="<?php echo $smvalue['link']; ?>">
                                                                     <?php echo $smvalue['title']; ?>
                                                                 </a>
-                                                                <?php
-                                                                if (isset($smvalue['submenu']) && $smvalue['submenu'] == 'yes') {
-                                                                    ?>
-                                                                    <ul class="mn-sub mn-has-multi">
-                                                                        <?php
-                                                                        foreach ($smvalue["submenuitems"] as $smkey1 => $smvalue1) {
-                                                                            ?>   
-                                                                            <li>
-                                                                                <a class="" href="<?php echo $smvalue1['link']; ?>">
-                                                                                    <?php echo $smvalue1['title']; ?>
-                                                                                </a>
-                                                                            </li>
-                                                                            <?php
-                                                                        }
-                                                                        ?>
-                                                                    </ul>
-                                                                    <?php
-                                                                }
-                                                                ?>
+                                                               
                                                             </li>
 
                                                     </li>
@@ -263,7 +245,7 @@
                             }
                             ?>
                             <li>
-                                <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart(0)</a>
+                                <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart({{globleCartData.total_quantity}})</a>
                             </li>
 
                             </ul>

@@ -7,10 +7,12 @@
                     ?>
                     <!--cart block-->
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="fa-stack">
+                      <span class="fa-stack">
                             <i class="fa fa-shopping-cart fa-stack-1x"></i>
                             <i class="ion-bag fa-stack-1x "></i>
-                        </span>   My Shopping Bag
+                        </span>    
+                        <span class="hideonmobile"> My Shopping Bag
+                       </span>
                         <span style="float: right; line-height: 29px;color: white;
     font-weight: bold;" class="ng-binding">Total: {{globleCartData.total_price|currency:"<?php echo globle_currency; ?>"}} ({{globleCartData.total_quantity}})</span> 
                     </a>
@@ -45,7 +47,9 @@
                             <i class="fa fa-map-marker fa-stack-1x"></i>
                             <i class="ion-bag fa-stack-1x "></i>
                         </span>   Shipping Address
-                        <span style="float: right; line-height: 29px;font-size: 12px;color: white;
+                        
+                      
+                        <span class="hideonmobile" style="float: right; line-height: 29px;font-size: 12px;color: white;
     font-weight: bold;" class="ng-binding">
                             <?php
                             if (count($user_address_details)) {

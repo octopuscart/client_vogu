@@ -38,7 +38,7 @@ $this->load->view('layout/header');
                  
                     
                     <!-- Works Grid -->
-                    <ul class="works-grid clearfix font-alt hover-white hide-titles masonry" id="work-grid">
+                    <ul class="works-grid work-grid-3 clearfix font-alt hover-white hide-titles masonry" id="work-grid">
                         
                         <!-- Work Item (Lightbox) -->
                         <?php

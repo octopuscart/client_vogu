@@ -92,7 +92,9 @@ $this->load->view('Cart/checkoutheader');
                                 <span class="fa-stack">
                                     <i class="fa fa-shopping-cart fa-stack-1x"></i>
                                     <i class="ion-bag fa-stack-1x "></i>
-                                </span>   My Shopping Bag
+                                </span> 
+                                                        <span class="hideonmobile"> My Shopping Bag</span>
+
                                 <span style="float: right; line-height: 29px;" class="ng-binding">Total: {{globleCartData.total_price|currency:"<?php echo globle_currency; ?>"}} ({{globleCartData.total_quantity}})</span> 
                             </a>
                         </h4>
@@ -108,62 +110,122 @@ $this->load->view('Cart/checkoutheader');
                             <!-- Cart Details -->
                             <div class="custom_block_item">
 
-                                <table class="table table-striped shopping-cart-table">
-                                    <thead>
-                                        <tr class="bg_light_2 color_dark">
+                             <table class="table table-striped shopping-cart-table hideonmobile">
+                <thead>
+                    <tr class="bg_light_2 color_dark">
 
-                                            <th colspan="2">Product Description</th>
+                        <th colspan="2">Product Description</th>
 
-                                            <th style='    width: 100px;'>Price</th>
-                                            <th style='    width: 140px;'>Quantity</th>
-                                            <th style='    width: 100px;'>Total</th>
-                                            <th style='    width: 100px;'></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="tr_delay" ng-repeat="product in globleCartData.products">
-                                            <td data-title="Product Image" style='    width: 150px;'>
-                                                <a href="#" class="r_corners d_inline_b wrapper">
-                                                    <img src="{{product.file_name}}" alt="" style='height: 150px'>
-                                                </a>
-                                            </td>
-                                            <td data-title="Description">
-                                                <h6 class="m_bottom_5"><a href="#" class="color_dark tr_all">{{product.title}}</a></h6>
-                                                <p class="fw_light">{{product.item_name}}</p>
-                                            </td>
-                                            <td data-title="Price">{{product.price|currency:" "}}</td>
-                                            <td data-title="Quantity" >
-
-
-                                                <div class="btn-group" role="group" aria-label="...">
-                                                    <button type="button" class="btn btn-default" ng-click="updateCart(product, 'sub')">-</button>
-                                                    <button type="button" class="btn btn-default disabled">{{product.quantity}}</button>
-                                                    <button type="button" class="btn btn-default"  ng-click="updateCart(product, 'add')">+</button>
-                                                </div>
+                        <th style='    width: 100px;'>Price</th>
+                        <th style='    width: 140px;'>Quantity</th>
+                        <th style='    width: 100px;'>Total</th>
+                        <th style='    width: 100px;'></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr_delay" ng-repeat="product in globleCartData.products">
+                        <td data-title="Product Image" style='    width: 150px;'>
+                            <a href="#" class="r_corners d_inline_b wrapper">
+                                <img src="{{product.file_name}}" alt="" style='height: 150px'>
+                            </a>
+                        </td>
+                        <td data-title="Description">
+                            <h6 class="m_bottom_5"><a href="#" class="color_dark tr_all">{{product.title}}</a></h6>
+                            <p class="fw_light">{{product.item_name}}</p>
+                        </td>
+                        <td data-title="Price">{{product.price|currency:" "}}</td>
+                        <td data-title="Quantity" >
 
 
-                                            </td>
-
-                                            <td data-title="Total" class="fw_ex_bold color_dark ">
-                                                {{product.total_price|currency:" "}}
-                                            </td>
-                                            <td>
-
-                                                <a href="#" ng-click="removeCart(product.product_id)"><i class="fa fa-times"></i> <span class="hidden-xs">Remove</span></a>
-
-                                            </td>
-                                        </tr>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default" ng-click="updateCart(product, 'sub')">-</button>
+                                <button type="button" class="btn btn-default disabled">{{product.quantity}}</button>
+                                <button type="button" class="btn btn-default"  ng-click="updateCart(product, 'add')">+</button>
+                            </div>
 
 
+                        </td>
 
-                                        <tr class="bg_light_2">
-                                            <td colspan="4" class="v_align_m">
+                        <td data-title="Total" class="fw_ex_bold color_dark ">
+                            {{product.total_price|currency:" "}}
+                        </td>
+                        <td>
 
-                                            </td>
-                                            <td colspan="2" class="fw_ex_bold color_pink v_align_m">{{globleCartData.total_price|currency:" "}}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <a href="#" ng-click="removeCart(product.product_id)"><i class="fa fa-times"></i> <span class="hidden-xs">Remove</span></a>
+
+                        </td>
+                    </tr>
+
+
+
+                    <tr class="bg_light_2">
+                        <td colspan="4" class="v_align_m">
+
+                        </td>
+                        <td colspan="2" class="fw_ex_bold color_pink v_align_m">{{globleCartData.total_price|currency:" "}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <!--//mobile view-->
+            <table class="table table-striped shopping-cart-table showonmobile">
+                <thead>
+                    <tr class="bg_light_2 color_dark">
+
+                        <th colspan="1">Product</th>
+
+                        <th style='    width: 350px;'>Quantity</th>
+                        <th colspan="2" style='    width: 100px;'>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr_delay" ng-repeat="product in globleCartData.products">
+                        <td data-title="Product Image" style='    width: 250px;text-align: center'>
+                            <b>{{product.title}}</b>
+
+                            <a href="#" class="r_corners d_inline_b wrapper">
+                                <img src="{{product.file_name}}" alt="" >
+                            </a>
+
+                            <p class="fw_light">
+                                {{product.item_name}}<br/>
+                                {{product.price|currency:" "}} X {{product.quantity}}
+                            </p>
+                        </td>
+
+                        <td data-title="Quantity" >
+
+
+                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default" ng-click="updateCart(product, 'sub')">-</button>
+                                <button type="button" class="btn btn-default disabled">{{product.quantity}}</button>
+                                <button type="button" class="btn btn-default"  ng-click="updateCart(product, 'add')">+</button>
+                            </div>
+
+
+                        </td>
+
+                        <td data-title="Total" class="fw_ex_bold color_dark ">
+                            {{product.total_price|currency:" "}}
+                            <a href="#" ng-click="removeCart(product.product_id)" class="btn btn-default btn-xs"><i class="fa fa-times"></i> Remove</a>
+
+
+
+                        </td>
+                    </tr>
+
+
+
+                    <tr class="bg_light_2">
+                        <td colspan="2" class="v_align_m">
+
+                        </td>
+                        <td colspan="1" class="fw_ex_bold color_pink v_align_m">{{globleCartData.total_price|currency:" "}}</td>
+                    </tr>
+                </tbody>
+            </table>
 
 
                             </div>

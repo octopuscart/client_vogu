@@ -112,7 +112,9 @@ $this->load->view('Cart/checkoutheader');
                                     <i class="ion-bag fa-stack-1x "></i>
                                 </span>   Shopping Address
                                 <span style="float: right; line-height: 29px;" class="ng-binding">
-                                    <button class="btn btn-default" data-toggle="modal" data-target="#changeAddress" style="margin-left: 20px;padding: 5px 11px;"><i class="fa fa-plus"></i> Add New</button>
+                                    <button class="btn btn-default hideonmobile" data-toggle="modal" data-target="#changeAddress" style="margin-left: 20px;padding: 5px 11px;"><i class="fa fa-plus"></i> Add New</button>
+                                    <button class="btn btn-default btn-xs showonmobile" data-toggle="modal" data-target="#changeAddress" style="margin-left: 20px;padding: 5px 11px;"><i class="fa fa-plus"></i> Add</button>
+
                                 </span> 
                             </a>
                         </h4>

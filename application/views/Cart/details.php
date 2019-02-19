@@ -31,10 +31,10 @@ $this->load->view('layout/header');
             <div class="half_column d_inline_m w_xs_full m_xs_bottom_10">
                 <p class="fw_light">Your shopping cart contains {{product.total_quantity}} product(s)</p>
             </div>
-          
+
         </div>
         <div class="r_corners wrapper border_grey m_bottom_10 m_xs_bottom_10">
-            <table class="table table-striped shopping-cart-table">
+            <table class="table table-striped shopping-cart-table hideonmobile">
                 <thead>
                     <tr class="bg_light_2 color_dark">
 
@@ -84,20 +84,81 @@ $this->load->view('layout/header');
 
                     <tr class="bg_light_2">
                         <td colspan="4" class="v_align_m">
-                            
+
                         </td>
                         <td colspan="2" class="fw_ex_bold color_pink v_align_m">{{globleCartData.total_price|currency:" "}}</td>
                     </tr>
                 </tbody>
             </table>
 
+
+
+            <!--//mobile view-->
+            <table class="table table-striped shopping-cart-table showonmobile">
+                <thead>
+                    <tr class="bg_light_2 color_dark">
+
+                        <th colspan="1">Product</th>
+
+                        <th style='    width: 350px;'>Quantity</th>
+                        <th colspan="2" style='    width: 100px;'>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr_delay" ng-repeat="product in globleCartData.products">
+                        <td data-title="Product Image" style='    width: 250px;text-align: center'>
+                            <b>{{product.title}}</b>
+
+                            <a href="#" class="r_corners d_inline_b wrapper">
+                                <img src="{{product.file_name}}" alt="" >
+                            </a>
+
+                            <p class="fw_light">
+                                {{product.item_name}}<br/>
+                                {{product.price|currency:" "}} X {{product.quantity}}
+                            </p>
+                        </td>
+
+                        <td data-title="Quantity" >
+
+
+                            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default" ng-click="updateCart(product, 'sub')">-</button>
+                                <button type="button" class="btn btn-default disabled">{{product.quantity}}</button>
+                                <button type="button" class="btn btn-default"  ng-click="updateCart(product, 'add')">+</button>
+                            </div>
+
+
+                        </td>
+
+                        <td data-title="Total" class="fw_ex_bold color_dark ">
+                            {{product.total_price|currency:" "}}
+                            <a href="#" ng-click="removeCart(product.product_id)" class="btn btn-default btn-xs"><i class="fa fa-times"></i> Remove</a>
+
+
+
+                        </td>
+                    </tr>
+
+
+
+                    <tr class="bg_light_2">
+                        <td colspan="2" class="v_align_m">
+
+                        </td>
+                        <td colspan="1" class="fw_ex_bold color_pink v_align_m">{{globleCartData.total_price|currency:" "}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </div>
-        
-        <a href="<?php echo site_url('Product/ProductList/2/0'); ?>" class="btn btn-mod btn-round btn-large pull-left">
+
+        <a href="<?php echo site_url('Product/ProductList/2/0'); ?>" class="btn btn-mod btn-round btn-large pull-left mobilebutton">
             <i class="icon-basket d_inline_b m_right_5"></i> Continue Shopping
         </a>
-        
-        <a href="<?php echo site_url("Cart/checkoutInit"); ?>" class="btn btn-mod btn-round btn-large pull-right">
+
+        <a href="<?php echo site_url("Cart/checkoutInit"); ?>" class="btn btn-mod btn-round btn-large pull-right mobilebutton">
             Checkout Now <i class="icon-right d_inline_b m_right_5"></i>
         </a>
 
