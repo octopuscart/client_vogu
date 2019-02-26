@@ -26,21 +26,26 @@ $this->load->view('layout/header');
     }
 </style>
 
-<div class="inner-page-banner-area">
-    <div class="container">
+<section class="small-section bg-gray-lighter">
+    <div class="relative container align-left">
+
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="breadcrumb-area">
-                    <h1>My Orders</h1>
-                    <ul>
-                        <li><a href="#">Home</a> /</li>
-                        <li>Account</li>
-                    </ul>
+
+            <div class="col-md-8">
+                <h1 class="hs-line-11 font-alt mb-0">My Orders</h1>
+            </div>
+
+            <div class="col-md-4 mt-20">
+                <div class="mod-breadcrumbs font-alt align-right">
+                    <a href="#">Home</a>&nbsp;/&nbsp;<span>Orders</span>
                 </div>
+
             </div>
         </div>
+
     </div>
-</div>
+</section>
+
 
 
 

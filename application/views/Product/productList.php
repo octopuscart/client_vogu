@@ -294,7 +294,7 @@ $image2 = "";
                     <!--                    <div class="showing-info">
                                             <p class="pull-left">Showing   1 - 12  of   30 results</p>
                                         </div>-->
-                    <div class="" id="paging_container1"> 
+                    <div class="" id="paging_container"> 
 
                         <div class="row " ng-if="productProcess.state == 2">
                             <!-- Item -->
@@ -400,15 +400,21 @@ $image2 = "";
                     </div>
 
 
-
-
-                    <!--                     Pagination 
-                                        <ul class="pagination">
-                                            <li><a href="#.">1</a></li>
-                                            <li><a href="#.">2</a></li>
-                                            <li><a href="#.">....</a></li>
-                                            <li><a href="#.">&gt;</a></li>
-                                        </ul>-->
+<div class="col-md-12" id="paging_container1" style="margin-bottom:30px;">
+                        <div class="showing-info">
+                            <p class="text-center"><span class="info_text ">Showing {0}-{1} of {2} results</span></p>
+                        </div>
+                        <div class="row products-container content" ng-if="productProcess.state == 2">
+                            <!-- Item -->
+                            <div class="col-sm-4 animated zoomIn"  ng-repeat="(k, product) in productResults.productscounter">
+                            </div>
+                        </div>
+                        <center>
+                            <div class="page_navigation"></div>
+                        </center>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>

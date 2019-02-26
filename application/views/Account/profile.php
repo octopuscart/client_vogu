@@ -3,22 +3,25 @@ $this->load->view('layout/header');
 ?>
 
 
+<section class="small-section bg-gray-lighter">
+    <div class="relative container align-left">
 
-<div class="inner-page-banner-area">
-    <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="breadcrumb-area">
-                    <h1>My Profile</h1>
-                    <ul>
-                        <li><a href="#">Home</a> /</li>
-                        <li>Account</li>
-                    </ul>
+
+            <div class="col-md-8">
+                <h1 class="hs-line-11 font-alt mb-0">My Profile</h1>
+            </div>
+
+            <div class="col-md-4 mt-20">
+                <div class="mod-breadcrumbs font-alt align-right">
+                    <a href="#">Home</a>&nbsp;/&nbsp;<span>Account</span>
                 </div>
+
             </div>
         </div>
+
     </div>
-</div>
+</section>
 
 
 
@@ -66,14 +69,14 @@ $this->load->view('layout/header');
                                         <li class="col-sm-6 woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
                                             <label>
                                                 First Name
-                                                <input type="text" name="first_name" class="woocommerce-Input woocommerce-Input--text input-text"  value="<?php echo $user_details->first_name; ?>">
+                                                <input type="text" name="first_name" class="form-control form-control--text input-text"  value="<?php echo $user_details->first_name; ?>">
                                             </label>
                                         </li>
                                         <li class="col-sm-6 woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
 
                                             <label>
                                                 Last Name
-                                                <input type="text" name="last_name" class="woocommerce-Input woocommerce-Input--text input-text"  value="<?php echo $user_details->last_name; ?>">
+                                                <input type="text" name="last_name" class="form-control form-control--text input-text"  value="<?php echo $user_details->last_name; ?>">
                                             </label>
                                         </li>
 
@@ -82,7 +85,7 @@ $this->load->view('layout/header');
 
                                             <label>
                                                 Contact No.
-                                                <input type="text" name="contact_no" class="woocommerce-Input woocommerce-Input--text input-text"  value="<?php echo $user_details->contact_no; ?>">
+                                                <input type="text" name="contact_no" class="form-control form-control--text input-text"  value="<?php echo $user_details->contact_no; ?>">
                                             </label>
                                         </li>
 
@@ -110,14 +113,14 @@ $this->load->view('layout/header');
 
                                             <label>
                                                 Date of Birth
-                                                <input type="date" class="woocommerce-Input woocommerce-Input--text input-text" name="birth_date"  value="<?php echo $user_details->birth_date; ?>">
+                                                <input type="date" class="form-control form-control--text input-text" name="birth_date"  value="<?php echo $user_details->birth_date; ?>">
                                             </label>
                                         </li>
 
 
                                         <li class="col-sm-6" style="padding-top: 20px;">
 
-                                            <button name="update_profile" type="submit" class="woocommerce-Button button btn-shop-now-fill">Update Profile</button>
+                                            <button name="update_profile" type="submit" class="btn btn-default button btn-shop-now-fill">Update Profile</button>
                                         </li>
 
 
@@ -187,17 +190,17 @@ $this->load->view('layout/header');
 
                                 <label class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
                                     Old Password
-                                    <input type="text" name="old_password"  value="" class=" woocommerce-Input woocommerce-Input--text input-text">
+                                    <input type="text" name="old_password"  value="" class=" form-control form-control--text input-text">
                                 </label>
 
                                 <label class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
                                     New Password
-                                    <input type="text" name="new_password"  value="" class=" woocommerce-Input woocommerce-Input--text input-text">
+                                    <input type="text" name="new_password"  value="" class=" form-control form-control--text input-text">
                                 </label>
                                 <br/>
                                 <label class="woocommerce-form-row woocommerce-form-row--last form-row form-row-last">
                                     Confirm Password
-                                    <input type="text" name="re_password"  value="" class=" woocommerce-Input woocommerce-Input--text input-text">
+                                    <input type="text" name="re_password"  value="" class=" form-control form-control--text input-text">
                                 </label>
                             </div>
                             <div class="modal-footer">

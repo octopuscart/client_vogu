@@ -104,11 +104,13 @@ $this->load->view('layout/header');
                     ?>
 
 
-                    <div class="col-md-9" style="margin-top:20px">
+                           <div class="col-md-9" style="margin-top:20px">
                         <!-- Address Details -->
                         <div class="col-md-12">
                             <div class="">
-                                <h6>Addresses <button class="btn btn-small" data-toggle="modal" data-target="#changeAddress" style="margin-left: 20px;padding: 5px 11px;color:white;"><i class="fa fa-plus"></i> Add New</button></h6>
+                                <h6>Addresses
+                                    <!--<button class="btn btn-small" data-toggle="modal" data-target="#changeAddress" style="margin-left: 20px;padding: 5px 11px;color:white;"><i class="fa fa-plus"></i> Add New</button>-->
+                                </h6>
                             </div>
                             <div class="noti-check1" style="#f5f5f5">  
                                 <div class="row">

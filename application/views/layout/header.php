@@ -157,11 +157,9 @@
                             <li> <a href="<?php echo site_url("Account/login"); ?>" >Sign In / Sign Up </a>
                             </li>
 
-                            <li class="m_right_8"><a href="#" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
-                            <li class="m_right_8"><a href="#" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
-                            <li class="m_right_8"><a href="#" class="color_light  googleplus  goo circle icon_wrap_size_1 d_block"><i class="fa fa-instagram"></i></a></li>
-                            <li class="m_right_8"><a href="#" class="color_light  youtube  circle icon_wrap_size_1 d_block"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
+                            <li class="m_right_8"><a href="https://www.facebook.com/VogueTailors/" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
+                            <li class="m_right_8"><a href="https://twitter.com/voguetailors" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
+                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
