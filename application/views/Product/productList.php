@@ -68,6 +68,18 @@ $image2 = "";
     .padding_10{
         padding: 10px;
     }
+    
+    .hoverproduct{
+            position: absolute;
+    top: 14px;
+    left: 0px;
+    /* height: 71px; */
+    width: auto;
+    margin: auto 19px;
+    right: 0;
+    opacity: 0;
+    }
+    .hoverproduct:hover{opacity: 1}
 
 
     .product-box1 .product-img-holder {
@@ -344,6 +356,7 @@ $image2 = "";
                                                 echo $custom_item;
                                                 ?>
                                                 <div class="item-hover" style=""> 
+
                                                     <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn" style="font-size: 9px;" title="Customize this fabric">Design Single
                                                     </a> 
                                                     <a href="#." class="btn by" style="    font-size: 9px;" ng-click="addToCart(product.product_id, 1, <?php echo $custom_id; ?>)" title="Choose fabric for multiple customization">Design Multiple</a> 
@@ -351,6 +364,11 @@ $image2 = "";
                                             <?php
                                         }
                                         ?>
+
+                                    </div>
+                                    <div class="post-prev-img hoverproduct">
+
+                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/{{product.folder}}.jpg" alt="product">
 
                                     </div>
 
@@ -400,7 +418,7 @@ $image2 = "";
                     </div>
 
 
-<div class="col-md-12" id="paging_container1" style="margin-bottom:30px;">
+                    <div class="col-md-12" id="paging_container1" style="margin-bottom:30px;">
                         <div class="showing-info">
                             <p class="text-center"><span class="info_text ">Showing {0}-{1} of {2} results</span></p>
                         </div>
@@ -415,10 +433,10 @@ $image2 = "";
                         <div style="clear: both"></div>
                     </div>
                 </div>
-                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 <!-- End Content --> 
 
