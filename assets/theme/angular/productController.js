@@ -3,19 +3,19 @@
  */
 
 App.controller('ProductController', function ($scope, $http, $timeout, $interval) {
-    
-    $scope.selectedProduct = {'product':{}};
-    
-   
-    
-   
- 
+
+    $scope.selectedProduct = {'product': {}};
 
 
 
 
 
-   $scope.productResults = {};
+
+
+
+
+
+    $scope.productResults = {};
     $scope.init = 0;
     $scope.checkproduct = 0;
     $scope.pricerange = {'min': 0, 'max': 0};
@@ -34,8 +34,8 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
             var ak = "a" + i + "=" + argsv.join("-");
             argsk.push(ak);
         }
-        var pmm = $("#price-range-min").text().replace("$", "");
-        var pmx = $("#price-range-max").text().replace("$", "");
+        var pmm =  $scope.pricerange.min;
+        var pmx =  $scope.pricerange.max;
 
         var elempm = "maxprice=" + pmx;
         var elempx = "minprice=" + pmm;
@@ -70,7 +70,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-        var url = baseurl + "Api/productListApi/" + category_id + "/"+custom_id;
+        var url = baseurl + "Api/productListApi/" + category_id + "/" + custom_id;
 
         if (stargs) {
             url = url + "?" + stargs;
@@ -89,13 +89,13 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 //                    $scope.productProcess.state = 2;
                 }
             }
-            
-            var totalcountdata  = result.data.product_count;
+
+            var totalcountdata = result.data.product_count;
             var productscounter = [];
-            for(i=1;i<=totalcountdata;i++){
+            for (i = 1; i <= totalcountdata; i++) {
                 productscounter.push(i);
             }
-            
+
             $scope.productResults['productscounter'] = productscounter;
 
 
@@ -126,7 +126,32 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-                //  Price Filter ( noUiSlider Plugin)
+
+                var priceui = document.getElementById("price-range");
+                var minp = Number($scope.productResults.price.minprice) - 1;
+                var maxp = Number($scope.productResults.price.maxprice)
+                noUiSlider.create(priceui, {
+                    start: [minp, maxp],
+                    connect: true,
+                    steps: 10,
+                    range: {
+                        'min': minp,
+                        'max': maxp
+                    }
+                });
+
+                priceui.noUiSlider.on('update', function (values, handle) {
+                    console.log(values, handle)
+                    $scope.pricerange.min = values[0];
+                    $scope.pricerange.max = values[1];
+                    $("#price-min").text(values[0]);
+                    $("#price-max").text(values[1]);
+
+                }
+                )
+
+
+
 
 
             }, 1000)
@@ -185,7 +210,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-        var url = baseurl + "Api/productListApi/" + category_id + "/"+custom_id;
+        var url = baseurl + "Api/productListApi/" + category_id + "/" + custom_id;
 
         if (stargs) {
             url = url + "?" + stargs;
@@ -204,9 +229,9 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 //                    $scope.productProcess.state = 2;
                 }
             }
-            
-            var totalcountdata  = result.data.product_count;
-            
+
+            var totalcountdata = result.data.product_count;
+
 
 
             if ($scope.productResults.products.length) {
@@ -219,7 +244,13 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-        
+
+
+
+
+
+
+
 
             $scope.init = 1;
         }, function () {
@@ -321,20 +352,20 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
     $(document).on("click", ".last_link", function () {
         $scope.productProcess.currentpage = "last";
-         $scope.getProducts2();
+        $scope.getProducts2();
     });
     $(document).on("click", ".first_link", function () {
         $scope.productProcess.currentpage = "last";
-         $scope.getProducts2();
+        $scope.getProducts2();
     });
 
     $(document).on("click", ".next_link", function () {
         $scope.productProcess.currentpage = Number($scope.productProcess.currentpage) + 1;
-         $scope.getProducts2();
+        $scope.getProducts2();
     });
     $(document).on("click", ".previous_link", function () {
         $scope.productProcess.currentpage = Number($scope.productProcess.currentpage) - 1;
-         $scope.getProducts2();
+        $scope.getProducts2();
     });
 
 
@@ -433,7 +464,7 @@ App.controller('ProductController12', function ($scope, $http, $timeout, $interv
                 noUiSlider.create(priceui, {
                     start: [minp, maxp],
                     connect: true,
-                    steps:10,
+                    steps: 10,
                     range: {
                         'min': minp,
                         'max': maxp
@@ -443,8 +474,8 @@ App.controller('ProductController12', function ($scope, $http, $timeout, $interv
                 priceui.noUiSlider.on('update', function (values, handle) {
                     console.log(values, handle)
                     $("#price-min").text(values[0]);
-                      $("#price-max").text(values[1]);
-                   
+                    $("#price-max").text(values[1]);
+
                 }
                 )
 

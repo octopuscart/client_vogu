@@ -242,10 +242,12 @@ $image2 = "";
                                     <span id="price-min" class="price-min col-xs-4"></span>
                                     <span class="col-xs-1">-</span> 
                                     <span id="price-max" class="price-max col-xs-4"></span> 
-                                    <a href="#." class="col-xs-3" >FILTER</a> 
+                                    <a href="#." class="col-xs-3" ng-click="getProducts()" >FILTER</a> 
                                 </div>
                             </div>
                         </div>
+                        
+                        {{pricerange}}
 
                         <!-- HEADING -->
 
@@ -369,7 +371,7 @@ $image2 = "";
                                     </div>
                                     <div class="post-prev-img hoverproduct">
 
-                                        <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">-->
+                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
 
                                     </div>
 
