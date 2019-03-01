@@ -164,13 +164,14 @@ class Api extends REST_Controller {
         $endpage = $attrdatak["end"];
         unset($attrdatak["start"]);
         unset($attrdatak["end"]);
+        $mnpricr = 0;
 
         if (isset($attrdatak["minprice"])) {
-            $mnpricr = $attrdatak["minprice"] - 1;
-            $mxpricr = $attrdatak["maxprice"] + 1;
+            $mnpricr = $attrdatak["minprice"];
+            $mxpricr = $attrdatak["maxprice"];
             unset($attrdatak["minprice"]);
             unset($attrdatak["maxprice"]);
-            $pricequery = " and (price between '$mnpricr' and '$mxpricr') ";
+            //$pricequery = " and (price between '$mnpricr' and '$mxpricr') ";
         }
 
         foreach ($attrdatak as $key => $atv) {
@@ -226,10 +227,21 @@ class Api extends REST_Controller {
             $value['attr'] = $this->Product_model->singleProductAttrs($value['product_id']);
             $item_price = $this->Product_model->category_items_prices_id($value['category_items_id'], $custom_id);
 
-            $value['price'] = $item_price ? $item_price->price : 0;
+            $price_p = $item_price ? $item_price->price : 0;
+            $value['price'] = $price_p;
+           
+            if ($mnpricr) {
+               
+                if ($price_p > $mnpricr && $price_p < $mxpricr) {
+                    array_push($productListFinal, $value);
+                }
+            } else {
+
+
+                array_push($productListFinal, $value);
+            }
             array_push($productListSt, $value['product_id']);
             array_push($pricecount, $value['price']);
-            array_push($productListFinal, $value);
         }
 
         $attr_filter = array();
@@ -260,10 +272,10 @@ class Api extends REST_Controller {
         }
 
         $this->output->set_header('Content-type: application/json');
-        $productListFinal = array_slice($productListFinal, $startpage, 12);
+        $productListFinal1 = array_slice($productListFinal, $startpage, 12);
         $productArray = array('attributes' => $attr_filter,
-            'products' => $productListFinal,
-            'product_count' => count($product_result),
+            'products' => $productListFinal1,
+            'product_count' => count($productListFinal),
             'price' => $pricelist);
         $this->response($productArray);
     }

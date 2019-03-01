@@ -42,7 +42,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-        if (pmm.trim()) {
+        if (pmm!=0) {
             $scope.pricerange.max = pmx;
             $scope.pricerange.min = pmm;
             argsk.push(elempx);

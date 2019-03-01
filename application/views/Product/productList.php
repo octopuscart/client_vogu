@@ -247,7 +247,7 @@ $image2 = "";
                             </div>
                         </div>
                         
-                        {{pricerange}}
+                      
 
                         <!-- HEADING -->
 
