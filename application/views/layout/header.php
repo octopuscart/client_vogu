@@ -86,18 +86,21 @@
             "submenu" => "yes",
             "link" => site_url('Product/ProductList/2/0'),
             "submenuitems" => [
+                 array(
+                    "title" => "Shirts",
+                    "link" => site_url('Product/ProductList/1/0'),),
                 array(
                     "title" => "Suits",
                     "link" => site_url('Product/ProductList/2/0')),
-                array(
-                    "title" => "Jackets",
-                    "link" => site_url('Product/ProductList/4/0'),),
+               
                 array(
                     "title" => "Pants",
                     "link" => site_url('Product/ProductList/3/0'),),
-                array(
-                    "title" => "Shirts",
-                    "link" => site_url('Product/ProductList/1/0'),),
+                
+                 array(
+                    "title" => "Jackets",
+                    "link" => site_url('Product/ProductList/4/0'),),
+               
                 array(
                     "title" => "Tuxedo Suits",
                     "link" => "#",),
