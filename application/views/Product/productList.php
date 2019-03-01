@@ -382,7 +382,7 @@ $image2 = "";
 
                                     <div class="post-prev-text align-center">
 
-                                        <strong>{{<?php echo $item_price; ?>|currency:"<?php echo globle_currency; ?> "}}</strong>
+                                        <strong>{{product.price|currency:"<?php echo globle_currency; ?> "}}</strong>
                                     </div>
 
                                     <div class="post-prev-more align-center">
@@ -529,7 +529,11 @@ $image2 = "";
 
 
 <script>
-    var category_id = <?php echo $category; ?>;</script>
+    var category_id = <?php echo $category; ?>;
+var custom_id = <?php echo $custom_id; ?>;
+
+
+</script>
 <!--angular controllers-->
 
 

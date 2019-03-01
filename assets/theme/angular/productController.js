@@ -70,7 +70,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-        var url = baseurl + "Api/productListApi/" + category_id + "";
+        var url = baseurl + "Api/productListApi/" + category_id + "/"+custom_id;
 
         if (stargs) {
             url = url + "?" + stargs;
@@ -185,7 +185,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
 
 
-        var url = baseurl + "Api/productListApi/" + category_id + "";
+        var url = baseurl + "Api/productListApi/" + category_id + "/"+custom_id;
 
         if (stargs) {
             url = url + "?" + stargs;
