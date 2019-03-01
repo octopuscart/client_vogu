@@ -165,7 +165,7 @@
 
 
 .quantitylogo{
-    height: 200px;
+    height: 200px!important;
     position: absolute;
     top: 0px;
     right: 100px;

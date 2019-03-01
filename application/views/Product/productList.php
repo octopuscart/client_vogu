@@ -250,6 +250,7 @@ $image2 = "";
                         <!-- HEADING -->
 
                         <div class="product_attr" ng-repeat="(attrk, attrv) in productResults.attributes" >
+                            
 
                             <div class="widget" ng-if='attrv.widget == "color"'>
 
@@ -368,7 +369,7 @@ $image2 = "";
                                     </div>
                                     <div class="post-prev-img hoverproduct">
 
-                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/{{product.folder}}.jpg" alt="product">
+                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
 
                                     </div>
 
