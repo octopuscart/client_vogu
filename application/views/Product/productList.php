@@ -71,7 +71,7 @@ $image2 = "";
 
     .hoverproduct{
         position: absolute;
-        top: 17px;
+        top: 20px;
         left: 0px;
         /* height: 71px; */
         width: auto;
