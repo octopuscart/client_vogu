@@ -327,7 +327,7 @@ $image2 = "";
                                                 break;
                                             case "2":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/suitfabrics/{{product.folder}}.jpg" alt="product" style="height: 414px;">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" style="height: 414px;">
                                                 <?php
                                                 break;
                                             case "5":
