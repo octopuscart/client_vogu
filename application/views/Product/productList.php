@@ -71,7 +71,7 @@ $image2 = "";
 
     .hoverproduct{
         position: absolute;
-        top: 14px;
+        top: 17px;
         left: 0px;
         /* height: 71px; */
         width: auto;
@@ -332,7 +332,7 @@ $image2 = "";
                                                 break;
                                             case "5":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/suitfabrics/{{product.folder}}.jpg" alt="product">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" style="height: 414px;">
                                                 <?php
                                                 break;
                                             case "6":
@@ -347,7 +347,7 @@ $image2 = "";
                                                 break;
                                             case "3":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/pant_style10001.png" alt="product">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" >
                                                 <?php
                                                 break;
                                             case "4":
@@ -401,7 +401,7 @@ $image2 = "";
                                                 break;
                                             case "3":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/suitfabrics/{{product.folder}}.jpg" alt="product">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/pant_style10001.png" alt="product">
                                                 <?php
                                                 break;
                                             case "4":
