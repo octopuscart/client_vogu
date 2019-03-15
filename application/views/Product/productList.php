@@ -352,7 +352,7 @@ $image2 = "";
                                                 break;
                                             case "4":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" style="height: 414px;">
                                                 <?php
                                                 break;
                                             default:
@@ -386,7 +386,7 @@ $image2 = "";
                                                 break;
                                             case "5":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/suitfabrics/{{product.folder}}.jpg" alt="product">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product" >
                                                 <?php
                                                 break;
                                             case "6":
