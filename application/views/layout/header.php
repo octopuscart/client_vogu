@@ -103,7 +103,7 @@
                
                 array(
                     "title" => "Tuxedo Suits",
-                    "link" => "#",),
+                    "link" => site_url('Product/ProductList/5/0'),),
                
             ]
         ),

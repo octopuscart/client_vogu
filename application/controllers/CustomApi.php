@@ -1656,7 +1656,7 @@ class CustomApi extends REST_Controller {
                     "buttons" => ["buttons_10001"],
                     "button_hole" => ["button_1_hole10001.png"],
                     "show_buttons" => "true",
-                    "overlay" => [],
+                    "overlay" => ["body_single_overlay.png"],
                 ), array(
                     "status" => "1",
                     "title" => "2 Buttons",
@@ -1669,7 +1669,7 @@ class CustomApi extends REST_Controller {
                     "buttons2" => ["buttons_20001"],
                     "button_hole" => ["button_1_hole10001.png", "button_1_hole20001.png"],
                     "show_buttons" => "false",
-                    "overlay" => [],
+                     "overlay" => ["body_single_overlay.png"],
                 )
                 , array(
                     "status" => "0",
