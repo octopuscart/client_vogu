@@ -166,30 +166,37 @@ $this->load->view('layout/header');
 
                     <!--======= IMAGES SLIDER =========-->
 
-                    <div class="col-sm-12 large-detail shirtcontainer showonmobile  " style="    height: 530px;">
+                    <!--======= ITEM DETAILS =========-->
+                    <div class="hideonmobile">
+                        <?php
+                        $this->load->view('Product/custom_select_left');
+                        ?>
+                    </div>
+                    <div class="showonmobile">
+                        <?php
+                        $this->load->view('Product/custom_select_left_mobile');
+                        ?>
+                    </div>
+                    <div style="clear: both"></div>
 
-                        <div class="media selected-fabric-block-mobile"  style="cursor:pointer;    padding: 0px 10px;"> 
-                            <div class="media-left  mobile_view_element_tab">
-                                <p class="selected-fabric-block-image" style="margin: 12px;background: url('<?php echo custome_image_server; ?>/coman/output/{{screencustom.productobj.folder}}/cutting20001.png');    float: left;"></p>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="selected-element-title media-heading">{{screencustom.productobj.title}} - {{screencustom.productobj.item_name}}</h4>
-                                <p class="selected-element-title_text">
-                                    {{screencustom.productobj.short_description}}
-                                </p>
-                                <p class="selected-element-title_text_price">
-                                    <span ng-if="selecteElements[screencustom.fabric].totalextracost == 0">
-                                        {{screencustom.productobj.price|currency:"<?php echo globle_currency_type; ?>"}}
-                                    </span>
-                                    <span ng-if="selecteElements[screencustom.fabric].totalextracost">
-                                        {{(tonumber(screencustom.productobj.price) + tonumber(selecteElements[screencustom.fabric].totalextracost)) | currency:"<?php echo globle_currency_type; ?>"}}
-                                    </span>        </p>
-                            </div>
-
+                    <div class="col-sm-8 col-xs-12">
+                        <!--shirt customization-->
+                        <div class="row hideonmobile" style="margin-top: 10px;">
+                            <?php
+                            $this->load->view('Product/custome_support_suit2');
+                            ?> 
                         </div>
-                        <div style="clear: both"></div>
+                        <div class="row showonmobile" style="margin-top: 10px;">
+                            <?php
+                            $this->load->view('Product/custome_support_suit2');
+                            ?> 
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                    <div class="col-sm-4 large-detail shirtcontainer  " style="    height: 530px;">
+
                         <div class="col-sm-12 col-xs-12"  style="padding: 0">
-                            <div class="tab-content" style="height: 400px;">
+                            <div class="tab-content">
 
                                 <div class="{{$index === 0?'active':''}} frame" ng-repeat="fab in cartFabrics" id="fabric_{{fab.product_id}}">
 
@@ -200,53 +207,7 @@ $this->load->view('layout/header');
                             </div>
                         </div>
                     </div>
-
                     <div style="clear: both"></div>
-                    <!--======= ITEM DETAILS =========-->
-                    <div class="hideonmobile">
-                        <?php
-                        $this->load->view('Product/custom_select_left');
-                        ?>
-                        <div class="col-sm-8 col-xs-10">
-                            <!--shirt customization-->
-                            <div class="row hideonmobile" style="margin-top: 10px;">
-                                <?php
-                                $this->load->view('Product/custome_support_suit2');
-                                ?> 
-                            </div>
-
-                        </div>
-                        <div class="col-sm-4 large-detail shirtcontainer hideonmobile  " style="    height: 530px;">
-
-                            <div class="col-sm-12 col-xs-12"  style="padding: 0">
-                                <div class="tab-content">
-
-                                    <div class="{{$index === 0?'active':''}} frame" ng-repeat="fab in cartFabrics" id="fabric_{{fab.product_id}}">
-
-                                        <?php
-                                        $this->load->view('customization/suitBlock');
-                                        ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="showonmobile">
-                        <?php
-                        $this->load->view('Product/custom_select_left_mobile');
-                        ?>
-
-                        <?php
-                        $this->load->view('Product/custome_support_suit2_mobile');
-                        ?> 
-
-                    </div>
-                    <div style="clear: both"></div>
-
-
-
-
-
                 </div>
 
                 <div class="row customization_order_block">

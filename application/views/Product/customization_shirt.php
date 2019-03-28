@@ -91,6 +91,50 @@ $this->load->view('layout/header');
         <!--======= PAGES INNER =========-->
         <section class="item-detail-page padding-top-30 ">
             <div class="container" style="width: 100%">
+                
+                
+                
+                    <div class="col-sm-12 large-detail shirtcontainer showonmobile  " style="    height: 530px;">
+
+                        <div class="media selected-fabric-block-mobile"  style="cursor:pointer;    padding: 0px 10px;"> 
+                            <div class="media-left  mobile_view_element_tab">
+                                <p class="selected-fabric-block-image" style="margin: 12px;background: url('<?php echo custome_image_server; ?>/coman/output/{{screencustom.productobj.folder}}/cutting20001.png');    float: left;"></p>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="selected-element-title media-heading">{{screencustom.productobj.title}} - {{screencustom.productobj.item_name}}</h4>
+                                <p class="selected-element-title_text">
+                                    {{screencustom.productobj.short_description}}
+                                </p>
+                                <p class="selected-element-title_text_price">
+                                    <span ng-if="selecteElements[screencustom.fabric].totalextracost == 0">
+                                        {{screencustom.productobj.price|currency:"<?php echo globle_currency_type; ?>"}}
+                                    </span>
+                                    <span ng-if="selecteElements[screencustom.fabric].totalextracost">
+                                        {{(tonumber(screencustom.productobj.price) + tonumber(selecteElements[screencustom.fabric].totalextracost)) | currency:"<?php echo globle_currency_type; ?>"}}
+                                    </span>        </p>
+                            </div>
+
+                        </div>
+                        <div style="clear: both"></div>
+                        <div class="col-sm-12 col-xs-12"  style="padding: 0">
+                            <div class="tab-content" style="height: 400px;">
+
+                                <div class="{{$index === 0?'active':''}} frame" ng-repeat="fab in cartFabrics" id="fabric_{{fab.product_id}}">
+
+                                    <?php
+                                    $this->load->view('customization/shirtBlock');
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                
+                
+                
+                
+                
                 <div class="row"> 
                     <?php
                     $this->load->view('Product/custom_select_left');

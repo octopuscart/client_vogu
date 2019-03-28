@@ -131,6 +131,23 @@ App.controller('customizationShirt', function ($scope, $http, $location, $filter
                     $(this).children(".zoom").css("transform", "none");
                 });
 
+
+                var owl = $("#owl-demo");
+
+                owl.owlCarousel({
+                    itemsCustom: [
+                        [0, 2],
+                        [450, 4],
+                        [600, 7],
+                        [700, 9],
+                        [1000, 10],
+                        [1200, 12],
+                        [1400, 13],
+                        [1600, 15]
+                    ],
+                    navigation: false
+                });
+
                 //end of zoom
 
             }, 1500)
@@ -466,11 +483,10 @@ App.controller('customizationShirt', function ($scope, $http, $location, $filter
         $('.custom_block_slide2').owlCarousel({
             loop: false,
             margin: 10,
-           rtl:true,
-           items:10,
-            nav:true,
-            dots:false,
-            
+            rtl: true,
+            items: 10,
+            nav: true,
+            dots: false,
         })
 
 
