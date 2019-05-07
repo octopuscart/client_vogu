@@ -375,7 +375,7 @@ $image2 = "";
                                         switch ($custom_id) {
                                             case "1":
                                                 ?>
-                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">
                                                 <?php
                                                 break;
                                             case "2":
