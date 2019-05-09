@@ -604,7 +604,7 @@ $image2 = "";
 <script>
     var category_id = <?php echo $category; ?>;
     var custom_id = <?php echo $custom_id; ?>;
-    var searchdata = <?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>;</script>
+    var searchdata = "<?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>";</script>
 <!--angular controllers-->
 
 
