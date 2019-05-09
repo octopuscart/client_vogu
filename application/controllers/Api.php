@@ -160,6 +160,16 @@ class Api extends REST_Controller {
         $countpr = 0;
         $pricequery = "";
 
+        
+        $psearch = "";
+        if (isset($attrdatak["search"])) {
+            $searchdata = $attrdatak["search"];
+            unset($attrdatak["search"]);
+            if($searchdata){
+            $psearch = " and title like '%$searchdata%' ";
+            }
+        }
+        
         $startpage = $attrdatak["start"] - 1;
         $endpage = $attrdatak["end"];
         unset($attrdatak["start"]);
@@ -214,7 +224,7 @@ class Api extends REST_Controller {
         $categoriesString = ltrim($categoriesString, ", ");
 
         $product_query = "select pt.id as product_id, pt.*
-            from products as pt where pt.category_id in ($categoriesString) $pricequery $proquery and status = 1 order by display_index desc";
+            from products as pt where pt.category_id in ($categoriesString) $psearch $pricequery $proquery and status = 1 order by display_index desc";
         $product_result = $this->Product_model->query_exe($product_query);
 
         $productListSt = [];

@@ -199,6 +199,18 @@ $image2 = "";
                 <!-- Shop Side Bar -->
                 <div class="col-md-2">
                     <div class="side-bar">
+                        <div class="widget">
+
+                            <h5 class="widget-title font-alt">Search Fabrics</h5>
+
+                            <div class="widget-body">
+                                <div class="search">
+                                    <form action="#">
+                                        <input type="text" name="search" placeholder="Type Fabric No.">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
 
                         <?php if (count($categories)) { ?>
 
@@ -296,10 +308,11 @@ $image2 = "";
                         <section class="error-page text-center pad-t-b-130">
                             <div class="{{productResults.products.length?'container1':'container'}}"> 
                                 <center>
-                                    <img src="<?php echo base_url() . 'assets/theme2/img/loader.gif' ?>">
+                                    <!--<div class="loader"></div>-->   
+                                    <h1 style="font-size: 40px;text-align: center">Loading...</h1>
                                 </center>
                                 <!-- Heading -->
-                                <h1 style="font-size: 40px;text-align: center">Loading...</h1>
+
                             </div>
                         </section>
 
@@ -379,12 +392,12 @@ $image2 = "";
                                                 ?>
                                                 <img class="img-responsive" src="<?php echo custome_image_server; ?>/shirt/output/{{product.folder}}/shirt_pos20001.png" alt="product">
 
-                                                <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
+                                                                <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
                                                 <?php
                                                 break;
                                             case "2":
                                                 ?>
-                                                <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
+                                                                <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
                                                 <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product" >
                                                 <?php
                                                 break;
@@ -583,7 +596,8 @@ $image2 = "";
 
 <script>
     var category_id = <?php echo $category; ?>;
-    var custom_id = <?php echo $custom_id; ?>;</script>
+    var custom_id = <?php echo $custom_id; ?>;
+    var searchdata = <?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>;</script>
 <!--angular controllers-->
 
 

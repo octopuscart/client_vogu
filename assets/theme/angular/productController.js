@@ -48,6 +48,11 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
             argsk.push(elempx);
             argsk.push(elempm);
         }
+        
+        if(searchdata){
+            var search = "search="+searchdata;
+            argsk.push(search);
+        }
 
 
         var countdata = $(".info_text").text().split(" ")[1];
