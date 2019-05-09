@@ -43,8 +43,8 @@
                                 </div>
                                 <br/>
                                 <br/>
-                                
-                                
+
+
                                 <div class="contact-item">
                                     <div class="ci-icon">
                                         <i class="fa fa-phone"></i>
@@ -56,8 +56,8 @@
                                         +(852) 2314 8016
                                     </div>
                                 </div>
-                                
-                                
+
+
                             </div>
                             <!-- End Phone -->
 
@@ -88,9 +88,9 @@
 
                             <!-- Email -->
                             <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
-                                  <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <a href="#top"><img class="quantitylogo" src="<?php echo base_url(); ?>assets/images/qclogo.png" /></a>
-        </div>
+                                <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+                                    <a href="#top"><img class="quantitylogo" src="<?php echo base_url(); ?>assets/images/qclogo.png" /></a>
+                                </div>
                             </div>
                             <!-- End Email -->
 
@@ -107,23 +107,26 @@
         <!-- Footer Logo -->
 
 
-<!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logo21.png" width="78" height="36" alt="" /></a>
-        </div>-->
-      
+        <!--        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+                    <a href="#top"><img src="<?php echo base_url(); ?>assets/images/logo21.png" width="78" height="36" alt="" /></a>
+                </div>-->
+
         <!-- End Footer Logo -->
         <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
             <div class="newsletter-area">
                 <h3>Newsletter Sign Up!</h3>
                 <center>
-                    <div class="input-group" style="width: 300px;">
-                        <input type="text" class="form-control" placeholder="E-mail . . .">
-                        <span class="input-group-addon">
-                            <button type="submit" class="">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                            </button>  
-                        </span>
-                    </div>
+                    <form class="" method="post" action='<?php echo site_url("Shop/subscribe") ?>'>
+
+                        <div class="input-group" style="width: 300px;">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail . . .">
+                            <span class="input-group-addon">
+                                <button type="submit" name="submit" value="submit" >
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </button>  
+                            </span>
+                        </div>
+                    </form>
                 </center>
             </div>
         </div>
@@ -140,7 +143,7 @@
 
             <!-- Copyright -->
             <div class="footer-copy font-alt">
-                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com <?php echo date("Y");?></a>.
+                <a href="http://www.voguetailors.com/" target="_blank">&copy; voguetailors.com <?php echo date("Y"); ?></a>.
             </div>
             <!-- End Copyright -->
 

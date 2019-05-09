@@ -91,6 +91,53 @@ class Shop extends CI_Controller {
         $this->load->view('pages/contactus', $data);
     }
 
+    public function subscribe() {
+        if (isset($_POST['submit'])) {
+            $appointment = array(
+                'email' => $this->input->post('email'),
+            );
+            // print_r($appointment);
+
+            $emailsender = email_sender;
+            $sendername = email_sender_name;
+            $email_bcc = email_bcc;
+
+            if ($this->input->post('email')) {
+                $this->email->set_newline("\r\n");
+                $this->email->from(email_bcc, $sendername);
+                $this->email->to($this->input->post('email'));
+                $this->email->bcc(email_bcc);
+                $subjectt = "Thank you for your subscription";
+                $orderlog = array(
+                    'log_type' => 'Thank You For Subscribing',
+                    'log_datetime' => date('Y-m-d H:i:s'),
+                    'user_id' => 'Subscribing User',
+                    'log_detail' => $sendernameeq . "  " . $subjectt
+                );
+                $this->db->insert('system_log', $orderlog);
+                $subject = $subjectt;
+                $this->email->subject($subject);
+                $appointment['appointment'] = $appointment;
+                $htmlsmessage = $this->load->view('Email/subscribing', $appointment, true);
+                if (REPORT_MODE == 1) {
+                    $this->email->message($htmlsmessage);
+                    $this->email->print_debugger();
+                    $send = $this->email->send();
+                    if ($send) {
+                        redirect(site_url("/"));
+                    } else {
+                        $error = $this->email->print_debugger(array('headers'));
+                        redirect(site_url("/"));
+                    }
+                } else {
+                    echo $htmlsmessage;
+                }
+            }
+        }
+        $this->load->view('pages/subscribe');
+    }
+    
+    
     public function aboutus() {
         $this->load->view('pages/aboutus');
     }
