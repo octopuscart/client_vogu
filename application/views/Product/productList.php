@@ -204,9 +204,16 @@ $image2 = "";
                             <h5 class="widget-title font-alt">Search Fabrics</h5>
 
                             <div class="widget-body">
+                                
                                 <div class="search">
                                     <form action="#">
-                                        <input type="text" name="search" placeholder="Type Fabric No.">
+                                        <div class="input-group input-group-sm">
+
+                                    <input  type="text" name="search" placeholder="Type Fabric No." class="form-control" >
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">Go!</button>
+                                    </span>
+                                </div><!-- /input-group -->
                                     </form>
                                 </div>
                             </div>
@@ -392,12 +399,12 @@ $image2 = "";
                                                 ?>
                                                 <img class="img-responsive" src="<?php echo custome_image_server; ?>/shirt/output/{{product.folder}}/shirt_pos20001.png" alt="product">
 
-                                                                <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
+                                                                        <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
                                                 <?php
                                                 break;
                                             case "2":
                                                 ?>
-                                                                <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
+                                                                        <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
                                                 <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product" >
                                                 <?php
                                                 break;
