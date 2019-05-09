@@ -104,6 +104,15 @@
 
 
             </table>
+            <table class="carttable"  align="center" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:20px">
+
+                <tr>
+                    <td colspan="6" style="font-size: 12px;padding-top: 50px;">
+
+                        <?php echo EMAIL_FOOTER; ?>
+                    </td>
+                </tr>
+            </table>
 
         </div>
     </body>
