@@ -204,16 +204,16 @@ $image2 = "";
                             <h5 class="widget-title font-alt">Search Fabrics</h5>
 
                             <div class="widget-body">
-                                
+
                                 <div class="search">
                                     <form action="#">
                                         <div class="input-group input-group-sm">
 
-                                    <input  type="text" name="search" placeholder="Type Fabric No." class="form-control" >
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="submit">Go!</button>
-                                    </span>
-                                </div><!-- /input-group -->
+                                            <input  type="text" name="search" placeholder="Type Fabric No." class="form-control" >
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="submit">Go!</button>
+                                            </span>
+                                        </div><!-- /input-group -->
                                     </form>
                                 </div>
                             </div>
@@ -381,9 +381,15 @@ $image2 = "";
                                                 echo $custom_item;
                                                 ?>
                                                 <div class="item-hover" style=""> 
-
-                                                    <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn" style="font-size: 9px;" title="Customize this fabric">Design Single
+                                                    <?php
+                                                    if (false) {
+                                                        ?>
+                                                        <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn" style="font-size: 9px;" title="Customize this fabric">Design Single
+                                                        </a> 
+                                                    <?php } ?>
+                                                    <a href="#" class="btn" style="font-size: 9px;" title="Customize this fabric">Design Single
                                                     </a> 
+
                                                     <a href="#." class="btn by" style="    font-size: 9px;" ng-click="addToCart(product.product_id, 1, <?php echo $custom_id; ?>)" title="Choose fabric for multiple customization">Design Multiple</a> 
                                                 </div>
                                             <?php
@@ -399,12 +405,12 @@ $image2 = "";
                                                 ?>
                                                 <img class="img-responsive" src="<?php echo custome_image_server; ?>/shirt/output/{{product.folder}}/shirt_pos20001.png" alt="product">
 
-                                                                        <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
+                                                                                <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
                                                 <?php
                                                 break;
                                             case "2":
                                                 ?>
-                                                                        <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
+                                                                                <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
                                                 <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product" >
                                                 <?php
                                                 break;
@@ -459,7 +465,15 @@ $image2 = "";
                                     </div>
 
                                     <div class="post-prev-more align-center">
+                                           <?php
+                                                    if (false) {
+                                                        ?>
                                         <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
+                                    <?php
+                                                    }
+                                    ?>
+                                                                            <a href="" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
+
                                     </div>
                                 </div>
                             </div>
