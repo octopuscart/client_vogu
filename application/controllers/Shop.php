@@ -103,6 +103,16 @@ class Shop extends CI_Controller {
             $email_bcc = email_bcc;
 
             if ($this->input->post('email')) {
+
+                $rand_1 = $this->input->post('rand_1');
+                $rand_2 = $this->input->post('rand_2');
+                $total = $this->input->post('total');
+                $t_total = intval($rand_1) + intval($rand_2);
+                if ($t_total == intval($total)) {
+                } else {
+                   redirect(site_url("/"));
+                }
+
                 $this->email->set_newline("\r\n");
                 $this->email->from(email_bcc, $sendername);
                 $this->email->to($this->input->post('email'));
@@ -112,32 +122,31 @@ class Shop extends CI_Controller {
                     'log_type' => 'Thank You For Subscribing',
                     'log_datetime' => date('Y-m-d H:i:s'),
                     'user_id' => 'Subscribing User',
-                    'log_detail' => $sendernameeq . "  " . $subjectt
+                    'log_detail' => $sendername . "  " . $subjectt
                 );
                 $this->db->insert('system_log', $orderlog);
                 $subject = $subjectt;
                 $this->email->subject($subject);
                 $appointment['appointment'] = $appointment;
                 $htmlsmessage = $this->load->view('Email/subscribing', $appointment, true);
-                if (REPORT_MODE == 1) {
-                    $this->email->message($htmlsmessage);
-                    $this->email->print_debugger();
-                    $send = $this->email->send();
-                    if ($send) {
-                        redirect(site_url("/"));
-                    } else {
-                        $error = $this->email->print_debugger(array('headers'));
-                        redirect(site_url("/"));
-                    }
-                } else {
-                    echo $htmlsmessage;
-                }
+//                if (REPORT_MODE == 1) {
+//                    $this->email->message($htmlsmessage);
+//                    $this->email->print_debugger();
+//                    $send = $this->email->send();
+//                    if ($send) {
+//                        redirect(site_url("/"));
+//                    } else {
+//                        $error = $this->email->print_debugger(array('headers'));
+//                        redirect(site_url("/"));
+//                    }
+//                } else {
+//                    echo $htmlsmessage;
+//                }
             }
         }
         $this->load->view('pages/subscribe');
     }
-    
-    
+
     public function aboutus() {
         $this->load->view('pages/aboutus');
     }

@@ -119,12 +119,31 @@
                     <form class="" method="post" action='<?php echo site_url("Shop/subscribe") ?>'>
 
                         <div class="input-group" style="width: 300px;">
-                            <input type="email" name="email" class="form-control" placeholder="E-mail . . .">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail . . ." required="">
+
+
+
                             <span class="input-group-addon">
                                 <button type="submit" name="submit" value="submit" >
                                     <i class="fa fa-chevron-right" aria-hidden="true"></i>
                                 </button>  
                             </span>
+
+
+                        </div>
+                        <div class="row" style="width: 200px;font-size: 17px;line-height: 37px;margin-top: 10px;">
+                            <div class="col-md-2">
+                                <?php echo $rand_1 = rand(0, 10); ?>
+                                <input type="hidden" class="form-control" name="rand_1" value="<?php echo $rand_1; ?>" />
+                            </div>
+                            <div class="col-md-2">+</div>
+                            <div class="col-md-2">
+                                <?php echo $rand_2 = rand(0, 10); ?>
+                                <input type="hidden" class="form-control" name="rand_2"  value="<?php echo $rand_2; ?>"/>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="number" class="form-control" name="total"/>
+                            </div>
                         </div>
                     </form>
                 </center>
