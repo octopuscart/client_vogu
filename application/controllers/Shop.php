@@ -129,19 +129,19 @@ class Shop extends CI_Controller {
                 $this->email->subject($subject);
                 $appointment['appointment'] = $appointment;
                 $htmlsmessage = $this->load->view('Email/subscribing', $appointment, true);
-//                if (REPORT_MODE == 1) {
-//                    $this->email->message($htmlsmessage);
-//                    $this->email->print_debugger();
-//                    $send = $this->email->send();
-//                    if ($send) {
-//                        redirect(site_url("/"));
-//                    } else {
-//                        $error = $this->email->print_debugger(array('headers'));
-//                        redirect(site_url("/"));
-//                    }
-//                } else {
-//                    echo $htmlsmessage;
-//                }
+                if (REPORT_MODE == 1) {
+                    $this->email->message($htmlsmessage);
+                    $this->email->print_debugger();
+                    $send = $this->email->send();
+                    if ($send) {
+                        redirect(site_url("/"));
+                    } else {
+                        $error = $this->email->print_debugger(array('headers'));
+                        redirect(site_url("/"));
+                    }
+                } else {
+                    echo $htmlsmessage;
+                }
             }
         }
         $this->load->view('pages/subscribe');
