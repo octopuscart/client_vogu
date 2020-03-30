@@ -246,7 +246,7 @@
                             }
                             ?>
                             <li>
-                                <a href="#" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart({{globleCartData.total_quantity}})</a>
+                                <a href="<?php echo site_url('Cart/details');?>" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart({{globleCartData.total_quantity}})</a>
                             </li>
 
                             </ul>

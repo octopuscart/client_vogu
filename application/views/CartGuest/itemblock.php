@@ -20,7 +20,7 @@
                 }
                 ?>
                 <?php
-                if ($vtype == 'size') {
+                if ($vtype == 'size1') {
                     ?>
                     <!--shipping block-->
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">

@@ -237,7 +237,7 @@ $this->load->view('Cart/checkoutheader');
                                 <a href=" <?php echo site_url("Cart/details"); ?>" class="btn btn-default checkout_button_pre " ><i class="fa fa-arrow-left"></i> Back To Cart</a>
                             </div>
                             <div class="proceed-button pull-right ">
-                                <a href=" <?php echo site_url("Cart/checkoutSize"); ?>" class="btn btn-default checkout_button_next " >Your Size <i class="fa fa-arrow-right"></i></a>
+                                                <a href=" <?php echo site_url("CartGuest/checkoutShipping"); ?>" class="btn btn-default checkout_button_next " >Choose Shipping Address <i class="fa fa-arrow-right"></i></a>
                             </div>
 
 
@@ -251,7 +251,7 @@ $this->load->view('Cart/checkoutheader');
                 </div>
 
             <?php
-            $this->load->view('Cart/itemblock', array('vtype' => 'size'));
+//            $this->load->view('Cart/itemblock', array('vtype' => 'size'));
             ?>
             <?php
             $this->load->view('Cart/itemblock', array('vtype' => 'shipping'));

@@ -90,9 +90,9 @@ class Api extends REST_Controller {
 
     function cartOperation_get() {
         if ($this->checklogin) {
-            $session_cart = $this->Product_model->cartData($this->user_id);
+            $session_cart = $this->Product_model->cartDataNoCustome($this->user_id);
         } else {
-            $session_cart = $this->Product_model->cartData();
+            $session_cart = $this->Product_model->cartDataNoCustome();
         }
         $this->response($session_cart);
     }

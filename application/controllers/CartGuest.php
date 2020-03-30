@@ -54,10 +54,20 @@ class CartGuest extends CI_Controller {
         $data['user_details'] = $address ? $this->session->userdata('customer_inforamtion') : array();
 
 
+        $measurement_style = array(
+            'measurement_style' => "Shop Stored",
+            'measurement_dict' => array()
+        );
+
+
+        $this->session->set_userdata('measurement_style', $measurement_style);
+
+
         $this->load->view('CartGuest/checkoutInit', $data);
     }
 
     function checkoutSize() {
+        redirect("CartGuest/checkoutShipping");
         $this->redirectCart();
         $address = $this->session->userdata('shipping_address');
         $data['user_address_details'] = $address ? [$this->session->userdata('shipping_address')] : [];
@@ -118,8 +128,8 @@ class CartGuest extends CI_Controller {
         $data['measurement_style_type'] = $measurement_style ? $measurement_style['measurement_style'] : "Please Select Size";
 
         $data['checkoutmode'] = 'Guest';
-        
-        
+
+
         $address = $this->session->userdata('shipping_address');
         $data['user_address_details'] = $address ? [$this->session->userdata('shipping_address')] : [];
 
@@ -168,17 +178,17 @@ class CartGuest extends CI_Controller {
 
         $user_details = $this->session->userdata('customer_inforamtion');
         $data['user_details'] = $user_details ? $this->session->userdata('customer_inforamtion') : array();
-       
-        $data['checkoutmode'] = 'Guest'; 
-        
-        
-       
+
+        $data['checkoutmode'] = 'Guest';
+
+
+
         if (isset($_POST['place_order'])) {
-          
+
             //place order
-            
+
             $address = $user_address_details;
-            
+
             if ($this->checklogin) {
                 $session_cart = $this->Product_model->cartDataCustome($this->user_id);
             } else {
@@ -187,7 +197,7 @@ class CartGuest extends CI_Controller {
 
             $sub_total_price = $session_cart['total_price'];
             $total_quantity = $session_cart['total_quantity'];
-            
+
             //place order
 
             $address = $user_address_details;

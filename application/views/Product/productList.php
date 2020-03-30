@@ -459,8 +459,12 @@ $image2 = "";
                                     </div>
 
                                     <div class="post-prev-more align-center">
-                                        <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
+                                        <a href="#" class="btn btn-mod btn-gray btn-round" ng-click='addToCart(product.product_id, 1, <?php echo $custom_id; ?>)'><i class="fa fa-shopping-cart"></i> Add To Cart</a>
                                     </div>
+                                    
+<!--                                    <div class="post-prev-more align-center">
+                                        <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
+                                    </div>-->
                                 </div>
                             </div>
                             <!-- End Shop Item -->

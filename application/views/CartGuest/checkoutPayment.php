@@ -91,7 +91,7 @@ $this->load->view('Cart/checkoutheader');
             $this->load->view('CartGuest/itemblock', array('vtype' => 'items'));
             ?>
             <?php
-            $this->load->view('Cart/itemblock', array('vtype' => 'size'));
+//            $this->load->view('Cart/itemblock', array('vtype' => 'size'));
             ?>
             <?php
             $this->load->view('CartGuest/itemblock', array('vtype' => 'shipping'));
