@@ -28,6 +28,15 @@ class Product extends CI_Controller {
         }
 
         $categories = $this->Product_model->productListCategories($cat_id, $custom_id);
+
+        $staticcat = $customeitem->category_id;
+        if ($cat_id == 0) {
+            $cat_id = $customeitem->category_id;
+        }
+
+        $categories = $this->Product_model->productListCategories($staticcat, $custom_id);
+
+
         $data["categorie_parent"] = $this->Product_model->getparent($cat_id);
         $data["categories"] = $categories;
         $data["category"] = $cat_id;
@@ -112,7 +121,7 @@ class Product extends CI_Controller {
         if ($custom_id == 3) {
             redirect('Product/customizationPant/' . $product_id . "/" . $custom_id);
         }
-        
+
         if ($custom_id == 5) {
             redirect('Product/customizationTuxedoSuit/' . $product_id . "/" . $custom_id);
         }
@@ -125,7 +134,7 @@ class Product extends CI_Controller {
     }
 
     function customizationShirt($productid, $custom_id) {
-        $productdetails = $this->Product_model->productDetails($productid , $custom_id);
+        $productdetails = $this->Product_model->productDetails($productid, $custom_id);
         $data['productdetails'] = $productdetails;
         $data["custom_item"] = "Pant";
         $data['custom_id'] = $custom_id;
@@ -140,18 +149,18 @@ class Product extends CI_Controller {
         $data['tuxedotype'] = "0";
         $this->load->view('Product/customization_suit_v2', $data);
     }
-    
+
     function customizationTuxedoSuit($productid, $custom_id) {
         $productdetails = $this->Product_model->productDetails($productid, $custom_id);
         $data['productdetails'] = $productdetails;
         $data["custom_item"] = "TuxedoSuit";
         $data['custom_id'] = $custom_id;
-        
+
         $data['tuxedotype'] = "1";
-        
+
         $this->load->view('Product/customization_suit_v2', $data);
     }
-    
+
     function customizationTuxedoJacket($productid, $custom_id) {
         $productdetails = $this->Product_model->productDetails($productid, $custom_id);
         $data['productdetails'] = $productdetails;
@@ -160,7 +169,7 @@ class Product extends CI_Controller {
         $data['tuxedotype'] = "1";
         $this->load->view('Product/customization_suit_v2', $data);
     }
-    
+
     function customizationTuxedoPant($productid, $custom_id) {
         $productdetails = $this->Product_model->productDetails($productid, $custom_id);
         $data['productdetails'] = $productdetails;
@@ -169,8 +178,7 @@ class Product extends CI_Controller {
         $data['tuxedotype'] = "1";
         $this->load->view('Product/customization_suit_v2', $data);
     }
-    
-    
+
     function customizationSuitV2($productid, $custom_id) {
         $productdetails = $this->Product_model->productDetails($productid, $custom_id);
         $data['productdetails'] = $productdetails;
@@ -188,8 +196,7 @@ class Product extends CI_Controller {
         $data['tuxedotype'] = "0";
         $this->load->view('Product/customization_suit_v2', $data);
     }
-    
-    
+
     function customizationPantV2($productid, $custom_id) {
         $productdetails = $this->Product_model->productDetails($productid, $custom_id);
         $data['productdetails'] = $productdetails;

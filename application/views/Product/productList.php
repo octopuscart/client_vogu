@@ -23,6 +23,11 @@ $image2 = "";
 
 
 <style>
+    
+    .activeCategory{
+        font-weight: bold;
+        border-bottom: 1px solid #c9c9c9!important;
+    }
     .page_navigation a {
         padding: 5px 10px;
         border: 1px solid #000;
@@ -232,7 +237,7 @@ $image2 = "";
                                             $subcategories = $value['sub_category'];
                                             ?>  
                                             <li>
-                                                <a href="<?php echo site_url("Product/ProductList/" . $custom_id . "/" . $value['id']); ?>" title=""><?php echo $value['category_name']; ?></a>
+                                                <a href="<?php echo site_url("Product/ProductList/" . $custom_id . "/" . $value['id']); ?>" id="categoryid<?php echo $value['id'];?>" title=""><?php echo $value['category_name']; ?></a>
 
                                             </li>
                                             <?php
@@ -543,7 +548,13 @@ $image2 = "";
 <script>
     var category_id = <?php echo $category; ?>;
     var custom_id = <?php echo $custom_id; ?>;
-    var searchdata = "<?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>";</script>
+    var searchdata = "<?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>";
+
+    $(function(){
+        $("#categoryid"+category_id).addClass("activeCategory");
+    })
+
+</script>
 <!--angular controllers-->
 
 
