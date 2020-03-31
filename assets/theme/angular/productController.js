@@ -34,23 +34,35 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
             var ak = "a" + i + "=" + argsv.join("-");
             argsk.push(ak);
         }
-        var pmm =  $scope.pricerange.min;
-        var pmx =  $scope.pricerange.max;
+        var pricelist = [];
+        $(".pricefilter").each(function (i, o) {
+
+            if ($(this).is(":checked")) {
+                pricelist.push($(this).val());
+            }
+
+        })
+        var pricestr = pricelist.join("--");
+        var pricefilters = "pfilter=" + pricestr;
+        argsk.push(pricefilters);
+        var pmm = $scope.pricerange.min;
+        var pmx = $scope.pricerange.max;
 
         var elempm = "maxprice=" + pmx;
+
         var elempx = "minprice=" + pmm;
 
 
 
-        if (pmm!=0) {
+        if (pmm != 0) {
             $scope.pricerange.max = pmx;
             $scope.pricerange.min = pmm;
             argsk.push(elempx);
             argsk.push(elempm);
         }
-        
-        if(searchdata){
-            var search = "search="+searchdata;
+
+        if (searchdata) {
+            var search = "search=" + searchdata;
             argsk.push(search);
         }
 
@@ -60,8 +72,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
             if (countdata) {
                 countdata = countdata.split("-");
             }
-        }
-        else {
+        } else {
             countdata = [1, 12];
         }
 
@@ -84,13 +95,11 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
         $http.get(url).then(function (result) {
             if ($scope.productResults.products) {
                 $scope.productResults.products = result.data.products;
-            }
-            else {
+            } else {
                 $scope.productResults = result.data;
                 if ($scope.productResults.products.length) {
                     $scope.checkproduct = 1;
-                }
-                else {
+                } else {
 //                    $scope.productProcess.state = 2;
                 }
             }
@@ -106,8 +115,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
             if ($scope.productResults.products.length) {
                 $scope.productProcess.state = 2;
-            }
-            else {
+            } else {
                 $scope.productProcess.state = 0;
             }
 
@@ -135,25 +143,10 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
                 var priceui = document.getElementById("price-range");
                 var minp = Number($scope.productResults.price.minprice) - 1;
                 var maxp = Number($scope.productResults.price.maxprice)
-                noUiSlider.create(priceui, {
-                    start: [minp, maxp],
-                    connect: true,
-                    steps: 10,
-                    range: {
-                        'min': minp,
-                        'max': maxp
-                    }
-                });
 
-                priceui.noUiSlider.on('update', function (values, handle) {
-                    console.log(values, handle)
-                    $scope.pricerange.min = values[0];
-                    $scope.pricerange.max = values[1];
-                    $("#price-min").text(values[0]);
-                    $("#price-max").text(values[1]);
 
-                }
-                )
+
+
 
 
 
@@ -185,7 +178,17 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
         var elempm = "maxprice=" + pmx;
         var elempx = "minprice=" + pmm;
 
+  var pricelist = [];
+        $(".pricefilter").each(function (i, o) {
 
+            if ($(this).is(":checked")) {
+                pricelist.push($(this).val());
+            }
+
+        })
+        var pricestr = pricelist.join("--");
+        var pricefilters = "pfilter=" + pricestr;
+        argsk.push(pricefilters);
 
         if (pmm.trim()) {
             $scope.pricerange.max = pmx;
@@ -200,8 +203,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
             if (countdata) {
                 countdata = countdata.split("-");
             }
-        }
-        else {
+        } else {
             countdata = [1, 12];
         }
 
@@ -224,13 +226,11 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
         $http.get(url).then(function (result) {
             if ($scope.productResults.products) {
                 $scope.productResults.products = result.data.products;
-            }
-            else {
+            } else {
                 $scope.productResults = result.data;
                 if ($scope.productResults.products.length) {
                     $scope.checkproduct = 1;
-                }
-                else {
+                } else {
 //                    $scope.productProcess.state = 2;
                 }
             }
@@ -241,8 +241,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
 
             if ($scope.productResults.products.length) {
                 $scope.productProcess.state = 2;
-            }
-            else {
+            } else {
                 $scope.productProcess.state = 0;
             }
 
@@ -276,16 +275,13 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
                 var attrlist = $scope.attribute_checked[atv.attribute_id];
                 if (attrlist.indexOf(atv.id) > -1) {
 
-                }
-                else {
+                } else {
                     $scope.attribute_checked[atv.attribute_id].push(atv.id)
                 }
-            }
-            else {
+            } else {
                 $scope.attribute_checked[atv.attribute_id] = [atv.id];
             }
-        }
-        else {
+        } else {
             var attrlist = $scope.attribute_checked[atv.attribute_id];
             var ind = attrlist.indexOf(atv.id)
             $scope.attribute_checked[atv.attribute_id].splice(ind, 1);
@@ -301,16 +297,13 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
                 var attrlist = $scope.attribute_checked_pre[atv.attribute];
                 if (attrlist.indexOf(atv.id) > -1) {
 
-                }
-                else {
+                } else {
                     $scope.attribute_checked_pre[atv.attribute].push(atv)
                 }
-            }
-            else {
+            } else {
                 $scope.attribute_checked_pre[atv.attribute] = [atv];
             }
-        }
-        else {
+        } else {
             var attrlist = $scope.attribute_checked_pre[atv.attribute];
             var ind = attrlist.indexOf(atv.id)
             $scope.attribute_checked_pre[atv.attribute].splice(ind, 1);
@@ -340,8 +333,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
         if (countdata) {
             var countdata1 = countdata.split("-");
             countdata = [Number(countdata1[0]), Number(countdata1[1])];
-        }
-        else {
+        } else {
             countdata = [1, 12];
         }
         console.log(countdata);
@@ -429,21 +421,18 @@ App.controller('ProductController12', function ($scope, $http, $timeout, $interv
         $http.get(url).then(function (result) {
             if ($scope.productResults.products) {
                 $scope.productResults.products = result.data.products;
-            }
-            else {
+            } else {
                 $scope.productResults = result.data;
                 if ($scope.productResults.products.length) {
                     $scope.checkproduct = 1;
-                }
-                else {
+                } else {
 //                    $scope.productProcess.state = 2;
                 }
             }
 
             if ($scope.productResults.products.length) {
                 $scope.productProcess.state = 2;
-            }
-            else {
+            } else {
                 $scope.productProcess.state = 0;
             }
 
@@ -523,16 +512,13 @@ App.controller('ProductController12', function ($scope, $http, $timeout, $interv
                 var attrlist = $scope.attribute_checked[atv.attribute_id];
                 if (attrlist.indexOf(atv.id) > -1) {
 
-                }
-                else {
+                } else {
                     $scope.attribute_checked[atv.attribute_id].push(atv.id)
                 }
-            }
-            else {
+            } else {
                 $scope.attribute_checked[atv.attribute_id] = [atv.id];
             }
-        }
-        else {
+        } else {
             var attrlist = $scope.attribute_checked[atv.attribute_id];
             var ind = attrlist.indexOf(atv.id)
             $scope.attribute_checked[atv.attribute_id].splice(ind, 1);
@@ -548,16 +534,13 @@ App.controller('ProductController12', function ($scope, $http, $timeout, $interv
                 var attrlist = $scope.attribute_checked_pre[atv.attribute];
                 if (attrlist.indexOf(atv.id) > -1) {
 
-                }
-                else {
+                } else {
                     $scope.attribute_checked_pre[atv.attribute].push(atv)
                 }
-            }
-            else {
+            } else {
                 $scope.attribute_checked_pre[atv.attribute] = [atv];
             }
-        }
-        else {
+        } else {
             var attrlist = $scope.attribute_checked_pre[atv.attribute];
             var ind = attrlist.indexOf(atv.id)
             $scope.attribute_checked_pre[atv.attribute].splice(ind, 1);
@@ -639,8 +622,7 @@ App.controller('ProductSearchController', function ($scope, $http, $timeout, $in
 
             if ($scope.productResults.products) {
                 $scope.productResults.products = result.data.products;
-            }
-            else {
+            } else {
                 $scope.productResults = result.data;
                 if ($scope.productResults.products.length) {
                     $scope.checkproduct = 1;
@@ -668,16 +650,13 @@ App.controller('ProductSearchController', function ($scope, $http, $timeout, $in
                 var attrlist = $scope.attribute_checked[atv.attribute_id];
                 if (attrlist.indexOf(atv.id) > -1) {
 
-                }
-                else {
+                } else {
                     $scope.attribute_checked[atv.attribute_id].push(atv.id)
                 }
-            }
-            else {
+            } else {
                 $scope.attribute_checked[atv.attribute_id] = [atv.id];
             }
-        }
-        else {
+        } else {
             var attrlist = $scope.attribute_checked[atv.attribute_id];
             var ind = attrlist.indexOf(atv.id)
             $scope.attribute_checked[atv.attribute_id].splice(ind, 1);
@@ -693,16 +672,13 @@ App.controller('ProductSearchController', function ($scope, $http, $timeout, $in
                 var attrlist = $scope.attribute_checked_pre[atv.attribute];
                 if (attrlist.indexOf(atv.id) > -1) {
 
-                }
-                else {
+                } else {
                     $scope.attribute_checked_pre[atv.attribute].push(atv)
                 }
-            }
-            else {
+            } else {
                 $scope.attribute_checked_pre[atv.attribute] = [atv];
             }
-        }
-        else {
+        } else {
             var attrlist = $scope.attribute_checked_pre[atv.attribute];
             var ind = attrlist.indexOf(atv.id)
             $scope.attribute_checked_pre[atv.attribute].splice(ind, 1);

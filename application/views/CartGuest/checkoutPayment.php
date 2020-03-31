@@ -146,7 +146,7 @@ $this->load->view('Cart/checkoutheader');
                                                                         </div>
                                                                         <div class="proceed-button pull-right ">
 
-                                                                            <a href=" <?php echo site_url("PayPalPaymentGuest/process"); ?>" class="btn btn-default checkout_button_next " >Place Order <i class="fa fa-arrow-right"></i></a>
+                                                                            <a href=" <?php echo site_url("PayPalPayment/process"); ?>" class="btn btn-default checkout_button_next " >Place Order <i class="fa fa-arrow-right"></i></a>
                                                                         </div>
                                                                     </td>
                                                                 </tr>

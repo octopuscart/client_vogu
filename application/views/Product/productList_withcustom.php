@@ -204,16 +204,16 @@ $image2 = "";
                             <h5 class="widget-title font-alt">Search Fabrics</h5>
 
                             <div class="widget-body">
-
+                                
                                 <div class="search">
                                     <form action="#">
                                         <div class="input-group input-group-sm">
 
-                                            <input  type="text" name="search" placeholder="Type Fabric No." class="form-control" >
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default" type="submit">Go!</button>
-                                            </span>
-                                        </div><!-- /input-group -->
+                                    <input  type="text" name="search" placeholder="Type Fabric No." class="form-control" >
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit">Go!</button>
+                                    </span>
+                                </div><!-- /input-group -->
                                     </form>
                                 </div>
                             </div>
@@ -255,11 +255,14 @@ $image2 = "";
                                 <h5 class="widget-title font-alt">Filter by price</h5>
                             </div>
                             <!-- PRICE -->
-                            <div class="cost-price-content12">
-                                <label ng-repeat="price in productResults.pricelist" style='font-weight: 500;width: 100%;'>
-                                    <input type="checkbox" name='pricerange[]' class='pricefilter' value='{{price}}'> {{price|currency}}
-                                </label>
-                                <button class="col-xs-3 btn btn-link" ng-click="getProducts()" >FILTER</button> 
+                            <div class="cost-price-content">
+                                <div id="price-range" class="price-range"></div>
+                                <div class='row' style="margin:0px;">
+                                    <span id="price-min" class="price-min col-xs-4"></span>
+                                    <span class="col-xs-1">-</span> 
+                                    <span id="price-max" class="price-max col-xs-4"></span> 
+                                    <a href="#." class="col-xs-3" ng-click="getProducts()" >FILTER</a> 
+                                </div>
                             </div>
                         </div>
 
@@ -335,12 +338,108 @@ $image2 = "";
                             <div class="col-md-4 col-lg-4 mb-0 mb-xs-0 padding_10"   ng-repeat="(k, product) in productResults.products">
                                 <div class="productmodel">
                                     <div class="post-prev-img">
-                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
+                                        <?php
+                                        switch ($custom_id) {
+                                            case "1":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">
+                                                <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/shirt/output/{{product.folder}}/shirt_pos20001.png" alt="product">-->
 
+                                                <?php
+                                                break;
+                                            case "2":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" style="height: 414px;">
+                                                <?php
+                                                break;
+                                            case "5":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" style="height: 414px;">
+                                                <?php
+                                                break;
+                                            case "6":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product">
+                                                <?php
+                                                break;
+                                            case "7":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product">
+                                                <?php
+                                                break;
+                                            case "3":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" >
+                                                <?php
+                                                break;
+                                            case "4":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product" style="height: 414px;">
+                                                <?php
+                                                break;
+                                            default:
+                                                echo $custom_item;
+                                                ?>
+                                                <div class="item-hover" style=""> 
+
+                                                    <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn" style="font-size: 9px;" title="Customize this fabric">Design Single
+                                                    </a> 
+                                                    <a href="#." class="btn by" style="    font-size: 9px;" ng-click="addToCart(product.product_id, 1, <?php echo $custom_id; ?>)" title="Choose fabric for multiple customization">Design Multiple</a> 
+                                                </div>
+                                            <?php
+                                        }
+                                        ?>
 
                                     </div>
                                     <div class="post-prev-img hoverproduct" style="background: #fff">
-                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
+
+                                        <?php
+                                        switch ($custom_id) {
+                                            case "1":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/shirt/output/{{product.folder}}/shirt_pos20001.png" alt="product">
+
+                                                                        <!--<img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/shirt/{{product.folder}}.jpg" alt="product">-->
+                                                <?php
+                                                break;
+                                            case "2":
+                                                ?>
+                                                                        <!--<div class="suitbackground" style="background: url(<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png)"></div>-->
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product" >
+                                                <?php
+                                                break;
+                                            case "5":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product" >
+                                                <?php
+                                                break;
+                                            case "6":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/suitfabrics/{{product.folder}}.jpg" alt="product">
+                                                <?php
+                                                break;
+                                            case "7":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/suitfabrics/{{product.folder}}.jpg" alt="product">
+                                                <?php
+                                                break;
+                                            case "3":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/pant_style10001.png" alt="product">
+                                                <?php
+                                                break;
+                                            case "4":
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/jacket/output/{{product.folder}}/s1_master_style60001.png" alt="product">
+                                                <?php
+                                                break;
+                                            default:
+                                                echo $custom_item;
+                                                ?>
+                                                <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
+                                            <?php
+                                        }
+                                        ?>
 
 
 
@@ -362,10 +461,10 @@ $image2 = "";
                                     <div class="post-prev-more align-center">
                                         <a href="#" class="btn btn-mod btn-gray btn-round" ng-click='addToCart(product.product_id, 1, <?php echo $custom_id; ?>)'><i class="fa fa-shopping-cart"></i> Add To Cart</a>
                                     </div>
-
-                                    <!--                                    <div class="post-prev-more align-center">
-                                                                            <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
-                                                                        </div>-->
+                                    
+<!--                                    <div class="post-prev-more align-center">
+                                        <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
+                                    </div>-->
                                 </div>
                             </div>
                             <!-- End Shop Item -->
