@@ -334,17 +334,51 @@ $image2 = "";
                             <!-- Shop Item -->
                             <div class="col-md-4 col-lg-4 mb-0 mb-xs-0 padding_10"   ng-repeat="(k, product) in productResults.products">
                                 <div class="productmodel">
-                                    <div class="post-prev-img">
-                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
 
 
-                                    </div>
-                                    <div class="post-prev-img hoverproduct" style="background: #fff">
-                                        <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product">
+                                    <?php
+                                    switch ($custom_id) {
+                                        case "8":
+                                            ?>
+                                            <div class="post-prev-img">
+                                                <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" alt="product"/>
+                                            </div>
+                                            <div class="post-prev-img hoverproduct" style="background: #fff">
+                                                <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" alt="product"/>
+                                            </div>
+                                            <?php
+                                            break;
+                                        default:
+
+                                            $staticcat = array(
+                                                "135" => "135",
+                                                "134" => "134",
+                                                "136" => "136",
+                                            );
+                                            if (isset($staticcat[$category])) {
+                                                ?>
+                                                <div class="post-prev-img">
+                                                    <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" style='height: 383px' alt="product"/>
+                                                </div>
+                                                <div class="post-prev-img hoverproduct" style="background: #fff">
+                                                    <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" style='height: 383px' alt="product"/>
+                                                </div>
+                                                <?php
+                                            } else {
+                                                ?>
+                                                <div class="post-prev-img">
+                                                    <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product"/>
+                                                </div>
+                                                <div class="post-prev-img hoverproduct" style="background: #fff">
+                                                    <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product"/>
+                                                </div>
+                                                <?php
+                                            }
+                                    }
+                                    ?>
 
 
 
-                                    </div>
 
                                     <div class="post-prev-title font-alt align-center">
                                         <a href="#.">
