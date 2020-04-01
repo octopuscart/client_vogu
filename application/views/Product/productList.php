@@ -23,7 +23,7 @@ $image2 = "";
 
 
 <style>
-    
+
     .activeCategory{
         font-weight: bold;
         border-bottom: 1px solid #c9c9c9!important;
@@ -228,7 +228,23 @@ $image2 = "";
 
                             <div class="widget">
 
-                                <h5 class="widget-title font-alt">Shop Brands</h5>
+                                <h5 class="widget-title font-alt">
+
+                                    <?php
+                                    switch ($custom_id) {
+                                        case "1":
+                                            ?>
+                                            2 PLY 100% COTTON
+                                            <?php
+                                                    break;
+                                         
+                                        default:
+                                            ?>
+                                            Shop Brands
+                                        <?php
+                                    }
+                                    ?>
+                                </h5>
 
                                 <div class="widget-body">
                                     <ul class="clearlist widget-menu">
@@ -237,7 +253,7 @@ $image2 = "";
                                             $subcategories = $value['sub_category'];
                                             ?>  
                                             <li>
-                                                <a href="<?php echo site_url("Product/ProductList/" . $custom_id . "/" . $value['id']); ?>" id="categoryid<?php echo $value['id'];?>" title=""><?php echo $value['category_name']; ?></a>
+                                                <a href="<?php echo site_url("Product/ProductList/" . $custom_id . "/" . $value['id']); ?>" id="categoryid<?php echo $value['id']; ?>" title=""><?php echo $value['category_name']; ?></a>
 
                                             </li>
                                             <?php
@@ -549,9 +565,8 @@ $image2 = "";
     var category_id = <?php echo $category; ?>;
     var custom_id = <?php echo $custom_id; ?>;
     var searchdata = "<?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>";
-
     $(function(){
-        $("#categoryid"+category_id).addClass("activeCategory");
+    $("#categoryid" + category_id).addClass("activeCategory");
     })
 
 </script>

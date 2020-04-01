@@ -321,7 +321,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                 foreach ($cartcustom as $key1 => $value1) {
                     $customdata[$value1['style_key']] = $value1['style_value'];
                 }
-                if (count($customdata)) {
+                if (count(1)) {
                     $productlist[$value['product_id']] = $value;
                     if (isset($value['item_id'])) {
                         array_push($custome_items, $value['item_id']);
@@ -369,7 +369,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                     array_push($session_cart['custome_items'], $value['item_id']);
                     array_push($session_cart['custome_items_name'], $value['item_name']);
                 }
-                if (isset($value['custom_dict'])) {
+                if (1) {
                     $returndata['products'][$key] = $value;
                     $returndata['total_quantity'] += $value['quantity'];
                     $returndata['total_price'] += $value['total_price'];
@@ -630,7 +630,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
     //category list array
     function productListCategories($category_id) {
         $this->db->where('parent_id', $category_id);
-                 $this->db->order_by('display_index desc');
+                 $this->db->order_by('category_name asc');
 
         $query = $this->db->get('category');
         $category = $query->result_array();
