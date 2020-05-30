@@ -636,7 +636,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
             $product_dict = array(
                 'title' => $product_details['title'],
                 'price' => $product_details['price'] + $price,
-                'sku' => $product_details['sku'] . ", Lining: ".$lining . " ($".$price.")",
+                'sku' => $product_details['sku'] . " ($".$product_details['price'].")" . ", Lining: ".$lining . " ($".$price.")",
                 'folder' => $product_details['folder'],
                 'attrs' => "",
                 'vendor_id' => $product_details['user_id'],
@@ -690,7 +690,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                 $product_dict = array(
                     'title' => $product_details['title'],
                     'price' =>  $product_details['price'] + $price,
-                    'sku' => $product_details['sku'] . ",  Lining: ".$lining . " ($".$price.")", 
+                    'sku' => $product_details['sku'] . " ($".$product_details['price'].")" . ",  Lining: ".$lining . " ($".$price.")", 
                     'folder' => $product_details['folder'],
                     'attrs' => "",
                     'item_id' => $product_details['item_id'],
