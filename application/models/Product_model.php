@@ -627,6 +627,90 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
         }
     }
 
+        //cart operation session 
+    public function cartOperationLining($product_id, $quantity, $item_id, $lining, $price,  $user_id = 0, $setSession = 0) {
+
+        if ($user_id != 0) {
+            $cartdata = $this->cartData($user_id);
+            $product_details = $this->productDetails($product_id, $item_id);
+            $product_dict = array(
+                'title' => $product_details['title'],
+                'price' => $product_details['price'] + $price,
+                'sku' => $product_details['sku'] . ", Lining: ".$lining . " ($".$price.")",
+                'folder' => $product_details['folder'],
+                'attrs' => "",
+                'vendor_id' => $product_details['user_id'],
+                'total_price' => $product_details['price'] + $price,
+                'item_id' => $product_details['item_id'],
+                'item_name' => $product_details['item_name'],
+                'file_name' => custome_image_server . PRODUCT_PATH_PRE . $product_details['folder'] . PRODUCT_PATH_POST,
+                'quantity' => $quantity,
+                'user_id' => $user_id,
+                'credit_limit' => $product_details['credit_limit'] ? $product_details['credit_limit'] : 0,
+                'product_id' => $product_id,
+                'op_date_time' => date('Y-m-d H:i:s'),
+            );
+            
+            if (isset($cartdata['products'][$product_id])) {
+                if ($setSession) {
+                    $total_price = $product_details['price'] * $quantity;
+                    $total_quantity = $quantity;
+                } else {
+                    $total_price = $cartdata['products'][$product_id]['total_price'] + $product_details['price'];
+                    $total_quantity = $cartdata['products'][$product_id]['quantity'] + $quantity;
+                }
+                $cid = $cartdata['products'][$product_id]['id'];
+                $this->db->set('quantity', $total_quantity);
+                $this->db->set('total_price', $total_price);
+                $this->db->where('id', $cid); //set column_name and value in which row need to update
+                $this->db->update('cart'); //
+            } else {
+                $this->db->insert('cart', $product_dict);
+            }
+        } else {
+            $session_cart = $this->session->userdata('session_cart');
+            if ($session_cart) {
+                
+            } else {
+                $cartdata = array('products' => array(), 'total_quantity' => 0, 'custome_items' => [],
+                    'custome_items_name' => [], 'total_price' => 0);
+                $this->session->set_userdata('session_cart', $cartdata);
+                $session_cart = $this->session->userdata('session_cart');
+            }
+
+            if (isset($session_cart['products'][$product_id])) {
+                $product_dict = $session_cart['products'][$product_id];
+                $qauntity = $product_dict['quantity'] + $quantity;
+                $price = $product_dict['price'] * $qauntity;
+                $session_cart['products'][$product_id]['quantity'] = $qauntity;
+                $session_cart['products'][$product_id]['total_price'] = $price;
+                $this->session->set_userdata('session_cart', $session_cart);
+            } else {
+                $product_details = $this->productDetails($product_id, $item_id);
+                $product_dict = array(
+                    'title' => $product_details['title'],
+                    'price' =>  $product_details['price'] + $price,
+                    'sku' => $product_details['sku'] . ",  Lining: ".$lining . " ($".$price.")", 
+                    'folder' => $product_details['folder'],
+                    'attrs' => "",
+                    'item_id' => $product_details['item_id'],
+                    'item_name' => $product_details['item_name'],
+                    'vendor_id' => $product_details['user_id'],
+                    'total_price' =>  $product_details['price'] + $price,
+                    'file_name' => custome_image_server . PRODUCT_PATH_PRE . $product_details['folder'] . PRODUCT_PATH_POST,
+                    'quantity' => 1,
+                    'product_id' => $product_id,
+                    'date' => date('Y-m-d'),
+                    'time' => date('H:i:s'),
+                );
+                $session_cart['products'][$product_id] = $product_dict;
+                $this->session->set_userdata('session_cart', $session_cart);
+            }
+            $session_cart = $this->session->userdata('session_cart');
+        }
+    }
+    
+    
     //category list array
     function productListCategories($category_id) {
         $this->db->where('parent_id', $category_id);

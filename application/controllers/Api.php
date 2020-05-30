@@ -34,6 +34,25 @@ class Api extends REST_Controller {
         $this->response($session_cart['products'][$product_id]);
     }
 
+    //function for product list
+    function cartOperationLining_post() {
+        $product_id = $this->post('product_id');
+        $quantity = $this->post('quantity');
+        $item_id = $this->post('custome_id');
+        $price = $this->post('price');
+        $lining = $this->post('lining');
+
+        if ($this->checklogin) {
+            $session_cart = $this->Product_model->cartOperationLining($product_id, $quantity, $item_id, $price, $lining, $this->user_id);
+            $session_cart = $this->Product_model->cartDataCustome($this->user_id);
+        } else {
+            $session_cart = $this->Product_model->cartOperationLining($product_id, $quantity, $item_id, $price, $lining);
+            $session_cart = $this->Product_model->cartDataCustome();
+        }
+
+        $this->response($session_cart['products'][$product_id]);
+    }
+
     //multiple customization cart
     function cartOperationMultiple_get() {
         if ($this->checklogin) {
@@ -252,7 +271,7 @@ class Api extends REST_Controller {
             if ($pricelistarray) {
 
                 if (isset($pricelistarray[$price_p])) {
-                    
+
                     array_push($productListFinal, $value);
                 }
             } else {

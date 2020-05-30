@@ -165,15 +165,13 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
     $scope.updateCart = function (productobj, oper) {
         if (oper == 'sub') {
             if (productobj.quantity == 1) {
-            }
-            else {
+            } else {
                 productobj.quantity = Number(productobj.quantity) - 1;
             }
         }
         if (oper == 'add') {
             if (productobj.quantity > 5) {
-            }
-            else {
+            } else {
                 productobj.quantity = Number(productobj.quantity) + 1;
             }
         }
@@ -242,12 +240,72 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
         });
     }
 
+    $scope.addToCartLining = function (product_id, quantity, custome_id, price, lining) {
+        var productdict = {
+            'product_id': product_id,
+            'quantity': quantity,
+            'custome_id': custome_id,
+            'price': price,
+            'lining': lining
+        }
+        var form = new FormData()
+        form.append('product_id', product_id);
+        form.append('quantity', quantity);
+        form.append('custome_id', custome_id);
+        form.append('price', price);
+        form.append('lining', lining);
+        swal({
+            title: 'Adding to Cart',
+            onOpen: function () {
+                swal.showLoading()
+            }
+        });
+        $http.post(globlecart + "Lining", form).then(function (rdata) {
+            swal.close();
+            $scope.getCartData();
+            $scope.getCartDatac();
+            $scope.getCartDatanc();
+            //custome model
+
+            //
+
+            swal({
+                title: 'Added To Cart',
+                type: 'success',
+                html: "<p class='swalproductdetail'><span>" + rdata.data.title + "</span><br>" + "Total Price: " + currencyfilter(rdata.data.total_price, globlecurrency) + ", Quantity: " + rdata.data.quantity + "</p>",
+                imageUrl: rdata.data.file_name,
+                imageWidth: 100,
+                timer: 1500,
+//                 background: '#fff url(//bit.ly/1Nqn9HU)',
+                imageAlt: 'Custom image',
+                showConfirmButton: false,
+                animation: true
+
+            }).then(
+                    function () {
+
+                    },
+                    function (dismiss) {
+                        if (dismiss === 'timer') {
+//                            $("#productcustome").modal("show");
+                            window.location = baseurl + "Cart/details";
+                        }
+                    }
+            )
+        }, function () {
+            swal.close();
+            swal({
+                title: 'Something Wrong..',
+            })
+        });
+    }
+
+
     $scope.avaiblecredits = avaiblecredits;
     $scope.checkOrderTotal = function () {
         if ($scope.globleCartData.used_credit) {
             $scope.globleCartData.grand_total = $scope.globleCartData.total_price - $scope.globleCartData.used_credit;
-        }
-        else {
+        } else {
             $scope.globleCartData.used_credit = 0;
             $scope.globleCartData.grand_total = $scope.globleCartData.total_price;
             alert("Invalid Credit Entered.")
@@ -339,19 +397,18 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
             var kv = styleobj[i];
             console.log(kv);
             var checkdl = kv.indexOf("$");
-            if(checkdl>-1){
+            if (checkdl > -1) {
                 var brkstr = kv.split(" ");
                 var brkstrl = brkstr.length;
-                var prestr = brkstr.splice(0, brkstrl-1).join(" ");
+                var prestr = brkstr.splice(0, brkstrl - 1).join(" ");
                 console.log(brkstr, brkstrl, prestr);
-                var poststr = " <b class='extrapricesummry'>"+brkstr[0]+"</b>";
+                var poststr = " <b class='extrapricesummry'>" + brkstr[0] + "</b>";
                 console.log(poststr);
-                var finalstr = prestr+poststr;
-                 var summaryhtml = "<tr><th>" + ks + "</th><td>" + finalstr + "</td></tr>";
+                var finalstr = prestr + poststr;
+                var summaryhtml = "<tr><th>" + ks + "</th><td>" + finalstr + "</td></tr>";
+            } else {
+                var summaryhtml = "<tr><th>" + ks + "</th><td>" + kv + "</td></tr>";
             }
-            else{
-            var summaryhtml = "<tr><th>" + ks + "</th><td>" + kv + "</td></tr>";
-        }
             customhtmlarray.push(summaryhtml);
         }
         customhtmlarray = customhtmlarray.join("");
@@ -363,8 +420,8 @@ App.controller('ShopController', function ($scope, $http, $timeout, $interval, $
             imageWidth: 100,
             confirmButtonClass: 'btn btn-default',
         });
-        
-      
+
+
     }
 
 
@@ -377,15 +434,13 @@ App.controller('ProductDetails', function ($scope, $http, $timeout, $interval, $
         console.log(oper)
         if (oper == 'sub') {
             if ($scope.productver.quantity == 1) {
-            }
-            else {
+            } else {
                 $scope.productver.quantity = Number($scope.productver.quantity) - 1;
             }
         }
         if (oper == 'add') {
             if ($scope.productver.quantity > 5) {
-            }
-            else {
+            } else {
                 $scope.productver.quantity = Number($scope.productver.quantity) + 1;
             }
         }

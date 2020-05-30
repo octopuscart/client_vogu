@@ -10,12 +10,12 @@ body {
 }
 
 .activestyleselect{
-           border-left: 1px solid #000;
+    border-left: 1px solid #000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
 div.activestyleselect:last-child{
-           border-right:  1px solid #000;
+    border-right:  1px solid #000;
 
 }
 
@@ -58,8 +58,7 @@ code {
 
 .collar_style {
 
-    //background-size: 293%!important;
-    //background-position: -101% -14%!important;
+
 }
 
 .cuff_style{
@@ -118,7 +117,7 @@ code {
 }
 
 .shirtcontainer{
-       height: 530px;
+    height: 530px;
 }
 
 
@@ -247,24 +246,24 @@ code {
 }
 
 .monogramtext_posistion_collar {
-       left: 202px;
+    left: 202px;
     display: flex;
     position: absolute;
     top: 23px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .multicustom .monogramtext_posistion_collar {
     left: 223px;
     display: block;
     top: 24px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
 
 }
 
 
 .monogramtext_posistion_cuff_left {
-     left: 329px;
+    left: 329px;
     display: block;
     top: 317px;
     transform: rotate(-1deg);
@@ -279,7 +278,7 @@ code {
 
 
 .monogramtext_posistion_left_pocket {
-         left: 251px;
+    left: 251px;
     display: block;
     top: 122px;
     transform: rotate(0deg);
@@ -288,23 +287,23 @@ code {
     left: 277px;
     display: block;
     top: 136px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .monogramtext_posistion_abdomen{
-       left: 233px;
+    left: 233px;
     display: block;
     top: 258px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
     /*transform: rotate(43deg);*/
 } 
-           
+
 
 .monogramtext_posistion_shirt_tail{
-            left: 221px;
+    left: 221px;
     display: block;
     top: 382px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 
@@ -312,16 +311,16 @@ code {
     left: 250px;
     display: block;
     top: 285px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
     /*transform: rotate(43deg);*/
 } 
-           
+
 
 .multicustom .monogramtext_posistion_shirt_tail{
-        left: 251px;
+    left: 251px;
     display: block;
     top: 431px;
-        transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 
@@ -397,7 +396,7 @@ p.fabric_title {
     height: 47px;
     width: 47px;
     background-size: 179px !important;
-       background-position: -25px 69px!important;
+    background-position: -25px 69px!important;
 }
 
 
@@ -458,12 +457,12 @@ p.selected-element-title_text_price{
 
 @media only screen and (max-width: 768px) {
 
-    
+
     .total_price_block h5 {
-    font-size: 15px;
-    color: white;
+        font-size: 15px;
+        color: white;
         line-height: 38px;
-}
+    }
     .insert_button {
         padding: 3px 3px;
         margin-top: 2px;
@@ -585,8 +584,7 @@ p.selected-element-title_text_price{
         background-position: -111px -29px!important;
     }
     .collar_style {
-        // background-size: 293%!important;
-        // background-position: -101% -7%!important;
+
     }
     .button_style1{
         margin-left: 2px;
@@ -738,4 +736,66 @@ p.selected-element-title_text_price{
 .multicustom .fixpos{
     height: 480px;
 }
+.linigimage {
+    width: 135px;
+    padding: 10px;
+    float: left;
+    display: inline-block;
+}
+.liningimage h3{
+    font-size: 15px;
+    margin: 0;
+}
 
+.liningimage p{
+    margin: 0;
+    margin-top: 15px;
+}
+
+.liningcontainer{
+    height: 450px;
+    overflow-y: auto;
+    text-align: center;
+    background: #E0E0E0;
+}
+.linigimage{
+    width: 135px;
+    padding: 10px;
+    float: left;
+    display: inline-block;
+}
+
+.liningcontainer .caption {
+    padding: 3px;
+    color: #333;
+    height: 75px;
+}
+.thumbnail.liningimage {
+    margin-bottom: -5px;
+}
+
+.fabricobj h3{
+    margin:0px 0px 5px;
+}
+
+.liningurl a{
+    text-decoration: none;
+}
+.liningurl a.active {
+    background: #000;
+    color: white;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.fabricobj p {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .linigimage {
+        width: 50%!important;
+    }
+}

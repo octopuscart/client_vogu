@@ -71,44 +71,39 @@
                 array(
                     "title" => "About Us",
                     "link" => site_url("Shop/aboutus"),
-                    ),
+                ),
                 array(
                     "title" => "FAQ's",
                     "link" => site_url("Shop/faq")
-                    ),
+                ),
                 array(
                     "title" => "Terms & Conditions",
                     "link" => site_url("Shop/tnc")
-                    ),
+                ),
             ]),
         array(
             "title" => "Order Now",
             "submenu" => "yes",
             "link" => site_url('Product/ProductList/2/0'),
             "submenuitems" => [
-                 array(
+                array(
                     "title" => "Shirts",
                     "link" => site_url('Product/ProductList/1/0'),),
                 array(
                     "title" => "Suits",
                     "link" => site_url('Product/ProductList/2/0')),
-               
                 array(
                     "title" => "Pants",
                     "link" => site_url('Product/ProductList/3/0'),),
-                
-                 array(
+                array(
                     "title" => "Jackets",
                     "link" => site_url('Product/ProductList/4/0'),),
-               
                 array(
                     "title" => "Tuxedo Suits",
                     "link" => site_url('Product/ProductList/5/0'),),
-                
                 array(
                     "title" => "Linings",
                     "link" => site_url('Product/ProductList/8/0'),),
-               
             ]
         ),
         array(
@@ -161,12 +156,23 @@
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li> <a href="<?php echo site_url("Account/login"); ?>" >Sign In / Sign Up </a>
+                            <li>
+                                <?php
+                                $session_data = $this->session->userdata('logged_in');
+                                if ($session_data) {
+                                    ?>
+                                <a href="<?php echo site_url("Account/profile"); ?>" ><i class="fa fa-user"></i> Profile</a>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <a href="<?php echo site_url("Account/login"); ?>" >Sign In / Sign Up </a>
+
+                                <?php } ?>
                             </li>
 
                             <li class="m_right_8"><a href="https://www.facebook.com/VogueTailors/" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
                             <li class="m_right_8"><a href="https://twitter.com/voguetailors" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
-                       </ul>
+                        </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
@@ -189,11 +195,11 @@
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="showonmobile">
-                                        <div class="nav-logo-wrap local-scroll ">
-                                            <a href="<?php echo site_url(); ?>" class="logo">
-                                                <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="" />
-                                            </a>
-                                        </div>
+                        <div class="nav-logo-wrap local-scroll ">
+                            <a href="<?php echo site_url(); ?>" class="logo">
+                                <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="" />
+                            </a>
+                        </div>
                     </div>
 
                     <div class="mobile-nav">
@@ -232,7 +238,7 @@
                                                                 <a class="" href="<?php echo $smvalue['link']; ?>">
                                                                     <?php echo $smvalue['title']; ?>
                                                                 </a>
-                                                               
+
                                                             </li>
 
                                                     </li>
@@ -250,7 +256,7 @@
                             }
                             ?>
                             <li>
-                                <a href="<?php echo site_url('Cart/details');?>" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart({{globleCartData.total_quantity}})</a>
+                                <a href="<?php echo site_url('Cart/details'); ?>" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart({{globleCartData.total_quantity}})</a>
                             </li>
 
                             </ul>

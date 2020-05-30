@@ -133,9 +133,9 @@ $this->load->view('Cart/checkoutheader');
                                 <img src="{{product.file_name}}" alt="" style='height: 150px'>
                             </a>
                         </td>
-                        <td data-title="Description">
-                            <h6 class="m_bottom_5"><a href="#" class="color_dark tr_all">{{product.title}}</a></h6>
-                            <p class="fw_light">{{product.item_name}}</p>
+                        <td data-title="Description" style="text-align: left;">
+                          <h6 class="m_bottom_5"><a href="#" class="color_dark tr_all">{{product.title}} - {{product.item_name}}</a></h6>
+                            <p class="fw_light">{{product.sku}}</p>
                         </td>
                         <td data-title="Price">{{product.price|currency:" "}}</td>
                         <td data-title="Quantity" >
