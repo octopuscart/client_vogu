@@ -178,7 +178,7 @@
 
                         <td style="width: 200px;">
                             <?php echo $product->title; ?> - <?php echo $product->item_name; ?><br/>
-                            <small style="font-size: 10px;">(<?php echo $product->sku; ?>)</small>
+                            <small style="font-size: 10px;"><?php echo $product->sku; ?></small>
 
 
                         </td>
