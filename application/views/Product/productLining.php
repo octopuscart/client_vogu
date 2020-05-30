@@ -17,7 +17,7 @@ $this->load->view('layout/header');
         <section class="item-detail-page padding-top-30 ">
             <div class="col-md-2">
                 <div class="thumbnail fabricobj">
-                    <img src="http://files.costcokart.com/vouge/coman/output/<?php echo $productdetails['folder']; ?>/cutting20001.png" alt="...">
+                    <img src="https://files.costcokart.com/vouge/coman/output/<?php echo $productdetails['folder']; ?>/cutting20001.png" alt="...">
                     <div class="caption">
                         <h3><?php echo $productdetails['title']; ?></h3>
                         <p><?php echo $productdetails['short_description']; ?></p>
