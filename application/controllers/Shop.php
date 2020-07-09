@@ -109,8 +109,9 @@ class Shop extends CI_Controller {
                 $total = $this->input->post('total');
                 $t_total = intval($rand_1) + intval($rand_2);
                 if ($t_total == intval($total)) {
+                    
                 } else {
-                   redirect(site_url("/"));
+                    redirect(site_url("/"));
                 }
 
                 $this->email->set_newline("\r\n");
@@ -352,4 +353,27 @@ class Shop extends CI_Controller {
         }
     }
 
+    public function testmail() {
+        setlocale(LC_MONETARY, 'en_US');
+        $emailsender = EMAIL_SENDER;
+        $sendername = EMAIL_SENDER_NAME;
+        $email_bcc = EMAIL_BCC;
+
+        $this->email->from(EMAIL_BCC, $sendername);
+
+        $this->email->to("octopuscartltd@gmail.com");
+        $this->email->bcc("octopuscartltd@gmail.com");
+        $subject = "Vogue Tailors - 20% Discount On Online Order";
+        $this->email->subject($subject);
+        $checkcode = REPORT_MODE;
+        if ($checkcode == 0) {
+//                ob_clean();
+            echo $this->load->view('Email/general', array(), true);
+        } else {
+            $this->email->message($this->load->view('Email/general', array(), true));
+            $this->email->print_debugger();
+          //  echo $result = $this->email->send();
+        }
+    }
 }
+    
