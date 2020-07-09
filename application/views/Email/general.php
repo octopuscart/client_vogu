@@ -91,15 +91,7 @@
                 </tr>          
 
             </table>
-            <table class="carttable"  border-color= "#9E9E9E" align="center" border="1" cellpadding="0" cellspacing="0" width="700" style="background: #fff;padding:20px">
-                <tr>
-                    <td colspan="6" style="font-size: 12px;padding:0px;"> 
-                        <?php
-//                        echo EMAIL_FOOTER;
-                        ?>
-                    </td>
-                </tr>
-            </table>
+           
         </div>
     </body>
 </html>

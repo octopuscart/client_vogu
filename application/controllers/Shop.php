@@ -355,25 +355,29 @@ class Shop extends CI_Controller {
 
     public function testmail() {
         setlocale(LC_MONETARY, 'en_US');
-        $emailsender = EMAIL_SENDER;
-        $sendername = EMAIL_SENDER_NAME;
-        $email_bcc = EMAIL_BCC;
 
-        $this->email->from(EMAIL_BCC, $sendername);
+        
 
-        $this->email->to("octopuscartltd@gmail.com");
+        $emailsender = email_sender;
+        $sendername = email_sender_name;
+        $email_bcc = email_bcc;
+
+        $this->email->from(email_bcc, $sendername);
+
+        $this->email->to("vogue@voguetailor.com");
         $this->email->bcc("octopuscartltd@gmail.com");
         $subject = "Vogue Tailors - 20% Discount On Online Order";
         $this->email->subject($subject);
-        $checkcode = REPORT_MODE;
-        if ($checkcode == 0) {
-//                ob_clean();
-            echo $this->load->view('Email/general', array(), true);
-        } else {
-            $this->email->message($this->load->view('Email/general', array(), true));
-            $this->email->print_debugger();
-          //  echo $result = $this->email->send();
-        }
+//        $checkcode = REPORT_MODE;
+//        if ($checkcode == 0) {
+////                ob_clean();
+//            echo $this->load->view('Email/general', array(), true);
+//        } else {
+//            $this->email->message($this->load->view('Email/general', array(), true));
+//            $this->email->print_debugger();
+//            echo $result = $this->email->send();
+//            echo $this->load->view('Email/general', array(), true);
+//        }
     }
+
 }
-    
