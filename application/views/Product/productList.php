@@ -36,6 +36,10 @@ if (isset($liningcheck[$custom_id])) {
 
 <style>
 
+
+    .page{
+
+    }
     .activeCategory{
         font-weight: bold;
         border-bottom: 1px solid #c9c9c9!important;
@@ -74,8 +78,10 @@ if (isset($liningcheck[$custom_id])) {
     }
 
     .productmodel{
-        border: 1px solid #dad5d5;
-        padding: 10px;
+
+        padding-bottom: 10px;
+        border-radius: 30px;
+        background: #E0E0E0;
     }
 
     .padding_5{
@@ -138,6 +144,15 @@ if (isset($liningcheck[$custom_id])) {
     }
 
 
+    .post-prev-title a {
+        color: #000;
+    }
+
+    .post-prev-text {
+        margin-bottom: 5px;
+        color: #000;
+    }
+
 
     .product-box1{
 
@@ -175,6 +190,23 @@ if (isset($liningcheck[$custom_id])) {
                 min-height: 260px;<?php
         }
         ?>
+    }
+
+    .product-image-back{
+
+    }
+
+    .product-image-back {
+        background-size: cover!important;
+        background-position: center!important;
+        border-radius: 30px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .btn-round {
+
+        border-radius: 15px;
     }
 
 </style>
@@ -367,19 +399,10 @@ if (isset($liningcheck[$custom_id])) {
                             <!-- Shop Item -->
                             <div class="col-md-4 col-lg-4 mb-0 mb-xs-0 padding_10"   ng-repeat="(k, product) in productResults.products">
                                 <div class="productmodel">
-
-
                                     <?php
                                     switch ($custom_id) {
                                         case "8":
-                                            ?>
-                                            <div class="post-prev-img">
-                                                <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" alt="product"/>
-                                            </div>
-                                            <div class="post-prev-img hoverproduct" style="background: #fff">
-                                                <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" alt="product"/>
-                                            </div>
-                                            <?php
+                                            $imageurl = "https://files.costcokart.com/hkwtc/{{product.folder}}";
                                             break;
                                         default:
 
@@ -389,26 +412,17 @@ if (isset($liningcheck[$custom_id])) {
                                                 "136" => "136",
                                             );
                                             if (isset($staticcat[$category])) {
-                                                ?>
-                                                <div class="post-prev-img">
-                                                    <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" style='height: 383px' alt="product"/>
-                                                </div>
-                                                <div class="post-prev-img hoverproduct" style="background: #fff">
-                                                    <img class="img-responsive" src="https://files.costcokart.com/hkwtc/{{product.folder}}" style='height: 383px' alt="product"/>
-                                                </div>
-                                                <?php
+                                                $imageurl = "https://files.costcokart.com/hkwtc/{{product.folder}}";
                                             } else {
-                                                ?>
-                                                <div class="post-prev-img">
-                                                    <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product"/>
-                                                </div>
-                                                <div class="post-prev-img hoverproduct" style="background: #fff">
-                                                    <img class="img-responsive" src="<?php echo custome_image_server; ?>/coman/output/{{product.folder}}/cutting20001.png" alt="product"/>
-                                                </div>
-                                                <?php
+                                                $imageurl = custome_image_server . "/coman/output/{{product.folder}}/cutting20001.png";
                                             }
                                     }
                                     ?>
+
+
+                                    <div class="post-prev-img">
+                                        <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('<?php echo $imageurl; ?>')" alt="product"/>
+                                    </div>
 
 
 
@@ -425,23 +439,28 @@ if (isset($liningcheck[$custom_id])) {
 
                                         <strong>{{product.price|currency:"<?php echo globle_currency; ?> "}}</strong>
                                     </div>
+                                    <input type="hidden" id="prd{{product.id}}" value="<?php echo $imageurl; ?>"/>
 
                                     <?php
                                     if ($haslining == 'yes') {
                                         ?>
                                         <div class="post-prev-more align-center">
                                             <a href="<?php echo site_url("Product/selectLining/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Select Fabric</a>
+                                            <a href="#" class="btn btn-mod btn-gray btn-round" ng-click='zoomFabric(product)'  data-toggle="modal" data-target="#fabricView"><i class="fa fa-search-plus"></i> Quick View</a>
+
                                         </div>
                                         <?php
                                     } else {
                                         ?> 
                                         <div class="post-prev-more align-center">
                                             <a href="#" class="btn btn-mod btn-gray btn-round" ng-click='addToCart(product.product_id, 1, <?php echo $custom_id; ?>)'><i class="fa fa-shopping-cart"></i> Add To Cart</a>
+                                            <a href="#" class="btn btn-mod btn-gray btn-round" ng-click='zoomFabric(product)'  data-toggle="modal" data-target="#fabricView"><i class="fa fa-search-plus"></i> Quick View</a>
+
                                         </div>
 
-                                        <!--                                    <div class="post-prev-more align-center">
-                                                                                <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
-                                                                            </div>-->
+                                        <!--                                        <div class="post-prev-more align-center">
+                                                                                    <a href="<?php echo site_url("Product/customizationRedirect/") ?><?php echo $custom_id; ?>/{{product.product_id}}" class="btn btn-mod btn-gray btn-round"><i class="fa fa-shopping-cart"></i> Design Now</a>
+                                                                                </div>-->
                                         <?php
                                     }
                                     ?>
@@ -493,95 +512,29 @@ if (isset($liningcheck[$custom_id])) {
             </div>
         </div>
     </div>
-</div>
-</div>
-<!-- End Content --> 
 
+    <!-- Modal -->
+    <div class="modal fade" id="fabricView" tabindex="-1" role="dialog" aria-labelledby="fabricView">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">{{selectedProduct.selectProduct.title}} <small>{{selectedProduct.selectProduct.short_description}} </small></h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{selectedProduct.image}}')" alt="product"/>
 
-<!-- Modal -->
-<div class="modal  fade" id="productcustome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="    z-index: 20000000;">
-    <div class="modal-dialog " role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel" style="font-size: 15px">
-                    <?php
-                    echo $custom_item;
-                    ?>
-                </h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
-
-            <?php
-
-            function createItemBlock($citem_id) {
-
-                switch ($citem_id) {
-                    case '1':
-                        $item_array = array("title" => "Shirt(s)", "link" => site_url("Customization/customizationShirt"));
-                        break;
-                    case '2':
-                        $item_array = array("title" => "Suit(s)", "link" => site_url("Customization/customizationSuitV2/2"));
-                        break;
-                    case '5':
-                        $item_array = array("title" => "Tuxedo Suit(s)", "link" => site_url("Customization/customizationSuitV2/5"));
-                        break;
-                    case '6':
-                        $item_array = array("title" => "Tuxedo Jackets(s)", "link" => site_url("Customization/customizationSuitV2/6"));
-                        break;
-                    case '7':
-                        $item_array = array("title" => "Tuxedo Pants(s)", "link" => site_url("Customization/customizationSuitV2/7"));
-                        break;
-                    case '3':
-                        $item_array = array("title" => "Pant(s)", "link" => site_url("Customization/customizationSuitV2/3"));
-                        break;
-                    case '4':
-                        $item_array = array("title" => "Jacket(s)", "link" => site_url("Customization/customizationSuitV2/4"));
-                        break;
-                    default:
-                        $item_array = array("title" => "Shirt(s)", "link" => site_url("Customization/customizationSuitV2"));
-                }
-                ?>
-
-                <!-- Cart Details -->
-                <div class="modal-body checkout-form">
-                    <div class="custom_block_item">
-
-
-                        <div class="row cart-details" >
-                            <div class="col-sm-12 col-md-3" ng-repeat="product in globleCartDatanc.products" ng-if="product.item_id == '<?php echo $citem_id; ?>'">
-                                <div class="thumbnail">
-                                    <img src="{{product.file_name}}" alt="" style="width: auto;" alt="...">
-                                    <div class="caption">
-                                        <h5 style="font-size:15px;">{{product.title}}</h5>
-                                        <p><span class="price">{{product.price|currency:" "}}</span> <a href="#." ng-click="removeCart(product.product_id)" class="pull-right"><i class="icon-close"></i></a> </p>
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal-footer" ng-repeat="product in globleCartDatanc.products" ng-if="(product.item_id == '<?php echo $citem_id; ?>') && $index == 0">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Add More</button>
-                    <a href="<?php echo $item_array['link']; ?>" class="btn btn-default pull-right">Customize Now <i class="fa fa-arrow-right"></i></a> 
-                </div>
-
-                <?php
-            }
-
-            createItemBlock($custom_id);
-            ?>
-
-
-
-
         </div>
     </div>
+
 </div>
+
+<!-- End Content --> 
 
 
 
@@ -589,7 +542,7 @@ if (isset($liningcheck[$custom_id])) {
     var category_id = <?php echo $category; ?>;
     var custom_id = <?php echo $custom_id; ?>;
     var searchdata = "<?php echo isset($_GET["search"]) ? ($_GET["search"] != '' ? $_GET["search"] : '0') : "0"; ?>";
-    $(function(){
+    $(function () {
     $("#categoryid" + category_id).addClass("activeCategory");
     })
 

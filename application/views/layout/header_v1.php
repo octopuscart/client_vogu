@@ -81,7 +81,7 @@
                 ),
             ]),
         array(
-            "title" => "Shop Online",
+            "title" => "Order Now",
             "submenu" => "yes",
             "link" => site_url('Product/ProductList/2/0'),
             "submenuitems" => [
@@ -143,26 +143,72 @@
                         var globlecurrency = "<?php echo globle_currency; ?>";
                         var avaiblecredits = 0;</script>
             <!--header-->
-           
-            
-             <!-- Navigation panel -->
-            <nav class="main-nav light js-stick">
+            <!-- Navigation panel -->
+            <nav class="navbar navbar-default" style="margin-bottom: 0px;">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"><i class="fa fa-phone"></i>  +(852) 2314 8016</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i> vogue@voguetailor.com</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <?php
+                                $session_data = $this->session->userdata('logged_in');
+                                if ($session_data) {
+                                    ?>
+                                <a href="<?php echo site_url("Account/profile"); ?>" ><i class="fa fa-user"></i> Profile</a>
+                                    <?php
+                                } else {
+                                    ?>
+                                    <a href="<?php echo site_url("Account/login"); ?>" >Sign In / Sign Up </a>
+
+                                <?php } ?>
+                            </li>
+
+                            <li class="m_right_8"><a href="https://www.facebook.com/VogueTailors/" class="color_light  facebook   circle icon_wrap_size_1 d_block"><i class="fa fa-facebook"></i></a></li>
+                            <li class="m_right_8"><a href="https://twitter.com/voguetailors" class="color_light  twitter  circle icon_wrap_size_1 d_block"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <!-- Navigation panel -->
+            <nav class="main-nav lightgrey hideonmobile " style="    background-size: contain;">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
-                    <div class="nav-logo-wrap local-scroll">
-                        <a href="<?php echo site_url("/");?>" class="logo">
-                            <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="Company logo" />
-                        </a>
+                    <center>
+                        <div class="">
+                            <a href="/" class="logo">
+                                <img src="https://www.voguetailorhk.com/assets/images/logo21.png" alt="" style="    height: 100px;" />
+                            </a>
+                        </div>
+                    </center>
+
+                </div>
+            </nav>
+            <!-- End Navigation panel -->
+            <nav class="main-nav js-stick">
+                <div class="full-wrapper relative clearfix">
+                    <!-- Logo ( * your text or image into link tag *) -->
+                    <div class="showonmobile">
+                        <div class="nav-logo-wrap local-scroll ">
+                            <a href="<?php echo site_url(); ?>" class="logo">
+                                <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="" />
+                            </a>
+                        </div>
                     </div>
-                    <div class="mobile-nav" role="button" tabindex="0">
+
+                    <div class="mobile-nav">
                         <i class="fa fa-bars"></i>
-                        <span class="sr-only">Menu</span>
                     </div>
-                    
-                    <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav">
-                        <ul class="clearlist">
-                            
+                    <center>
+                        <!-- Main Menu -->
+                        <div class="inner-nav desktop-nav" style="float: none;">
+                            <ul class="clearlist">
+
                                 <!-- Item With Sub -->
 
                                 <?php
@@ -208,14 +254,15 @@
                                 <?php
                             }
                             ?>
-                        </ul>
-                    </div>
-                    <!-- End Main Menu -->
-                    
+                            <li>
+                                <a href="<?php echo site_url('Cart/details'); ?>" style="height: 75px; line-height: 75px;"><i class="fa fa-shopping-cart"></i> Cart({{globleCartData.total_quantity}})</a>
+                            </li>
 
+                            </ul>
+                        </div>
+                    </center>
                 </div>
             </nav>
-            <!-- End Navigation panel -->
 
 
             <!-- End Sub Column -->

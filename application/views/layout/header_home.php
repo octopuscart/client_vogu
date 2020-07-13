@@ -146,12 +146,12 @@
            
             
              <!-- Navigation panel -->
-            <nav class="main-nav light js-stick">
+            <nav class="main-nav dark transparent stick-fixed">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
                         <a href="<?php echo site_url("/");?>" class="logo">
-                            <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="Company logo" />
+                            <img src="<?php echo base_url(); ?>assets/images/logow.png" alt="Company logo" />
                         </a>
                     </div>
                     <div class="mobile-nav" role="button" tabindex="0">

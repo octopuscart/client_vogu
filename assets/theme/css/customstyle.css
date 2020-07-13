@@ -185,11 +185,11 @@
     }
 
     .quantitylogo{
-      position: inherit;
-    width: 200px;
+        position: inherit;
+        width: 200px;
 
     }
-    
+
     .mobilebutton{
         width: 100%
     }
@@ -198,3 +198,21 @@
 
 }
 
+
+
+.nav-logo-wrap .logo img {
+    max-height: 100%;
+    max-width: max-content;
+}
+
+
+.main-nav.dark .inner-nav ul > li > a {
+    color: rgb(255, 255, 255);
+}
+
+.fabricblockhome{
+    animation-delay: 200ms;    font-size: 18px;
+  color:white;
+    font-weight: 300;
+        margin-bottom: 30px;
+}

@@ -15,7 +15,7 @@ $this->load->view('layout/header');
 
         <div class="row mb-60 mb-xs-40">
 
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
                 <div class="row">
 
                     <!-- Phone -->
@@ -35,7 +35,7 @@ $this->load->view('layout/header');
                     <!-- End Phone -->
 
                     <!-- Address -->
-                    <div class="col-lg-6 pt-20 pb-20 pb-xs-0">
+                    <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
                         <div class="contact-item">
                             <div class="ci-icon">
                                 <i class="fa fa-map-marker"></i>
@@ -48,7 +48,12 @@ $this->load->view('layout/header');
                                 <br/> 3 Salisbury Road,
                                 Tsim Sha Tsui,<br/> Kowloon, Hong Kong
                             </div>
-                            <br/>
+                           
+                        </div>
+                    </div>
+                      <div class="col-lg-3 pt-20 pb-20 pb-xs-0">
+                        <div class="contact-item">
+                            
                             <div class="ci-title font-alt" style="text-align: left;">
                                 Showroom
                             </div>

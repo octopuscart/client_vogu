@@ -4,13 +4,17 @@
 
 App.controller('ProductController', function ($scope, $http, $timeout, $interval) {
 
-    $scope.selectedProduct = {'product': {}};
+    $scope.selectedProduct = {'product': {}, "selectProduct": {}, "image": ""};
 
 
 
 
 
-
+    $scope.zoomFabric = function(product){
+        console.log()
+        $scope.selectedProduct.selectProduct = product;
+        $scope.selectedProduct.image = $("#prd"+product.id).val();
+    }
 
 
 
@@ -178,7 +182,7 @@ App.controller('ProductController', function ($scope, $http, $timeout, $interval
         var elempm = "maxprice=" + pmx;
         var elempx = "minprice=" + pmm;
 
-  var pricelist = [];
+        var pricelist = [];
         $(".pricefilter").each(function (i, o) {
 
             if ($(this).is(":checked")) {
