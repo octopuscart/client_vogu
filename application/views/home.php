@@ -49,6 +49,72 @@ $this->load->view('layout/header_home');
 
 
 
+
+
+
+            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
+
+                <img src="<?php echo base_url(); ?>assets/theme/slider/slider2_1.jpg"  alt="">
+
+
+                <div class="caption customin customout tp-resizeme mediumlarge_light_white" 
+                     data-x="center" 
+                     data-y="center" 
+                     data-voffset="-70"  
+                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+
+                     data-speed="800" 
+                     data-start="1000" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+
+                </div>
+
+                <div class="caption customin customout tp-resizeme hs-line-14 font-alt" 
+                     data-x="center" 
+                     data-y="center" 
+                     data-hoffset="20" 
+                     data-voffset="40"  
+                     data-customin="x:-50;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:0.1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1300" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn" style="font-size: 30px;">
+
+
+                    HONG KONG LEADING BESPOKE CLOTHIER
+
+                </div>
+
+
+                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
+                     data-x="center" 
+                     data-y="center" 
+                     data-voffset="120"
+                     data-customin="x:50;y:300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
+                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
+                     data-speed="800" 
+                     data-start="1500" 
+                     data-startslide="1" 
+
+                     data-easing="Power4.easeOut" 
+                     data-endspeed="500" 
+                     data-endeasing="Power4.easeIn">
+
+                    BESPOKE OR MADE TO MEASURE SUITS & FORMAL WEARS
+                </div>
+
+            </li>
+
             <li data-transition="fade" data-slotamount="7" data-title="Black Slide">
 
                 <img src="<?php echo base_url(); ?>assets/theme/slider/slider1.jpg" alt="">
@@ -119,70 +185,6 @@ $this->load->view('layout/header_home');
 
                     </div>
 
-                </div>
-
-            </li>
-
-
-            <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
-
-                <img src="<?php echo base_url(); ?>assets/theme/slider/slider2_1.jpg"  alt="">
-
-
-                <div class="caption customin customout tp-resizeme mediumlarge_light_white" 
-                     data-x="center" 
-                     data-y="center" 
-                     data-voffset="-70"  
-                     data-customin="x:-50;y:-300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-
-                     data-speed="800" 
-                     data-start="1000" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-
-                </div>
-
-                <div class="caption customin customout tp-resizeme hs-line-14 font-alt" 
-                     data-x="center" 
-                     data-y="center" 
-                     data-hoffset="20" 
-                     data-voffset="40"  
-                     data-customin="x:-50;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.1;scaleY:0.1;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1300" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn" style="font-size: 30px;">
-
-
-                    HONG KONG LEADING BESPOKE CLOTHIER
-
-                </div>
-
-
-                <div class="caption customin customout tp-resizeme hs-line-8 no-transp font-alt" 
-                     data-x="center" 
-                     data-y="center" 
-                     data-voffset="120"
-                     data-customin="x:50;y:300;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;" 
-                     data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" 
-                     data-speed="800" 
-                     data-start="1500" 
-                     data-startslide="1" 
-
-                     data-easing="Power4.easeOut" 
-                     data-endspeed="500" 
-                     data-endeasing="Power4.easeIn">
-
-                    BESPOKE OR MADE TO MEASURE SUITS & FORMAL WEARS
                 </div>
 
             </li>
