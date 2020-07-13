@@ -606,7 +606,7 @@ $this->load->view('layout/header_home');
                 </h2>
 
                 <p class="m_bottom_25 mt-20 fw_light fs_large">
-                    Vogue Tailors was founded Mr. Bhat Zahoor and Mr. Farooq Shalla with the belief that bespoke does not have to mean expensive. Most people would agree that a bespoke suit, hand cut and stitched by a skilled tailor, would look and fit much better than an off-the-peg suit.
+                    Vogue Tailors was founded Mr. Farooq Shalla and Mr. Bhat Zahoor  with the belief that bespoke does not have to mean expensive. Most people would agree that a bespoke suit, hand cut and stitched by a skilled tailor, would look and fit much better than an off-the-peg suit.
                 </p>
                 <p class="m_bottom_25 fw_light fs_large">
                     However, people can be put off by the prices - that need not be the case.
