@@ -60,8 +60,9 @@ $this->load->view('layout/header');
                 <div class="row" style="    background: #e0e0e0;">
                     <nav aria-label="...">
                         <ul class="pager liningurl">
-                            <li><a href="<?php echo site_url('Product/selectLining/' . $item_id . '/' . $product_id . '/solid'); ?>" class="<?php echo $lining_type == 'solid' ? 'active' : ''; ?>">Solid Lining</a></li>
                             <li><a href="<?php echo site_url('Product/selectLining/' . $item_id . '/' . $product_id . '/fancy'); ?>" class="<?php echo $lining_type == 'fancy' ? 'active' : ''; ?>">Fancy Lining</a></li>
+
+                            <li><a href="<?php echo site_url('Product/selectLining/' . $item_id . '/' . $product_id . '/solid'); ?>" class="<?php echo $lining_type == 'solid' ? 'active' : ''; ?>">Solid Lining</a></li>
                         </ul>
                     </nav>
                     <div class="liningcontainer">

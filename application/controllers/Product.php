@@ -214,7 +214,7 @@ class Product extends CI_Controller {
         $this->load->view('Product/customization_suit_v2', $data);
     }
 
-    function selectLining($item_id, $product_id, $lining_type = "solid") {
+    function selectLining($item_id, $product_id, $lining_type = "fancy") {
         $data = array();
         $data['item_id'] = $item_id;
         $data['product_id'] = $product_id;
