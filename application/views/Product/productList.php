@@ -504,7 +504,8 @@ if (isset($liningcheck[$custom_id])) {
                     <h4 class="modal-title" id="myModalLabel">{{selectedProduct.selectProduct.title}} <small>{{selectedProduct.selectProduct.short_description}} </small></h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{selectedProduct.image}}')" alt="product"/>
+                    <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{selectedProduct.image}}');    height: 422px;
+    width: 100%;;    border-radius: 0px;" alt="product"/>
 
                 </div>
                 <div class="modal-footer">
