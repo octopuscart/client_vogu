@@ -63,7 +63,7 @@
     <?php
     $menuitems = [
         array(
-            "title" => "Home",
+            "title" => "INSIGHTS",
             "submenu" => "yes",
             "link" => site_url("/"),
             "submenuitems" => [
