@@ -208,6 +208,12 @@ if (isset($liningcheck[$custom_id])) {
 
         border-radius: 15px;
     }
+    
+    .btn-mod.btn-round {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 25px;
+}
 
 </style>
 
