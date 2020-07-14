@@ -399,29 +399,11 @@ if (isset($liningcheck[$custom_id])) {
                             <!-- Shop Item -->
                             <div class="col-md-4 col-lg-4 mb-0 mb-xs-0 padding_10"   ng-repeat="(k, product) in productResults.products">
                                 <div class="productmodel">
-                                    <?php
-                                    switch ($custom_id) {
-                                        case "8":
-                                            $imageurl = "https://files.costcokart.com/hkwtc/{{product.folder}}";
-                                            break;
-                                        default:
-
-                                            $staticcat = array(
-                                                "135" => "135",
-                                                "134" => "134",
-                                                "136" => "136",
-                                            );
-                                            if (isset($staticcat[$category])) {
-                                                $imageurl = "https://files.costcokart.com/hkwtc/{{product.folder}}";
-                                            } else {
-                                                $imageurl = custome_image_server . "/coman/output/{{product.folder}}/cutting20001.png";
-                                            }
-                                    }
-                                    ?>
+                                   
 
 
                                     <div class="post-prev-img">
-                                        <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('<?php echo $imageurl; ?>')" alt="product"/>
+                                        <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{product.image}}')" alt="product"/>
                                     </div>
 
 
@@ -439,7 +421,7 @@ if (isset($liningcheck[$custom_id])) {
 
                                         <strong>{{product.price|currency:"<?php echo globle_currency; ?> "}}</strong>
                                     </div>
-                                    <input type="hidden" id="prd{{product.id}}" value="<?php echo $imageurl; ?>"/>
+                                    <input type="hidden" id="prd{{product.id}}" value="{{product.image}}"/>
 
                                     <?php
                                     if ($haslining == 'yes') {

@@ -17,7 +17,7 @@ class Api extends REST_Controller {
         $this->load->view('welcome_message');
     }
 
-    //function for product list
+//function for product list
     function cartOperation_post() {
         $product_id = $this->post('product_id');
         $quantity = $this->post('quantity');
@@ -34,7 +34,7 @@ class Api extends REST_Controller {
         $this->response($session_cart['products'][$product_id]);
     }
 
-    //function for product list
+//function for product list
     function cartOperationLining_post() {
         $product_id = $this->post('product_id');
         $quantity = $this->post('quantity');
@@ -53,7 +53,7 @@ class Api extends REST_Controller {
         $this->response($session_cart['products'][$product_id]);
     }
 
-    //multiple customization cart
+//multiple customization cart
     function cartOperationMultiple_get() {
         if ($this->checklogin) {
             $session_cart = $this->Product_model->cartData($this->user_id);
@@ -85,7 +85,7 @@ class Api extends REST_Controller {
         $this->response($session_cart['products'][$product_id]);
     }
 
-    //end of multiple customization
+//end of multiple customization
 
 
 
@@ -148,7 +148,7 @@ class Api extends REST_Controller {
         }
     }
 
-    //Product 
+//Product 
     public function SearchSuggestApi_get($keyword) {
         $query = $this->db->select('title, id, file_name')->from('products')->where("keywords LIKE '%$keyword%' or title LIKE '%$keyword%' ")->get();
         $searchobj = $query->result_array();
@@ -209,7 +209,7 @@ class Api extends REST_Controller {
             $mxpricr = $attrdatak["maxprice"];
             unset($attrdatak["minprice"]);
             unset($attrdatak["maxprice"]);
-            //$pricequery = " and (price between '$mnpricr' and '$mxpricr') ";
+//$pricequery = " and (price between '$mnpricr' and '$mxpricr') ";
         }
 
         foreach ($attrdatak as $key => $atv) {
@@ -227,14 +227,14 @@ class Api extends REST_Controller {
 //                }
             }
         }
-        //print_r($products);
+//print_r($products);
 
         $productdict = [];
 
         $productcheck = array_count_values($products);
 
 
-        //print_r($productcheck);
+//print_r($productcheck);
 
         foreach ($productcheck as $key => $value) {
             if ($value == $countpr) {
@@ -267,6 +267,28 @@ class Api extends REST_Controller {
 
             $price_p = $item_price ? $item_price->price : 0;
             $value['price'] = $price_p;
+
+            switch ($custom_id) {
+                case "8":
+                    $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'];
+                    break;
+                default:
+
+                    $staticcat = array(
+                        "135" => "135",
+                        "134" => "134",
+                        "136" => "136",
+                    );
+                    if (isset($staticcat[$value['category_id']])) {
+                        $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'];
+                    } else {
+                        $imageurl = custome_image_server . "/coman/output/" . $value['folder'] . "/cutting20001.png";
+                    }
+            }
+
+            $value['image'] = $imageurl;
+
+
 
             if ($pricelistarray) {
 
@@ -324,7 +346,7 @@ class Api extends REST_Controller {
         $this->response($productArray);
     }
 
-    //ProductList APi
+//ProductList APi
     public function productListApi_pre_get($category_id) {
         $attrdatak = $this->get();
         $products = [];
@@ -354,14 +376,14 @@ class Api extends REST_Controller {
 //                }
 //            }
         }
-        //print_r($products);
+//print_r($products);
 
         $productdict = [];
 
         $productcheck = array_count_values($products);
 
 
-        //print_r($productcheck);
+//print_r($productcheck);
 
         foreach ($productcheck as $key => $value) {
             if ($value == $countpr) {
@@ -433,7 +455,7 @@ class Api extends REST_Controller {
         $this->response($productArray);
     }
 
-    //ProductList APi
+//ProductList APi
     public function productListSearchApi_get($searchkey) {
         $attrdatak = $this->get();
         $products = [];
@@ -463,14 +485,14 @@ class Api extends REST_Controller {
                 }
             }
         }
-        //print_r($products);
+//print_r($products);
 
         $productdict = [];
 
         $productcheck = array_count_values($products);
 
 
-        //print_r($productcheck);
+//print_r($productcheck);
 
         foreach ($productcheck as $key => $value) {
             if ($value == $countpr) {
@@ -547,13 +569,13 @@ class Api extends REST_Controller {
         $this->response($productArray);
     }
 
-    //category list api
+//category list api
     function categoryMenu_get() {
         $categories = $this->Product_model->productListCategories(0);
         $this->response($categories);
     }
 
-    //order detail get
+//order detail get
     function orderDetails_get($order_id) {
         $order_details = $this->Product_model->getOrderDetails($order_id);
         $this->response($order_details);
@@ -612,7 +634,7 @@ class Api extends REST_Controller {
         $this->response($prodct_details);
     }
 
-    //function for product list
+//function for product list
     function cartOperationCustom_post() {
         $product_id = $this->post('product_id');
         $quantity = $this->post('quantity');
@@ -632,7 +654,7 @@ class Api extends REST_Controller {
         $this->response($session_cart['products'][$product_id]);
     }
 
-    //cartOperationCustomMulti
+//cartOperationCustomMulti
     function cartOperationCustomMulti_post() {
         $product_id = $this->post('product_id');
         $quantity = $this->post('quantity');
