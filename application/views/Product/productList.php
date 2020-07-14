@@ -503,14 +503,14 @@ if (isset($liningcheck[$custom_id])) {
 
     <!-- Modal -->
     <div class="modal fade" id="fabricView" tabindex="-1" role="dialog" aria-labelledby="fabricView">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
+        <div class="modal-dialog" role="document" style='    width: 450px;'>
+            <div class="modal-content" >
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">{{selectedProduct.selectProduct.title}} <small>{{selectedProduct.selectProduct.short_description}} </small></h4>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{selectedProduct.image}}');    height: 422px;
+                    <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{selectedProduct.image}}');    height: 500px;
     width: 100%;;    border-radius: 0px;" alt="product"/>
 
                 </div>

@@ -135,6 +135,26 @@ where pa.product_id = $product_id group by attribute_value_id";
             $productobj['regular_price'] = $item_price->price;
 
             $productobj['item_id'] = $custom_id;
+            
+            switch ($custom_id) {
+                case "8":
+                    $imageurl = "https://files.costcokart.com/hkwtc/" . $productobj['folder'];
+                    break;
+                default:
+
+                    $staticcat = array(
+                        "135" => "135",
+                        "134" => "134",
+                        "136" => "136",
+                    );
+                    if (isset($staticcat[$productobj['category_id']])) {
+                        $imageurl = "https://files.costcokart.com/hkwtc/" . $productobj['folder'];
+                    } else {
+                        $imageurl = custome_image_server . "/coman/output/" . $productobj['folder'] . "/cutting20001.png";
+                    }
+            }
+
+            $productobj['image'] = $imageurl;
 
             if ($custom_id != 0) {
                 $this->db->where('id', $custom_id);
