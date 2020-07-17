@@ -424,7 +424,7 @@ if (isset($liningcheck[$custom_id])) {
 
 
 
-                                    <div class="post-prev-img">
+                                    <div class="post-prev-img animated animate zoomIn">
                                         <img class="img-responsive product-image-back product-image2" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{product.image2}}')" ng-if='product.variant_product_of==1' alt="product"/>
 
                                         <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{product.image}}')" alt="product"/>
