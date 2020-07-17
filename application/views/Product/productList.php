@@ -208,12 +208,28 @@ if (isset($liningcheck[$custom_id])) {
 
         border-radius: 15px;
     }
-    
+
     .btn-mod.btn-round {
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 25px;
-}
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 25px;
+    }
+
+
+    .product-image2 {
+        position: absolute;
+
+        opacity: 0;
+        background: black;
+        border: 1px solid #000;
+    }
+
+    .product-image2:hover {
+        opacity: 1;
+        display: block;
+
+    }
+
 
 </style>
 
@@ -405,11 +421,14 @@ if (isset($liningcheck[$custom_id])) {
                             <!-- Shop Item -->
                             <div class="col-md-4 col-lg-4 mb-0 mb-xs-0 padding_10"   ng-repeat="(k, product) in productResults.products">
                                 <div class="productmodel">
-                                   
+
 
 
                                     <div class="post-prev-img">
+                                        <img class="img-responsive product-image-back product-image2" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{product.image2}}')" ng-if='product.variant_product_of==1' alt="product"/>
+
                                         <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{product.image}}')" alt="product"/>
+
                                     </div>
 
 
@@ -511,7 +530,7 @@ if (isset($liningcheck[$custom_id])) {
                 </div>
                 <div class="modal-body">
                     <img class="img-responsive product-image-back" src="<?php echo base_url(); ?>assets/images/default.png" style="background: url('{{selectedProduct.image}}');    height: 500px;
-    width: 100%;;    border-radius: 0px;" alt="product"/>
+                         width: 100%;;    border-radius: 0px;" alt="product"/>
 
                 </div>
                 <div class="modal-footer">

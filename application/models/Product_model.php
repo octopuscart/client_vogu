@@ -152,6 +152,10 @@ where pa.product_id = $product_id group by attribute_value_id";
                     } else {
                         $imageurl = custome_image_server . "/coman/output/" . $productobj['folder'] . "/cutting20001.png";
                     }
+                    
+                    if ($productobj['variant_product_of']=='1') {
+                        $imageurl = "https://files.costcokart.com/hkwtc/" . $productobj['folder'].".jpg";
+                    }
             }
 
             $productobj['image'] = $imageurl;
