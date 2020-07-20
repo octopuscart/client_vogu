@@ -427,7 +427,7 @@ $this->load->view('layout/header_home');
 
             <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-title="Cup of Dream">
 
-                <img src="<?php echo base_url(); ?>assets/theme/slider/slider5.jpg"  alt="">
+                <img src="<?php echo base_url(); ?>assets/theme/slider/slider5_1.jpg"  alt="">
 
 
                 <div class="caption customin customout tp-resizeme mediumlarge_light_white" 
