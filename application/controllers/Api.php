@@ -287,10 +287,10 @@ class Api extends REST_Controller {
                         $imageurl = custome_image_server . "/coman/output/" . $value['folder'] . "/cutting20001.png";
                         $imageurl2 = custome_image_server . "/coman/output/" . $value['folder'] . "/cutting20001.png";
                     }
-                    if ($value['variant_product_of'] == '1') {
-                        $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'] . ".jpg";
-                        $imageurl2 = "https://files.costcokart.com/hkwtc/" . $value['folder'] . "_c.jpg";
-                    }
+//                    if ($value['variant_product_of'] == '1') {
+//                        $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'] . ".jpg";
+//                        $imageurl2 = "https://files.costcokart.com/hkwtc/" . $value['folder'] . "_c.jpg";
+//                    }
             }
 
             $value['image'] = $imageurl;
