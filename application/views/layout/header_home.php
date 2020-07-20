@@ -129,6 +129,16 @@
             <div class="loader">Loading...</div>
         </div>
         <!-- End Page Loader -->
+        
+        <div class="header-top-inner-top">
+                    <div class="container">
+                        <h2>
+                            <marquee>
+                                SEASONAL 20% OFF ON ALL ONLINE ORDERS TILL 31ST AUGUST 2020
+                            </marquee>
+                        </h2>
+                    </div>
+                </div>
 
         <div ng-controller="ShopController" class="page"  id="top">
             <script>

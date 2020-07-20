@@ -130,6 +130,17 @@
         </div>
         <!-- End Page Loader -->
 
+        <div class="header-top-inner-top">
+            <div class="container">
+                <h2>
+                    <marquee>
+                        SEASONAL 20% OFF ON ALL ONLINE ORDERS TILL 31ST AUGUST 2020
+                    </marquee>
+                </h2>
+            </div>
+        </div>
+
+
         <div ng-controller="ShopController" class="page"  id="top">
             <script>
                         var App = angular.module('App', []).config(function ($interpolateProvider, $httpProvider) {
@@ -143,14 +154,14 @@
                         var globlecurrency = "<?php echo globle_currency; ?>";
                         var avaiblecredits = 0;</script>
             <!--header-->
-           
-            
-             <!-- Navigation panel -->
+
+
+            <!-- Navigation panel -->
             <nav class="main-nav light js-stick">
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="<?php echo site_url("/");?>" class="logo">
+                        <a href="<?php echo site_url("/"); ?>" class="logo">
                             <img src="<?php echo base_url(); ?>assets/images/logo21.png" alt="Company logo" />
                         </a>
                     </div>
@@ -158,60 +169,60 @@
                         <i class="fa fa-bars"></i>
                         <span class="sr-only">Menu</span>
                     </div>
-                    
+
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
-                            
-                                <!-- Item With Sub -->
 
-                                <?php
-                                foreach ($menuitems as $mkey => $mvalue) {
-                                    ?>   
+                            <!-- Item With Sub -->
+
+                            <?php
+                            foreach ($menuitems as $mkey => $mvalue) {
+                                ?>   
 
 
-                                    <li>
-                                        <a href="<?php echo $mvalue['link']; ?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
-                                            <?php echo $mvalue['title']; ?> <?php echo $mvalue['submenu'] == 'yes' ? '<i class="fa fa-angle-down"></i>' : '' ?>
-                                        </a>
+                                <li>
+                                    <a href="<?php echo $mvalue['link']; ?>" class="<?php echo $mvalue['submenu'] == 'yes' ? 'mn-has-sub' : '' ?>">
+                                        <?php echo $mvalue['title']; ?> <?php echo $mvalue['submenu'] == 'yes' ? '<i class="fa fa-angle-down"></i>' : '' ?>
+                                    </a>
 
-                                        <?php
-                                        if ($mvalue['submenu'] == 'yes') {
-                                            ?>
-                                            <!-- Sub Multilevel -->
-                                            <ul class="mn-sub mn-has-multi">
-
-                                                <!-- Sub Column -->
-                                                <li class="mn-sub-multi">
-                                                    <ul class=''>
-                                                        <?php
-                                                        foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
-                                                            ?>   
-                                                            <li>
-                                                                <a class="" href="<?php echo $smvalue['link']; ?>">
-                                                                    <?php echo $smvalue['title']; ?>
-                                                                </a>
-
-                                                            </li>
-
-                                                    </li>
-                                                    <?php
-                                                }
-                                                ?>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                     <?php
-                                }
-                                ?>
-                                </li>
+                                    if ($mvalue['submenu'] == 'yes') {
+                                        ?>
+                                        <!-- Sub Multilevel -->
+                                        <ul class="mn-sub mn-has-multi">
+
+                                            <!-- Sub Column -->
+                                            <li class="mn-sub-multi">
+                                                <ul class=''>
+                                                    <?php
+                                                    foreach ($mvalue["submenuitems"] as $smkey => $smvalue) {
+                                                        ?>   
+                                                        <li>
+                                                            <a class="" href="<?php echo $smvalue['link']; ?>">
+                                                                <?php echo $smvalue['title']; ?>
+                                                            </a>
+
+                                                        </li>
+
+                                                </li>
+                                                <?php
+                                            }
+                                            ?>
+                                        </ul>
+                                    </li>
+                                </ul>
                                 <?php
                             }
                             ?>
+                            </li>
+                            <?php
+                        }
+                        ?>
                         </ul>
                     </div>
                     <!-- End Main Menu -->
-                    
+
 
                 </div>
             </nav>
