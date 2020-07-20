@@ -122,6 +122,10 @@ $this->load->view('Cart/checkoutheader');
                                     <div class="row">
                                         <div class="col-lg-12 col-md-12 col-sm-12">
                                             <ul class="nav nav-tabs bg_blue3 tab_measurement">
+
+                                                <li class="active"><a href="#offlinepayment" data-toggle="tab" aria-expanded="false">Offline Payment</a></li>
+
+
                                                 <?php
                                                 if (PAYMENT_MODE_PAYPAL == 'on') {
                                                     ?>
@@ -150,6 +154,8 @@ $this->load->view('Cart/checkoutheader');
                                                     <?php
                                                 }
                                                 ?>
+
+
 
 
                                             </ul>
@@ -280,6 +286,34 @@ $this->load->view('Cart/checkoutheader');
                                                     <?php
                                                 }
                                                 ?>
+
+                                                <!--offline payment-->
+                                                <div class="tab-pane fade active in" id="cheque">
+                                                    <p style="font-size: 22px;
+    padding: 20px 0px;">
+                                                        For Payment Admin Will Contact You.
+                                                    </p>
+                                                    <div class="cart-page-top table-responsive">
+                                                        <table class="table table-hover">
+                                                            <tbody id="quantity-holder">
+                                                                <tr>
+                                                                    <td colspan="4" class="text_right">
+                                                                        <div class="proceed-button pull-left " >
+                                                                            <a href=" <?php echo site_url("Cart/checkoutShipping"); ?>" class="btn btn-default checkout_button_pre " ><i class="fa fa-arrow-left"></i> View Shipping Address</a>
+                                                                        </div>
+                                                                        <div class="proceed-button pull-right ">
+                                                                            <button type="submit" name="place_order" class="btn btn-default checkout_button_next "  value="Offline Payment">
+                                                                                Place Order <i class="fa fa-arrow-right"></i>
+                                                                            </button>                                                                   
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>

@@ -95,7 +95,7 @@
                         </span>  Payment Method
                         <span style="float: right; line-height: 29px;font-size: 12px;color: white;
                               font-weight: bold;" class="ng-binding">
-                            PayPal
+                            Offline Payment
                         </span> 
                     </a>
                     <?php
