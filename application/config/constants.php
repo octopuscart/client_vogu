@@ -27,6 +27,8 @@ define('site_mail_logo', $configuration['site_logo']);
 define('custome_image_server', $configuration['product_images_url']);
 
 
+define('seo_keywords', $configuration['seo_keywords']);
+
 //Email Settings//
 define('email_sender', $configuration['email_sender']);
 define('email_sender_name', $configuration['email_sender_name']);

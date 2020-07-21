@@ -109,8 +109,8 @@
     font-weight: 300;
     border-top: 1px solid #e2d7d7;padding:20px 0px;
     border-bottom: 1px solid #e2d7d7;'>
-            Vogue Tailors, Farooq And Bhat, A True Class Act, Best High End Tailor, Best Tailor In Hong Kong, Suit Online Shopping In Hong Kong,Hong Kong Tailor, Bespoke Tailor In Hong Kong, Hong Kong Bespoke Tailors, Travelling Tailors, Bespoke Tailors, Voguetailor Custom Tailor, Hong Kong Tailors, Vogue Tailor Hong Kong, Tailoring, Style, Bespoke, Tailor, Fashion, Menswear Suit, Mens Fashion, Sartorial, Made To Measure,Handmade, Dapper Menstyle,Gentleman Menstyle,Tailored, Luxury, Fashion Designer,Hong Kong Bespoke Tailor, Mensstyle, Suits, Tailormade, Lifestyle, Men With Class, Designer Suits, Voguetailor, Voguetailors, Vogue Tailors Hong Kong, Vogue Tailor Hong Kong
-        </div>
+            <?php echo seo_keywords;?>
+         </div>
 
         <!-- Footer Logo -->
 
