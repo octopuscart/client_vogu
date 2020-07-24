@@ -591,7 +591,7 @@ $this->load->view('layout/header_home');
 
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12 m_xs_bottom_20">
-                <img src="<?php echo base_url(); ?>assets/images/aboutvogue2_1.jpg" class="r_corners" alt="Mr. Bhat Zahoor and Mr. Farooq Shalla " style="border-radius: 30px;">
+                <img src="<?php echo base_url(); ?>assets/images/aboutimage.jpg" class="r_corners" alt="Mr. Bhat Zahoor and Mr. Farooq Shalla " style="border-radius: 30px;">
             </div>
             <div class="col-lg-7 col-md-7 t_align_l">
 
