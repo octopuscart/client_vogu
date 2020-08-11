@@ -279,6 +279,7 @@ class Api extends REST_Controller {
                         "135" => "135",
                         "134" => "134",
                         "136" => "136",
+                        "137" => "137",
                     );
                     if (isset($staticcat[$value['category_id']])) {
                         $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'];
