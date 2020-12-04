@@ -130,7 +130,7 @@
         </div>
         <!-- End Page Loader -->
 
-        <div class="header-top-inner-top">
+<!--        <div class="header-top-inner-top">
             <div class="container">
                 <h2>
                     <marquee>
@@ -138,7 +138,7 @@
                     </marquee>
                 </h2>
             </div>
-        </div>
+        </div>-->
 
 
         <div ng-controller="ShopController" class="page"  id="top">
