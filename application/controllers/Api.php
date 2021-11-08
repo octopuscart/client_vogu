@@ -270,8 +270,8 @@ class Api extends REST_Controller {
 
             switch ($custom_id) {
                 case "8":
-                    $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'];
-                    $imageurl2 = "https://files.costcokart.com/hkwtc/" . $value['folder'];
+                    $imageurl = "https://files.voguetailorhk.com/hkwtc/" . $value['folder'];
+                    $imageurl2 = "https://files.voguetailorhk.com/hkwtc/" . $value['folder'];
                     break;
                 default:
 
@@ -282,15 +282,15 @@ class Api extends REST_Controller {
                         "137" => "137",
                     );
                     if (isset($staticcat[$value['category_id']])) {
-                        $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'];
-                        $imageurl2 = "https://files.costcokart.com/hkwtc/" . $value['folder'];
+                        $imageurl = "https://files.voguetailorhk.com/hkwtc/" . $value['folder'];
+                        $imageurl2 = "https://files.voguetailorhk.com/hkwtc/" . $value['folder'];
                     } else {
                         $imageurl = custome_image_server . "/coman/output/" . $value['folder'] . "/cutting20001.png";
                         $imageurl2 = custome_image_server . "/coman/output/" . $value['folder'] . "/cutting20001.png";
                     }
 //                    if ($value['variant_product_of'] == '1') {
-//                        $imageurl = "https://files.costcokart.com/hkwtc/" . $value['folder'] . ".jpg";
-//                        $imageurl2 = "https://files.costcokart.com/hkwtc/" . $value['folder'] . "_c.jpg";
+//                        $imageurl = "https://files.voguetailorhk.com/hkwtc/" . $value['folder'] . ".jpg";
+//                        $imageurl2 = "https://files.voguetailorhk.com/hkwtc/" . $value['folder'] . "_c.jpg";
 //                    }
             }
 
