@@ -138,7 +138,7 @@ where pa.product_id = $product_id group by attribute_value_id";
             
             switch ($custom_id) {
                 case "8":
-                    $imageurl = "https://files.costcokart.com/hkwtc/" . $productobj['folder'];
+                    $imageurl = "https://files.voguetailorhk.com/hkwtc/" . $productobj['folder'];
                     break;
                 default:
 
@@ -148,13 +148,13 @@ where pa.product_id = $product_id group by attribute_value_id";
                         "136" => "136",
                     );
                     if (isset($staticcat[$productobj['category_id']])) {
-                        $imageurl = "https://files.costcokart.com/hkwtc/" . $productobj['folder'];
+                        $imageurl = "https://files.voguetailorhk.com/hkwtc/" . $productobj['folder'];
                     } else {
                         $imageurl = custome_image_server . "/coman/output/" . $productobj['folder'] . "/cutting20001.png";
                     }
                     
                     if ($productobj['variant_product_of']=='1') {
-                        $imageurl = "https://files.costcokart.com/hkwtc/" . $productobj['folder'].".jpg";
+                        $imageurl = "https://files.voguetailorhk.com/hkwtc/" . $productobj['folder'].".jpg";
                     }
             }
 
