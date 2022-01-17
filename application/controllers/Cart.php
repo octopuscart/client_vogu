@@ -320,7 +320,7 @@ class Cart extends CI_Controller {
                 );
                 $this->db->insert('user_order_status', $order_status_data);
 //                    $this->Product_model->order_to_vendor($last_id);
-                redirect('Order/orderdetails/' . $orderkey);
+//                redirect('Order/orderdetails/' . $orderkey);
             }
             $this->load->view('Cart/checkoutPayment', $data);
         } else {
