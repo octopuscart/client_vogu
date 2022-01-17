@@ -204,6 +204,7 @@ class Cart extends CI_Controller {
             } else {
                 $session_cart = $this->Product_model->cartData();
             }
+            print_r($session_cart);
             
             
            
