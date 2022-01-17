@@ -256,10 +256,10 @@ class Cart extends CI_Controller {
                     'credit_price' => $this->input->post('credit_price') || 0,
                 );
 
-
+                print_r($order_array);
                 $this->db->insert('user_order', $order_array);
                 $last_id = $this->db->insert_id();
-              echo   $orderno = "VT" . date('Y/m/d') . "/" . $last_id;
+                $orderno = "VT" . date('Y/m/d') . "/" . $last_id;
                 $orderkey = md5($orderno);
                 $this->db->set('order_no', $orderno);
                 $this->db->set('order_key', $orderkey);
