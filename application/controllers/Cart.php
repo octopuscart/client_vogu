@@ -232,7 +232,7 @@ class Cart extends CI_Controller {
 
                 $address = $user_address_details[0];
                 $paymentmathod = $this->input->post('place_order');
-                print_r($sub_total_price);
+              
                 $order_array = array(
                     'name' => $user_details->first_name . " " . $user_details->last_name,
                     'email' => $user_details->email,
@@ -259,7 +259,7 @@ class Cart extends CI_Controller {
 
                 $this->db->insert('user_order', $order_array);
                 $last_id = $this->db->insert_id();
-                $orderno = "VT" . date('Y/m/d') . "/" . $last_id;
+              echo   $orderno = "VT" . date('Y/m/d') . "/" . $last_id;
                 $orderkey = md5($orderno);
                 $this->db->set('order_no', $orderno);
                 $this->db->set('order_key', $orderkey);
