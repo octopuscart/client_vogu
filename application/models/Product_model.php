@@ -320,12 +320,13 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
     }
 
     function cartData($user_id = 0) {
-        if ($user_id != 0) {
+        if ($user_id) {
             $this->db->where('user_id', $user_id);
             $this->db->where('order_id', '0');
             $this->db->order_by("item_id", "asc");
             $query = $this->db->get('cart');
             $product = $query->result_array();
+       
             $productlist = array();
             $total_price = 0;
             $total_quantity = 0;
@@ -345,7 +346,7 @@ where pa.product_id in ($productatrvalue) group by attribute_value_id";
                 foreach ($cartcustom as $key1 => $value1) {
                     $customdata[$value1['style_key']] = $value1['style_value'];
                 }
-                if (count(1)) {
+                if (count($product)) {
                     $productlist[$value['product_id']] = $value;
                     if (isset($value['item_id'])) {
                         array_push($custome_items, $value['item_id']);

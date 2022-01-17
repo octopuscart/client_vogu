@@ -237,7 +237,7 @@ $this->load->view('Cart/checkoutheader');
                                 <a href=" <?php echo site_url("Cart/details"); ?>" class="btn btn-default checkout_button_pre " ><i class="fa fa-arrow-left"></i> Back To Cart</a>
                             </div>
                             <div class="proceed-button pull-right ">
-                                                <a href=" <?php echo site_url("CartGuest/checkoutShipping"); ?>" class="btn btn-default checkout_button_next " >Choose Shipping Address <i class="fa fa-arrow-right"></i></a>
+                                                <a href=" <?php echo site_url("Cart/checkoutShipping"); ?>" class="btn btn-default checkout_button_next " >Choose Shipping Address <i class="fa fa-arrow-right"></i></a>
                             </div>
 
 

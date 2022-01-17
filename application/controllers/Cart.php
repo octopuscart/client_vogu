@@ -187,6 +187,8 @@ class Cart extends CI_Controller {
 
 
         $session_data = $this->session->userdata('logged_in');
+        
+   
         if ($session_data) {
             $user_details = $this->User_model->user_details($this->user_id);
             $data['user_details'] = $user_details;
@@ -197,17 +199,19 @@ class Cart extends CI_Controller {
             $user_credits = $this->User_model->user_credits($this->user_id);
             $data['user_credits'] = $user_credits;
 
-
-
+            if ($this->checklogin) {
+                $session_cart = $this->Product_model->cartData($this->user_id);
+            } else {
+                $session_cart = $this->Product_model->cartData();
+            }
+            
+            
+           
             //place order
             if (isset($_POST['place_order'])) {
                 $address = $user_address_details[0];
 
-                if ($this->checklogin) {
-                    $session_cart = $this->Product_model->cartData($this->user_id);
-                } else {
-                    $session_cart = $this->Product_model->cartData();
-                }
+
 
                 $sub_total_price = $session_cart['total_price'];
                 $total_quantity = $session_cart['total_quantity'];
@@ -227,6 +231,7 @@ class Cart extends CI_Controller {
 
                 $address = $user_address_details[0];
                 $paymentmathod = $this->input->post('place_order');
+                print_r($sub_total_price);
                 $order_array = array(
                     'name' => $user_details->first_name . " " . $user_details->last_name,
                     'email' => $user_details->email,
@@ -249,6 +254,7 @@ class Cart extends CI_Controller {
                     'measurement_style' => $measurement_style['measurement_style'],
                     'credit_price' => $this->input->post('credit_price') || 0,
                 );
+
 
                 $this->db->insert('user_order', $order_array);
                 $last_id = $this->db->insert_id();
@@ -275,7 +281,7 @@ class Cart extends CI_Controller {
 
                 $measurement_style_array = $measurement_style['measurement_dict'];
 
-                if (count($measurement_style_array)) {
+                if (($measurement_style_array)) {
                     $order_measurement_profile = array(
                         'datetime' => date('Y-m-d H:i:s'),
                         'order_id' => $last_id,
