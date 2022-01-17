@@ -158,7 +158,7 @@ $this->load->view('layout/header');
             <i class="icon-basket d_inline_b m_right_5"></i> Continue Shopping
         </a>
 
-        <a href="<?php echo site_url("Cart/checkoutInit"); ?>" class="btn btn-mod btn-round btn-large pull-right mobilebutton">
+        <a href="<?php echo site_url("CartGuest/checkoutInit"); ?>" class="btn btn-mod btn-round btn-large pull-right mobilebutton">
             Checkout Now <i class="icon-right d_inline_b m_right_5"></i>
         </a>
 
